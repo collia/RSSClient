@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>ITgopNIK.RU</title>
+    <link>http://itgopnik.ru/rss.xml</link>
+    <description>Все о Linux, настройки, программы, дистрибутивы</description>
+    <item>
+      <title>Symantec запускает в России и СНГ расширенную версию Symantec Protection Suite и на 40% снижает цену на версию для малого бизнеса.</title>
+      <link>http://itgopnik.ru/bezop/113-symantec-zapuskaet-v-rossii-i-sng-rasshirennuyu-versiyu-symantec-protection-suite-i-na-40-snizhaet-cenu-na-versiyu-dlya-malogo-biznesa.html</link>
+      <description>Базовая версия для малого бизнеса Symantec Protection Suite Small Business Edition уже значительно превосходит по своим возможностям обычные антивирусные программы, обеспечивая комплексную защиту настольных компьютеров и серверов, резервное копирование и аварийное восстановление для настольных систем, а также высокоточную защиту от спама и фишинга.</description>
+      <category>Безопасность</category>
+      <pubDate>Thu, 01 Jul 2010 07:40:28 GMT</pubDate>
+      <guid isPermaLink="false">http://itgopnik.ru/bezop/113-symantec-zapuskaet-v-rossii-i-sng-rasshirennuyu-versiyu-symantec-protection-suite-i-na-40-snizhaet-cenu-na-versiyu-dlya-malogo-biznesa.html</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-07-01T07:40:28Z</dc:date>
+    </item>
+    <item>
+      <title>Первый релиз системы мониторинга системных журналов Sagan 0.1.0</title>
+      <link>http://itgopnik.ru/112-pervyj-reliz-sistemy-monitoringa-sistemnyx-zhurnalov-sagan-010.html</link>
+      <description>&amp;#160;&amp;#160; &amp;#160; &amp;#160; &amp;#160; &amp;#160;Компания Softwink&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://seclists.org/fulldisclosure/2010/Jun/552"&gt;анонсировала&lt;/a&gt;&amp;#160;выпуск&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://sagan.softwink.com/"&gt;Sagan 0.1.0&lt;/a&gt;, многопоточной системы мониторинга системных журналов и событий. Программа использует наборы правил сигнатур, подобные правилам Snort, для определения нежелательных событий, происходящих в локальной сети и с обслуживаемыми системами. Если Sagan обнаруживает подобные нежелательные события, то они могут сохраняться в единой базе данных системы обнаружения атак (MySQL/PostgreSQL) для сопоставления с соответствующими событиями Snort. Предполагается, что Sagan используется как централизованная система обработки системных журналов, но при необходимости он может быть использован и для мониторинга отдельных рабочих станций.</description>
+      <category>---</category>
+      <pubDate>Thu, 01 Jul 2010 07:37:52 GMT</pubDate>
+      <guid isPermaLink="false">http://itgopnik.ru/112-pervyj-reliz-sistemy-monitoringa-sistemnyx-zhurnalov-sagan-010.html</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-07-01T07:37:52Z</dc:date>
+    </item>
+    <item>
+      <title>Возможность принудительной удаленной установки программ в Android вызывает опасения</title>
+      <link>http://itgopnik.ru/bezop/111-vozmozhnost-prinuditelnoj-udalennoj-ustanovki-programm-v-android-vyzyvaet-opaseniya.html</link>
+      <description>&amp;#160;&amp;#160; &amp;#160; &amp;#160; Специалист по компьютерной безопасности Джон Оберхайд (Jon Oberheide), чьё&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://www.opennet.ru/opennews/art.shtml?num=27052"&gt;исследование&lt;/a&gt;&amp;#160;возможности легкого распространения вредоносного ПО для платформы Android, используя склонность пользователей особо не разбираясь устанавливать заманчивые программы из каталога Android Market, наделало много шуму и вынудило компанию Google&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://www.opennet.ru/opennews/art.shtml?num=27090#google"&gt;прибегнуть&lt;/a&gt;&amp;#160;к функции принудительного удаленного стирания программ с телефонов пользователей,&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://jon.oberheide.org/blog/2010/06/25/remote-kill-and-install-on-google-android/"&gt;опубликовал&lt;/a&gt;&amp;#160;в своем блоге результаты изучения функции удаленного выполнения операций в платформе Android.</description>
+      <category>Безопасность</category>
+      <pubDate>Thu, 01 Jul 2010 07:36:05 GMT</pubDate>
+      <guid isPermaLink="false">http://itgopnik.ru/bezop/111-vozmozhnost-prinuditelnoj-udalennoj-ustanovki-programm-v-android-vyzyvaet-opaseniya.html</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-07-01T07:36:05Z</dc:date>
+    </item>
+    <item>
+      <title>Уязвимости в LibPNG, LibTIFF, Spring Framework, Plone, Apache Axis2 и Google Chrome</title>
+      <link>http://itgopnik.ru/bezop/110-uyazvimosti-v-libpng-libtiff-spring-framework-plone-apache-axis2-i-google-chrome.html</link>
+      <description>&lt;p&gt;Несколько новых уязвимостей:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class="l" style="margin-bottom: 10pt; text-align: left;"&gt;В новых версиях библиотеки&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://www.libpng.org/pub/png/libpng.html"&gt;LibPNG&lt;/a&gt;&amp;#160;1.2.44 и 1.4.3 устранены две опасные&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://secunia.com/advisories/40302/"&gt;уязвимости&lt;/a&gt;, одна из которых может привести к выполнения кода злоумышленника при открытии функциями библиотеки специально оформленных PNG-изображений. Опасность уязвимостей усугубляется тем, что libpng активно&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://www.libpng.org/pub/png/pngapbr.html"&gt;используется&lt;/a&gt;&amp;#160;для обработки PNG-изображений в большом числе сторонних программ, таких как web-браузеры, графические оболочки и просмотрщики изображений.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <category>Безопасность</category>
+      <pubDate>Thu, 01 Jul 2010 07:34:44 GMT</pubDate>
+      <guid isPermaLink="false">http://itgopnik.ru/bezop/110-uyazvimosti-v-libpng-libtiff-spring-framework-plone-apache-axis2-i-google-chrome.html</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-07-01T07:34:44Z</dc:date>
+    </item>
+    <item>
+      <title>Kingmax Hercules (4ГБ): "для подвигов Геракла"</title>
+      <link>http://itgopnik.ru/news/84-kingmax-hercules-4gb-dlya-podvigov-gerakla.html</link>
+      <description>&lt;p&gt;&lt;!--TBegin--&gt;&lt;a href="http://itgopnik.ru/uploads/posts/2010-06/1277360740_kingmax_hercules_ddr3-2200_dc_kit_01.jpg" onclick="return hs.expand(this)" &gt;&lt;img align="left" src="http://itgopnik.ru/uploads/posts/2010-06/thumbs/1277360740_kingmax_hercules_ddr3-2200_dc_kit_01.jpg" alt='Kingmax Hercules (4ГБ): &amp;#34;для подвигов Геракла&amp;#34;' title='Kingmax Hercules (4ГБ): &amp;#34;для подвигов Геракла&amp;#34;'  /&gt;&lt;/a&gt;&lt;!--TEnd--&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Игровой комплект оперативной памяти, предназначенный для сборки компьютерных систем на базе процессоров Intel Core i7 и Core i5. Память характеризируется одной из лучших частот на сегодня - 2,2 ГГц, при таймингах CL10.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;em&gt;Также чип может похвастать поддержкой профиля Intel XMP, встроенной ASIC микросхемой и многим др.&amp;#160;&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;</description>
+      <category>Новости сайта</category>
+      <pubDate>Thu, 24 Jun 2010 06:32:03 GMT</pubDate>
+      <guid isPermaLink="false">http://itgopnik.ru/news/84-kingmax-hercules-4gb-dlya-podvigov-gerakla.html</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-06-24T06:32:03Z</dc:date>
+    </item>
+    <item>
+      <title>Примеры настроек на заказ.</title>
+      <link>http://itgopnik.ru/news/83-primery-nvstroek-na-zakaz.html</link>
+      <description>&lt;p&gt;Уважаемые посетители!&amp;#160;&lt;/p&gt;
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+&lt;p&gt;Если Вы не нашли чего-то на нашем сайте, есть возможность заказать примеры настроек и конфигураций софта, пишите в комментах к этому посту и мы в течении суток сделаем это для Вас.&lt;/p&gt;
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+&lt;p&gt;&amp;#160;&lt;/p&gt;</description>
+      <category>Новости сайта</category>
+      <pubDate>Thu, 10 Jun 2010 06:03:44 GMT</pubDate>
+      <guid isPermaLink="false">http://itgopnik.ru/news/83-primery-nvstroek-na-zakaz.html</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-06-10T06:03:44Z</dc:date>
+    </item>
+    <item>
+      <title>«Ростехнологии»: Отечественная операционная система будет в 2011 г.</title>
+      <link>http://itgopnik.ru/news/82-rostexnologii-otechestvennaya-operacionnaya-sistema-budet-v-2011-g.html</link>
+      <description>&lt;div style="text-align: center;"&gt;&lt;a style="outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; text-decoration: underline; color: #424242; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: initial initial; background-repeat: initial initial; padding: 0px; margin: 0px; border: 0px initial initial;" title="оригинальный размер" href="http://img15.nnm.ru/f/8/b/3/1/d88ff8f9245b510bdee92868db0.jpg" target="_blank"&gt;&lt;img style="outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: inherit; font-style: inherit; font-size: 14px; font-family: inherit; vertical-align: baseline; padding: 0px; margin: 0px; border: 0px none initial;" src="http://img15.nnm.ru/f/8/b/3/1/d88ff8f9245b510bdee92868db0.jpg" alt="картинка" /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div style="text-align: center;"&gt;&lt;/div&gt;
+&lt;div style="text-align: left;"&gt;Входящий в &amp;#171;Ростехнологии&amp;#187; концерн &amp;#171;Сириус&amp;#187; строит два ЦОДа для создания государственного репозитория свободного ПО. В 2011 г. на его базе авторы проекта рассчитывают создать поддерживаемую и непрерывно обновляемую российскую операционную систему.&lt;/div&gt;</description>
+      <category>Новости сайта</category>
+      <pubDate>Thu, 03 Jun 2010 09:23:35 GMT</pubDate>
+      <guid isPermaLink="false">http://itgopnik.ru/news/82-rostexnologii-otechestvennaya-operacionnaya-sistema-budet-v-2011-g.html</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-06-03T09:23:35Z</dc:date>
+    </item>
+    <item>
+      <title>Релиз музыкального проигрывателя Amarok 2.3.1</title>
+      <link>http://itgopnik.ru/news/81-reliz-muzykalnogo-proigryvatelya-amarok-231.html</link>
+      <description>&lt;p&gt;&amp;#160;&amp;#160; &amp;#160; &amp;#160;&lt;a style="text-decoration: underline; color: #0080c0;" href="http://amarok.kde.org/en/releases/2.3.1"&gt;Вышел&lt;/a&gt;&amp;#160;релиз музыкального проигрывателя&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://amarok.kde.org/"&gt;Amarok 2.3.1&lt;/a&gt;, построенного с использованием библиотеки Qt4 и технологий KDE4. Кроме исправления ошибок, в новой версии представлено несколько интересных новшеств:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class="l" style="margin-bottom: 10pt; text-align: left;"&gt;Началось возвращение в Amarok 2 такой возможности Amarok 1.4, как "умные" плейлисты (smart playlist), автоматически формируемые на основании определенных критериев. Добавлен автоматизированный генератор списков воспроизведения, который позволяет создавать плейлисты на основании выборки композиций из общей коллекции на основании таких параметров, как размер файла или длительность композиции.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <category>Новости сайта</category>
+      <pubDate>Wed, 02 Jun 2010 09:49:11 GMT</pubDate>
+      <guid isPermaLink="false">http://itgopnik.ru/news/81-reliz-muzykalnogo-proigryvatelya-amarok-231.html</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-06-02T09:49:11Z</dc:date>
+    </item>
+    <item>
+      <title>Google уходит от использования Windows на рабочих станциях</title>
+      <link>http://itgopnik.ru/news/80-google-uxodit-ot-ispolzovaniya-windows-na-rabochix-stanciyax.html</link>
+      <description>&amp;#160;&amp;#160; &amp;#160;Компания Google&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://www.ft.com/cms/s/2/d2f3f04e-6ccf-11df-91c8-00144feab49a.html"&gt;начала&lt;/a&gt;&amp;#160;воплощение в жизнь плана по полному избавлению от использования платформы Windows на рабочих станциях персонала компании, объяснив такое решение работой в области повышения корпоративной информационной безопасности. Указание о повсеместном переходе на другие операционные системы было дано после истории со&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://www.vedomosti.ru/tech/news/2010/01/15/924851"&gt;взломом&lt;/a&gt;&amp;#160;нескольких машин сотрудников Google в начале января, при котором злоумышленники использовали неисправленную уязвимость в Internet Explorer.</description>
+      <category>Новости сайта</category>
+      <pubDate>Wed, 02 Jun 2010 09:46:12 GMT</pubDate>
+      <guid isPermaLink="false">http://itgopnik.ru/news/80-google-uxodit-ot-ispolzovaniya-windows-na-rabochix-stanciyax.html</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-06-02T09:46:12Z</dc:date>
+    </item>
+    <item>
+      <title>Компания Novell представила дистрибутив SUSE MeeGo</title>
+      <link>http://itgopnik.ru/news/79-kompaniya-novell-predstavila-distributiv-suse-meego.html</link>
+      <description>&amp;#160;&amp;#160; &amp;#160;Компания Novell&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://www.novell.com/news/press/novell-announces-support-for-meego"&gt;объявила&lt;/a&gt;&amp;#160;о поддержке мобильной платформы&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://meego.com/"&gt;MeeGo&lt;/a&gt;&amp;#160;и выпуске специализированного варианта Linux-дистрибутива для портативных устройств -&amp;#160;&lt;a style="text-decoration: none; color: #0000ad;" href="http://www.novell.com/promo/lp/moblin.html"&gt;SUSE MeeGo&lt;/a&gt;. Дистрибутив позиционируется как базовая и полностью поддерживаемая платформа для предустановки на нетбуки по контракту с OEM-производителями. По заявлению Novell в настоящее время уже достигнуто несколько соглашений о начале предустановки SUSE MeeGo на нетбуки ряда известных производителей, которые появятся в продаже в ближайшие 12 месяцев.</description>
+      <category>Новости сайта</category>
+      <pubDate>Wed, 02 Jun 2010 09:42:35 GMT</pubDate>
+      <guid isPermaLink="false">http://itgopnik.ru/news/79-kompaniya-novell-predstavila-distributiv-suse-meego.html</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-06-02T09:42:35Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

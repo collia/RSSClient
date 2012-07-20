@@ -1,0 +1,2456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Фид Архивов Радио-Т</title>
+    <link>http://localhost:8080/rss/testRSS3.xml</link>
+    <description>Радио-Т</description>
+    <item>
+      <title>rt_podcast184.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast184.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast184.mp3" length="82412440" type="audio/mpeg" />
+      <pubDate>Sat, 24 Apr 2010 23:41:41 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast184.mp3</guid>
+      <itunes:duration>01:54:26</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-04-24T23:41:41Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast183.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast183.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast183.mp3" length="70168691" type="audio/mpeg" />
+      <pubDate>Sat, 17 Apr 2010 22:34:32 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast183.mp3</guid>
+      <itunes:duration>01:56:55</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-04-17T22:34:32Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast182.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast182.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast182.mp3" length="72636479" type="audio/mpeg" />
+      <pubDate>Sun, 11 Apr 2010 00:25:44 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast182.mp3</guid>
+      <itunes:duration>02:01:02</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-04-11T00:25:44Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast181.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast181.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast181.mp3" length="64123434" type="audio/mpeg" />
+      <pubDate>Sat, 03 Apr 2010 23:27:33 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast181.mp3</guid>
+      <itunes:duration>01:46:51</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-04-03T23:27:33Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast180.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast180.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast180.mp3" length="65498520" type="audio/mpeg" />
+      <pubDate>Sun, 28 Mar 2010 01:32:34 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast180.mp3</guid>
+      <itunes:duration>01:49:08</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-03-28T01:32:34Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast179.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast179.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast179.mp3" length="73941120" type="audio/mpeg" />
+      <pubDate>Sun, 21 Mar 2010 19:34:55 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast179.mp3</guid>
+      <itunes:duration>02:03:11</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-03-21T19:34:55Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast178.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast178.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast178.mp3" length="69296256" type="audio/mpeg" />
+      <pubDate>Sun, 14 Mar 2010 02:11:50 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast178.mp3</guid>
+      <itunes:duration>01:55:27</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-03-14T02:11:50Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast177.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast177.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast177.mp3" length="66853288" type="audio/mpeg" />
+      <pubDate>Sun, 07 Mar 2010 04:45:03 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast177.mp3</guid>
+      <itunes:duration>01:51:23</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000065F 00000000 00014B1F 00000000 00628849 00000000 00008B50 00000000 004767E6 00000000</itunes:subtitle>
+      <dc:date>2010-03-07T04:45:03Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast176.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast176.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast176.mp3" length="63672448" type="audio/mpeg" />
+      <pubDate>Sun, 28 Feb 2010 00:39:42 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast176.mp3</guid>
+      <itunes:duration>01:46:05</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-02-28T00:39:42Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast175.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast175.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast175.mp3" length="72956323" type="audio/mpeg" />
+      <pubDate>Sun, 21 Feb 2010 05:00:41 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast175.mp3</guid>
+      <itunes:duration>02:01:34</itunes:duration>
+      <itunes:author>Umputun Bobuk Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-02-21T05:00:41Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast174.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast174.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast174.mp3" length="76905410" type="audio/mpeg" />
+      <pubDate>Sun, 14 Feb 2010 06:02:43 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast174.mp3</guid>
+      <itunes:duration>02:08:09</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Marinka,</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-02-14T06:02:43Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast173.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast173.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast173.mp3" length="80996809" type="audio/mpeg" />
+      <pubDate>Sun, 07 Feb 2010 01:07:37 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast173.mp3</guid>
+      <itunes:duration>02:14:58</itunes:duration>
+      <itunes:author>Umputun Bobuk Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-02-07T01:07:37Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast172.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast172.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast172.mp3" length="72304307" type="audio/mpeg" />
+      <pubDate>Sun, 31 Jan 2010 05:14:11 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast172.mp3</guid>
+      <itunes:duration>02:00:29</itunes:duration>
+      <itunes:author>Umputun Bobuk Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-01-31T05:14:11Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast171.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast171.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast171.mp3" length="77333135" type="audio/mpeg" />
+      <pubDate>Sun, 24 Jan 2010 03:41:26 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast171.mp3</guid>
+      <itunes:duration>02:08:52</itunes:duration>
+      <itunes:author>Umputun Bobuk Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-01-24T03:41:26Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast170.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast170.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast170.mp3" length="74252677" type="audio/mpeg" />
+      <pubDate>Sun, 17 Jan 2010 04:42:55 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast170.mp3</guid>
+      <itunes:duration>02:03:43</itunes:duration>
+      <itunes:author>Umputun Bobuk Gray Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000006D6 000006D6 0001DFED 0001DFED 006E3D7F 006E3D7F 00008000 00008000 00012129 00012129</itunes:subtitle>
+      <dc:date>2010-01-17T04:42:55Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast169.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast169.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast169.mp3" length="69293444" type="audio/mpeg" />
+      <pubDate>Sun, 10 Jan 2010 02:23:31 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast169.mp3</guid>
+      <itunes:duration>01:55:28</itunes:duration>
+      <itunes:author>Umputun Bobuk Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-01-10T02:23:31Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast168.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast168.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast168.mp3" length="83588682" type="audio/mpeg" />
+      <pubDate>Sun, 03 Jan 2010 01:57:30 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast168.mp3</guid>
+      <itunes:duration>02:19:17</itunes:duration>
+      <itunes:author>Umputun Bobuk Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2010-01-03T01:57:30Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast167.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast167.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast167.mp3" length="73493929" type="audio/mpeg" />
+      <pubDate>Sun, 27 Dec 2009 01:38:36 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast167.mp3</guid>
+      <itunes:duration>02:02:21</itunes:duration>
+      <itunes:author>Umputun Bobuk Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2009-12-27T01:38:36Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast166.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast166.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast166.mp3" length="83218965" type="audio/mpeg" />
+      <pubDate>Sun, 20 Dec 2009 05:44:32 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast166.mp3</guid>
+      <itunes:duration>02:18:39</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000BD9 00000BD9 0001F402 0001F402 0009E1E2 0009E1E2 00008000 00008000 00001CEF 00001CEF</itunes:subtitle>
+      <dc:date>2009-12-20T05:44:32Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast165.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast165.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast165.mp3" length="85042397" type="audio/mpeg" />
+      <pubDate>Sun, 13 Dec 2009 02:02:13 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast165.mp3</guid>
+      <itunes:duration>02:21:43</itunes:duration>
+      <itunes:author>Umputun Bobuk Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2009-12-13T02:02:13Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast164.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast164.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast164.mp3" length="77459314" type="audio/mpeg" />
+      <pubDate>Sun, 06 Dec 2009 03:36:49 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast164.mp3</guid>
+      <itunes:duration>02:09:04</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray,</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2009-12-06T03:36:49Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast163.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast163.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast163.mp3" length="67104371" type="audio/mpeg" />
+      <pubDate>Sun, 29 Nov 2009 03:20:00 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast163.mp3</guid>
+      <itunes:duration>01:51:49</itunes:duration>
+      <itunes:author>Umputun Bobuk Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2009-11-29T03:20:00Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast162.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast162.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast162.mp3" length="72485271" type="audio/mpeg" />
+      <pubDate>Sun, 22 Nov 2009 03:19:03 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast162.mp3</guid>
+      <itunes:duration>02:00:45</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000005FB 000005FB 0000F628 0000F628 00601203 00601203 00008000 00008000 000DC758 000DC758</itunes:subtitle>
+      <dc:date>2009-11-22T03:19:03Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast160.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast160.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast160.mp3" length="66997447" type="audio/mpeg" />
+      <pubDate>Sat, 07 Nov 2009 23:29:20 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast160.mp3</guid>
+      <itunes:duration>01:51:37</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000651 00000651 0000C1E3 0000C1E3 001765A8 001765A8 00008000 00008000 0006C7B1 0006C7B1</itunes:subtitle>
+      <dc:date>2009-11-07T23:29:20Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast159.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast159.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast159.mp3" length="70259095" type="audio/mpeg" />
+      <pubDate>Sun, 01 Nov 2009 03:16:11 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast159.mp3</guid>
+      <itunes:duration>01:57:03</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000006F4 000006F4 000168BB 000168BB 0067D153 0067D153 00008000 00008000 0000184E 0000184E</itunes:subtitle>
+      <dc:date>2009-11-01T03:16:11Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast158.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast158.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast158.mp3" length="83665026" type="audio/mpeg" />
+      <pubDate>Sun, 25 Oct 2009 03:05:14 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast158.mp3</guid>
+      <itunes:duration>02:19:24</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2009-10-25T03:05:14Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast157.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast157.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast157.mp3" length="76671634" type="audio/mpeg" />
+      <pubDate>Sun, 11 Oct 2009 02:38:11 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast157.mp3</guid>
+      <itunes:duration>02:07:45</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000040E 0000040E 00012E56 00012E56 0059132C 0059132C 00008000 00008000 000618B9 000618B9</itunes:subtitle>
+      <dc:date>2009-10-11T02:38:11Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast155.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast155.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast155.mp3" length="85738736" type="audio/mpeg" />
+      <pubDate>Sun, 27 Sep 2009 02:04:03 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast155.mp3</guid>
+      <itunes:duration>02:22:51</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000490 00000490 00011714 00011714 0068A8D5 0068A8D5 00007FE5 00007FE5 00106518 00106518</itunes:subtitle>
+      <dc:date>2009-09-27T02:04:03Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast154.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast154.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast154.mp3" length="74770594" type="audio/mpeg" />
+      <pubDate>Sun, 20 Sep 2009 00:46:09 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast154.mp3</guid>
+      <itunes:duration>02:04:35</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2009-09-20T00:46:09Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast153.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast153.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast153.mp3" length="69029924" type="audio/mpeg" />
+      <pubDate>Sun, 13 Sep 2009 01:43:36 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast153.mp3</guid>
+      <itunes:duration>01:55:00</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2009-09-13T01:43:36Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast152.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast152.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast152.mp3" length="66467161" type="audio/mpeg" />
+      <pubDate>Sun, 06 Sep 2009 03:34:28 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast152.mp3</guid>
+      <itunes:duration>01:50:44</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000007C4 00000000 0002A633 00000000 003B0D5E 00000000 00008000 00000000 0000C367 00000000</itunes:subtitle>
+      <dc:date>2009-09-06T03:34:28Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast151.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast151.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast151.mp3" length="76319504" type="audio/mpeg" />
+      <pubDate>Sat, 29 Aug 2009 23:23:20 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast151.mp3</guid>
+      <itunes:duration>02:07:09</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000A93 00000000 00038C10 00000000 000CF850 00000000 00008000 00000000 00009C40 00000000</itunes:subtitle>
+      <dc:date>2009-08-29T23:23:20Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast150.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast150.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast150.mp3" length="77592973" type="audio/mpeg" />
+      <pubDate>Sat, 22 Aug 2009 22:44:54 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast150.mp3</guid>
+      <itunes:duration>02:09:17</itunes:duration>
+      <itunes:author>Umputun, Bobuk,  Marinka, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000079A 00000000 0002ABFC 00000000 005C50E7 00000000 00008000 00000000 00007547 00000000</itunes:subtitle>
+      <dc:date>2009-08-22T22:44:54Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast149.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast149.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast149.mp3" length="80644075" type="audio/mpeg" />
+      <pubDate>Sun, 16 Aug 2009 02:14:38 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast149.mp3</guid>
+      <itunes:duration>02:14:22</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000009F4 00000000 00032727 00000000 001758A7 00000000 00008000 00000000 00002727 00000000</itunes:subtitle>
+      <dc:date>2009-08-16T02:14:38Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast148.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast148.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast148.mp3" length="73108793" type="audio/mpeg" />
+      <pubDate>Sun, 09 Aug 2009 01:16:30 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast148.mp3</guid>
+      <itunes:duration>02:01:48</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Petr</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000B47 00000000 00020AA1 00000000 00264CDE 00000000 00008000 00000000 00002710 00000000</itunes:subtitle>
+      <dc:date>2009-08-09T01:16:30Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast147.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast147.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast147.mp3" length="68781610" type="audio/mpeg" />
+      <pubDate>Sun, 02 Aug 2009 00:24:00 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast147.mp3</guid>
+      <itunes:duration>01:54:36</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000081A 00000000 0002135F 00000000 0032F70E 00000000 00008000 00000000 00013897 00000000</itunes:subtitle>
+      <dc:date>2009-08-02T00:24:00Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast146.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast146.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast146.mp3" length="78098181" type="audio/mpeg" />
+      <pubDate>Sun, 26 Jul 2009 04:11:07 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast146.mp3</guid>
+      <itunes:duration>02:10:07</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Eldar, Marinka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000007D7 00000000 0001D372 00000000 00659FA0 00000000 00008000 00000000 00002727 00000000</itunes:subtitle>
+      <dc:date>2009-07-26T04:11:07Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast145.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast145.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast145.mp3" length="77863602" type="audio/mpeg" />
+      <pubDate>Sun, 19 Jul 2009 06:09:13 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast145.mp3</guid>
+      <itunes:duration>02:09:44</itunes:duration>
+      <itunes:author>Umputun, Gray, Marinka, Petr</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000109C 00000000 0002F21B 00000000 00061AAE 00000000 00008000 00000000 00015FA7 00000000</itunes:subtitle>
+      <dc:date>2009-07-19T06:09:13Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast144.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast144.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast144.mp3" length="58335242" type="audio/mpeg" />
+      <pubDate>Sun, 12 Jul 2009 03:05:37 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast144.mp3</guid>
+      <itunes:duration>01:37:11</itunes:duration>
+      <itunes:author>Umputun, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000A9F 00000000 0003E209 00000000 0030D400 00000000 00008000 00000000 00004E37 00000000</itunes:subtitle>
+      <dc:date>2009-07-12T03:05:37Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast143.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast143.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast143.mp3" length="74483618" type="audio/mpeg" />
+      <pubDate>Sun, 05 Jul 2009 04:33:59 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast143.mp3</guid>
+      <itunes:duration>02:04:06</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Eldar</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000011A5 00000000 00046726 00000000 0061F637 00000000 00008000 00000000 00002727 00000000</itunes:subtitle>
+      <dc:date>2009-07-05T04:33:59Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast142.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast142.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast142.mp3" length="65141708" type="audio/mpeg" />
+      <pubDate>Sun, 28 Jun 2009 02:48:58 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast142.mp3</guid>
+      <itunes:duration>01:48:32</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000075E 00000000 00027FD2 00000000 00258977 00000000 00008000 00000000 00002727 00000000</itunes:subtitle>
+      <dc:date>2009-06-28T02:48:58Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast141.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast141.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast141.mp3" length="61286545" type="audio/mpeg" />
+      <pubDate>Sun, 21 Jun 2009 00:22:15 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast141.mp3</guid>
+      <itunes:duration>01:42:06</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000BA2 00000000 00048ACA 00000000 0006DDE7 00000000 00008000 00000000 00009C57 00000000</itunes:subtitle>
+      <dc:date>2009-06-21T00:22:15Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast140.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast140.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast140.mp3" length="72858018" type="audio/mpeg" />
+      <pubDate>Sun, 14 Jun 2009 01:48:23 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast140.mp3</guid>
+      <itunes:duration>02:01:23</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000009F3 00000000 0001DE6C 00000000 00523EC7 00000000 00008000 00000000 00007530 00000000</itunes:subtitle>
+      <dc:date>2009-06-14T01:48:23Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast139.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast139.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast139.mp3" length="59946736" type="audio/mpeg" />
+      <pubDate>Sun, 07 Jun 2009 03:45:58 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast139.mp3</guid>
+      <itunes:duration>01:39:52</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000BBB 00000000 00027842 00000000 002EB137 00000000 00008000 00000000 00004E20 00000000</itunes:subtitle>
+      <dc:date>2009-06-07T03:45:58Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast138.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast138.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast138.mp3" length="72469577" type="audio/mpeg" />
+      <pubDate>Sun, 24 May 2009 06:39:34 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast138.mp3</guid>
+      <itunes:duration>02:00:44</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Eldar</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000008D6 00000000 00019A30 00000000 006AF6E7 00000000 00008000 00000000 00007547 00000000</itunes:subtitle>
+      <dc:date>2009-05-24T06:39:34Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast137.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast137.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast137.mp3" length="66572695" type="audio/mpeg" />
+      <pubDate>Sun, 17 May 2009 01:15:26 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast137.mp3</guid>
+      <itunes:duration>01:50:55</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000BC3 00000000 0003017F 00000000 0032F6E0 00000000 00008000 00000000 000222F7 00000000</itunes:subtitle>
+      <dc:date>2009-05-17T01:15:26Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast136.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast136.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast136.mp3" length="69053283" type="audio/mpeg" />
+      <pubDate>Sun, 10 May 2009 05:28:35 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast136.mp3</guid>
+      <itunes:duration>01:55:03</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000011CB 00000000 0003B72E 00000000 001E8497 00000000 00008000 00000000 00004E37 00000000</itunes:subtitle>
+      <dc:date>2009-05-10T05:28:35Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast135.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast135.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast135.mp3" length="72262426" type="audio/mpeg" />
+      <pubDate>Sun, 03 May 2009 01:17:08 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast135.mp3</guid>
+      <itunes:duration>02:00:24</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000701 00000000 00021AEF 00000000 006CCB90 00000000 00008000 00000000 00030D57 00000000</itunes:subtitle>
+      <dc:date>2009-05-03T01:17:08Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast134.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast134.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast134.mp3" length="69544385" type="audio/mpeg" />
+      <pubDate>Sun, 26 Apr 2009 00:55:02 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast134.mp3</guid>
+      <itunes:duration>01:55:52</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000123B 00000000 0003D715 00000000 003A22FE 00000000 00008000 00000000 00009C57 00000000</itunes:subtitle>
+      <dc:date>2009-04-26T00:55:02Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast133.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast133.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast133.mp3" length="77045708" type="audio/mpeg" />
+      <pubDate>Sun, 19 Apr 2009 05:30:00 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast133.mp3</guid>
+      <itunes:duration>02:08:22</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale, Eldar</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000ACC 00000000 0002D3AA 00000000 00181BF7 00000000 00008000 00000000 00007547 00000000</itunes:subtitle>
+      <dc:date>2009-04-19T05:30:00Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast132.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast132.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast132.mp3" length="78149381" type="audio/mpeg" />
+      <pubDate>Sat, 11 Apr 2009 23:07:35 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast132.mp3</guid>
+      <itunes:duration>02:10:12</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000E7F 00000000 00032941 00000000 003D574E 00000000 00008000 00000000 00002727 00000000</itunes:subtitle>
+      <dc:date>2009-04-11T23:07:35Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast131.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast131.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast131.mp3" length="62600516" type="audio/mpeg" />
+      <pubDate>Sun, 05 Apr 2009 00:13:11 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast131.mp3</guid>
+      <itunes:duration>01:44:18</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000993 00000000 0002CD21 00000000 0027AC57 00000000 00008000 00000000 00004E37 00000000</itunes:subtitle>
+      <dc:date>2009-04-05T00:13:11Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast130.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast130.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast130.mp3" length="61973316" type="audio/mpeg" />
+      <pubDate>Sun, 29 Mar 2009 04:09:56 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast130.mp3</guid>
+      <itunes:duration>01:43:15</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000BB5 00000000 0001E7D6 00000000 0056367E 00000000 00008000 00000000 00007530 00000000</itunes:subtitle>
+      <dc:date>2009-03-29T04:09:56Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast129.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast129.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast129.mp3" length="66996402" type="audio/mpeg" />
+      <pubDate>Sun, 22 Mar 2009 01:58:07 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast129.mp3</guid>
+      <itunes:duration>01:51:37</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000ABC 00000000 0003590F 00000000 003BA99E 00000000 00008000 00000000 0000755E 00000000</itunes:subtitle>
+      <dc:date>2009-03-22T01:58:07Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast128.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast128.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast128.mp3" length="75715030" type="audio/mpeg" />
+      <pubDate>Sun, 15 Mar 2009 05:00:03 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast128.mp3</guid>
+      <itunes:duration>02:06:09</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Eldar, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000887 00000000 000258F7 00000000 0025627E 00000000 00008000 00000000 00002727 00000000</itunes:subtitle>
+      <dc:date>2009-03-15T05:00:03Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast127.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast127.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast127.mp3" length="58319598" type="audio/mpeg" />
+      <pubDate>Sun, 08 Mar 2009 05:58:44 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast127.mp3</guid>
+      <itunes:duration>01:37:10</itunes:duration>
+      <itunes:author>Umputun, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000006C3 00000000 00008219 00000000 0019F0B7 00000000 00008000 00000000 000186E5 00000000</itunes:subtitle>
+      <dc:date>2009-03-08T05:58:44Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast126.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast126.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast126.mp3" length="66785368" type="audio/mpeg" />
+      <pubDate>Sun, 01 Mar 2009 07:47:26 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast126.mp3</guid>
+      <itunes:duration>01:51:17</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000043E 00000000 000059F2 00000000 001B776E 00000000 00007D98 00000000 0038EA50 00000000</itunes:subtitle>
+      <dc:date>2009-03-01T07:47:26Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast125.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast125.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast125.mp3" length="77112878" type="audio/mpeg" />
+      <pubDate>Sun, 22 Feb 2009 10:17:00 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast125.mp3</guid>
+      <itunes:duration>02:08:30</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000846 00000000 00008AF0 00000000 003281DE 00000000 00008000 00000000 00075300 00000000</itunes:subtitle>
+      <dc:date>2009-02-22T10:17:00Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast124.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast124.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast124.mp3" length="69070821" type="audio/mpeg" />
+      <pubDate>Sun, 15 Feb 2009 05:28:20 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast124.mp3</guid>
+      <itunes:duration>01:55:06</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000B2F 00000000 0000DD5A 00000000 003FEF75 00000000 00008000 00000000 00002755 00000000</itunes:subtitle>
+      <dc:date>2009-02-15T05:28:20Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast123.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast123.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast123.mp3" length="75261718" type="audio/mpeg" />
+      <pubDate>Sun, 08 Feb 2009 03:38:56 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast123.mp3</guid>
+      <itunes:duration>02:05:25</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000009CA 00000000 0001030C 00000000 0055E847 00000000 00008000 00000000 0001D4D7 00000000</itunes:subtitle>
+      <dc:date>2009-02-08T03:38:56Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast122.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast122.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast122.mp3" length="59864133" type="audio/mpeg" />
+      <pubDate>Sun, 01 Feb 2009 05:08:56 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast122.mp3</guid>
+      <itunes:duration>02:04:41</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000064C 00000000 000087FB 00000000 0046F43E 00000000 00008000 00000000 00081695 00000000</itunes:subtitle>
+      <dc:date>2009-02-01T05:08:56Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast121.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast121.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast121.mp3" length="56536403" type="audio/mpeg" />
+      <pubDate>Sun, 25 Jan 2009 05:49:05 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast121.mp3</guid>
+      <itunes:duration>01:57:45</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000004D2 00000000 000094DB 00000000 0061A845 00000000 00008000 00000000 0055C165 00000000</itunes:subtitle>
+      <dc:date>2009-01-25T05:49:05Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast116.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast116.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast116.mp3" length="60778850" type="audio/mpeg" />
+      <pubDate>Fri, 23 Jan 2009 02:44:35 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast116.mp3</guid>
+      <itunes:duration>02:06:35</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000499 00000000 00005141 00000000 002B55EE 00000000 00008000 00000000 00362B5E 00000000</itunes:subtitle>
+      <dc:date>2009-01-23T02:44:35Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast113.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast113.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast113.mp3" length="79829138" type="audio/mpeg" />
+      <pubDate>Fri, 23 Jan 2009 02:37:01 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast113.mp3</guid>
+      <itunes:duration>02:13:01</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000009CD 00000000 00018F42 00000000 004D8EE6 00000000 00009185 00000000 005B7115 00000000</itunes:subtitle>
+      <dc:date>2009-01-23T02:37:01Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast114.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast114.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast114.mp3" length="66366108" type="audio/mpeg" />
+      <pubDate>Fri, 23 Jan 2009 02:27:32 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast114.mp3</guid>
+      <itunes:duration>02:18:14</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray &amp; Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000082B 00000000 0000C2D3 00000000 00113E55 00000000 00008000 00000000 0025898E 00000000</itunes:subtitle>
+      <dc:date>2009-01-23T02:27:32Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast115.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast115.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast115.mp3" length="72221505" type="audio/mpeg" />
+      <pubDate>Fri, 23 Jan 2009 02:18:56 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast115.mp3</guid>
+      <itunes:duration>02:30:26</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray &amp; Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000641 00000000 00008683 00000000 007975D7 00000000 00008000 00000000 000B71C7 00000000</itunes:subtitle>
+      <dc:date>2009-01-23T02:18:56Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast110.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast110.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast110.mp3" length="77747296" type="audio/mpeg" />
+      <pubDate>Fri, 23 Jan 2009 02:09:34 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast110.mp3</guid>
+      <itunes:duration>02:09:33</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2009-01-23T02:09:34Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast111.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast111.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast111.mp3" length="67744404" type="audio/mpeg" />
+      <pubDate>Fri, 23 Jan 2009 01:59:27 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast111.mp3</guid>
+      <itunes:duration>01:52:52</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000315 00000000 000046EC 00000000 00164737 00000000 00008000 00000000 000CAA30 00000000</itunes:subtitle>
+      <dc:date>2009-01-23T01:59:27Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast112.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast112.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast112.mp3" length="63893099" type="audio/mpeg" />
+      <pubDate>Fri, 23 Jan 2009 01:50:39 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast112.mp3</guid>
+      <itunes:duration>01:46:28</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000069E 00000000 00012364 00000000 00199C87 00000000 00008C64 00000000 005F48C1 00000000</itunes:subtitle>
+      <dc:date>2009-01-23T01:50:39Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast119.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast119.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast119.mp3" length="68620011" type="audio/mpeg" />
+      <pubDate>Fri, 23 Jan 2009 00:59:57 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast119.mp3</guid>
+      <itunes:duration>01:54:22</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2009-01-23T00:59:57Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast117.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast117.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast117.mp3" length="68719409" type="audio/mpeg" />
+      <pubDate>Fri, 23 Jan 2009 00:13:27 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast117.mp3</guid>
+      <itunes:duration>01:54:30</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray &amp; Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000629 00000000 00008066 00000000 0051F0A7 00000000 00008000 00000000 00002755 00000000</itunes:subtitle>
+      <dc:date>2009-01-23T00:13:27Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast118.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast118.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast118.mp3" length="71210728" type="audio/mpeg" />
+      <pubDate>Fri, 23 Jan 2009 00:13:00 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast118.mp3</guid>
+      <itunes:duration>01:58:40</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000908 00000000 0000E9A9 00000000 000493F7 00000000 00008000 00000000 00046CFE 00000000</itunes:subtitle>
+      <dc:date>2009-01-23T00:13:00Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast120.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast120.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast120.mp3" length="58821193" type="audio/mpeg" />
+      <pubDate>Thu, 22 Jan 2009 23:54:05 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast120.mp3</guid>
+      <itunes:duration>01:38:01</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Lavale</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000008E3 00000000 0000D53F 00000000 00118C75 00000000 00008000 00000000 00029810 00000000</itunes:subtitle>
+      <dc:date>2009-01-22T23:54:05Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast109.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast109.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast109.mp3" length="58767883" type="audio/mpeg" />
+      <pubDate>Sun, 26 Oct 2008 01:35:51 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast109.mp3</guid>
+      <itunes:duration>02:02:24</itunes:duration>
+      <itunes:author>Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-10-26T01:35:51Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast108.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast108.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast108.mp3" length="74424206" type="audio/mpeg" />
+      <pubDate>Sun, 19 Oct 2008 05:02:10 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast108.mp3</guid>
+      <itunes:duration>02:04:00</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-10-19T05:02:10Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast107.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast107.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast107.mp3" length="80163143" type="audio/mpeg" />
+      <pubDate>Sun, 12 Oct 2008 03:32:05 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast107.mp3</guid>
+      <itunes:duration>02:13:35</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000B2C 00000000 000199A6 00000000 000782F5 00000000 0000942A 00000000 004377A2 00000000</itunes:subtitle>
+      <dc:date>2008-10-12T03:32:05Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast106.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast106.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast106.mp3" length="71569767" type="audio/mpeg" />
+      <pubDate>Sun, 05 Oct 2008 08:03:48 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast106.mp3</guid>
+      <itunes:duration>01:59:15</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000074C 00000000 00016D5A 00000000 006C58A2 00000000 000094A0 00000000 00000C3E 00000000</itunes:subtitle>
+      <dc:date>2008-10-05T08:03:48Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast105.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast105.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast105.mp3" length="64738411" type="audio/mpeg" />
+      <pubDate>Sun, 28 Sep 2008 00:17:42 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast105.mp3</guid>
+      <itunes:duration>01:47:52</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-09-28T00:17:42Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast104.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast104.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast104.mp3" length="63741974" type="audio/mpeg" />
+      <pubDate>Wed, 24 Sep 2008 04:16:00 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast104.mp3</guid>
+      <itunes:duration>01:46:13</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-09-24T04:16:00Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast103.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast103.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast103.mp3" length="82193256" type="audio/mpeg" />
+      <pubDate>Sun, 14 Sep 2008 03:00:20 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast103.mp3</guid>
+      <itunes:duration>02:16:58</itunes:duration>
+      <itunes:author>Umputun &amp; Gray &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-09-14T03:00:20Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast102.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast102.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast102.mp3" length="70176417" type="audio/mpeg" />
+      <pubDate>Sun, 07 Sep 2008 01:45:19 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast102.mp3</guid>
+      <itunes:duration>01:56:56</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-09-07T01:45:19Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast101.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast101.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast101.mp3" length="85127616" type="audio/mpeg" />
+      <pubDate>Sun, 31 Aug 2008 05:51:18 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast101.mp3</guid>
+      <itunes:duration>02:21:51</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-08-31T05:51:18Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast100.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast100.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast100.mp3" length="78515675" type="audio/mpeg" />
+      <pubDate>Sun, 24 Aug 2008 02:35:25 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast100.mp3</guid>
+      <itunes:duration>02:10:47</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-08-24T02:35:25Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast99.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast99.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast99.mp3" length="71325784" type="audio/mpeg" />
+      <pubDate>Sun, 17 Aug 2008 07:16:43 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast99.mp3</guid>
+      <itunes:duration>01:58:51</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-08-17T07:16:43Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast98.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast98.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast98.mp3" length="66435373" type="audio/mpeg" />
+      <pubDate>Sun, 10 Aug 2008 03:35:52 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast98.mp3</guid>
+      <itunes:duration>01:50:42</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-08-10T03:35:52Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast97.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast97.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast97.mp3" length="73305575" type="audio/mpeg" />
+      <pubDate>Sun, 03 Aug 2008 01:21:06 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast97.mp3</guid>
+      <itunes:duration>02:02:09</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-08-03T01:21:06Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast96.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast96.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast96.mp3" length="73022440" type="audio/mpeg" />
+      <pubDate>Sun, 27 Jul 2008 02:00:36 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast96.mp3</guid>
+      <itunes:duration>02:01:41</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-07-27T02:00:36Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast95.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast95.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast95.mp3" length="55611536" type="audio/mpeg" />
+      <pubDate>Sun, 20 Jul 2008 01:11:30 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast95.mp3</guid>
+      <itunes:duration>01:32:40</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-07-20T01:11:30Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast94.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast94.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast94.mp3" length="71235356" type="audio/mpeg" />
+      <pubDate>Sun, 13 Jul 2008 02:40:35 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast94.mp3</guid>
+      <itunes:duration>01:58:42</itunes:duration>
+      <itunes:author>Umputun, Bobuk, Gray, Eldar</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-07-13T02:40:35Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast93.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast93.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast93.mp3" length="59603808" type="audio/mpeg" />
+      <pubDate>Sun, 06 Jul 2008 07:31:56 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast93.mp3</guid>
+      <itunes:duration>01:39:19</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-07-06T07:31:56Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast92.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast92.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast92.mp3" length="53711511" type="audio/mpeg" />
+      <pubDate>Sun, 29 Jun 2008 03:26:52 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast92.mp3</guid>
+      <itunes:duration>01:51:52</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-06-29T03:26:52Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast91.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast91.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast91.mp3" length="36885508" type="audio/mpeg" />
+      <pubDate>Sun, 22 Jun 2008 01:37:02 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast91.mp3</guid>
+      <itunes:duration>01:16:49</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-06-22T01:37:02Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast90.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast90.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast90.mp3" length="44403323" type="audio/mpeg" />
+      <pubDate>Sun, 15 Jun 2008 01:09:34 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast90.mp3</guid>
+      <itunes:duration>01:32:28</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000005E8 00000000 00011D23 00000000 0005E429 00000000 00008CA7 00000000 000F7B5E 00000000</itunes:subtitle>
+      <dc:date>2008-06-15T01:09:34Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast89.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast89.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast89.mp3" length="48193570" type="audio/mpeg" />
+      <pubDate>Mon, 09 Jun 2008 00:40:01 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast89.mp3</guid>
+      <itunes:duration>01:40:22</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000004E9 00000000 0001065C 00000000 00385CE0 00000000 00008036 00000000 005BB334 00000000</itunes:subtitle>
+      <dc:date>2008-06-09T00:40:01Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast88.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast88.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast88.mp3" length="36743592" type="audio/mpeg" />
+      <pubDate>Sun, 01 Jun 2008 03:02:18 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast88.mp3</guid>
+      <itunes:duration>01:16:31</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000817 00000000 0002AC0B 00000000 002747EB 00000000 00009661 00000000 001CA305 00000000</itunes:subtitle>
+      <dc:date>2008-06-01T03:02:18Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast87.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast87.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast87.mp3" length="52507182" type="audio/mpeg" />
+      <pubDate>Sat, 24 May 2008 23:53:12 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast87.mp3</guid>
+      <itunes:duration>01:49:21</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000051E 00000000 0000D914 00000000 003174D1 00000000 0000943C 00000000 00075714 00000000</itunes:subtitle>
+      <dc:date>2008-05-24T23:53:12Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast86.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast86.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast86.mp3" length="45705696" type="audio/mpeg" />
+      <pubDate>Sun, 18 May 2008 00:11:04 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast86.mp3</guid>
+      <itunes:duration>01:35:11</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka &amp; Gray</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000799 00000000 00011E18 00000000 002EB4F0 00000000 00008EA6 00000000 0056F2AC 00000000</itunes:subtitle>
+      <dc:date>2008-05-18T00:11:04Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast85.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast85.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast85.mp3" length="56123101" type="audio/mpeg" />
+      <pubDate>Mon, 12 May 2008 00:02:54 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast85.mp3</guid>
+      <itunes:duration>01:56:53</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000690 00000000 00017AAF 00000000 00694739 00000000 00008EA6 00000000 006A1F8D 00000000</itunes:subtitle>
+      <dc:date>2008-05-12T00:02:54Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast84.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast84.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast84.mp3" length="38963030" type="audio/mpeg" />
+      <pubDate>Sun, 04 May 2008 03:32:26 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast84.mp3</guid>
+      <itunes:duration>01:21:08</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000007EC 00000000 00011D03 00000000 003E5AF5 00000000 00008BCE 00000000 00124D68 00000000</itunes:subtitle>
+      <dc:date>2008-05-04T03:32:26Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast83.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast83.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast83.mp3" length="42553682" type="audio/mpeg" />
+      <pubDate>Sat, 26 Apr 2008 23:33:22 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast83.mp3</guid>
+      <itunes:duration>01:28:37</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000769 00000000 0001A40F 00000000 003A87FB 00000000 00008D48 00000000 00498054 00000000</itunes:subtitle>
+      <dc:date>2008-04-26T23:33:22Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast82bonus.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast82bonus.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast82bonus.mp3" length="32838975" type="audio/mpeg" />
+      <pubDate>Wed, 23 Apr 2008 22:31:02 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast82bonus.mp3</guid>
+      <itunes:duration>01:08:23</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-04-23T22:31:02Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast82_int.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast82_int.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast82_int.mp3" length="21569789" type="audio/mpeg" />
+      <pubDate>Wed, 23 Apr 2008 16:14:34 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast82_int.mp3</guid>
+      <itunes:duration>00:44:54</itunes:duration>
+      <itunes:author>Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2008-04-23T16:14:34Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast82.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast82.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast82.mp3" length="42784589" type="audio/mpeg" />
+      <pubDate>Sun, 20 Apr 2008 00:55:41 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast82.mp3</guid>
+      <itunes:duration>01:29:06</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000626 00000000 00016C87 00000000 003D21E6 00000000 00008CB4 00000000 0050082A 00000000</itunes:subtitle>
+      <dc:date>2008-04-20T00:55:41Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast81.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast81.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast81.mp3" length="50152507" type="audio/mpeg" />
+      <pubDate>Sun, 13 Apr 2008 01:07:43 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast81.mp3</guid>
+      <itunes:duration>01:44:27</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000046C 00000000 00015715 00000000 00467C15 00000000 0000BEEE 00000000 001BE363 00000000</itunes:subtitle>
+      <dc:date>2008-04-13T01:07:43Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast80.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast80.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast80.mp3" length="44098317" type="audio/mpeg" />
+      <pubDate>Sun, 06 Apr 2008 03:29:26 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast80.mp3</guid>
+      <itunes:duration>01:31:50</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000007D5 00000000 000162EA 00000000 0020D20A 00000000 00009803 00000000 003D615E 00000000</itunes:subtitle>
+      <dc:date>2008-04-06T03:29:26Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast79.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast79.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast79.mp3" length="47339695" type="audio/mpeg" />
+      <pubDate>Sun, 30 Mar 2008 01:29:28 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast79.mp3</guid>
+      <itunes:duration>01:38:35</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000620 00000000 0000FA14 00000000 0003ACEB 00000000 00008E95 00000000 003D480F 00000000</itunes:subtitle>
+      <dc:date>2008-03-30T01:29:28Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast78.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast78.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast78.mp3" length="56563063" type="audio/mpeg" />
+      <pubDate>Mon, 24 Mar 2008 03:10:04 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast78.mp3</guid>
+      <itunes:duration>01:57:48</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000917 00000000 000157CD 00000000 00423597 00000000 000088A8 00000000 0055C0F5 00000000</itunes:subtitle>
+      <dc:date>2008-03-24T03:10:04Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast77.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast77.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast77.mp3" length="52527192" type="audio/mpeg" />
+      <pubDate>Sun, 16 Mar 2008 05:21:50 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast77.mp3</guid>
+      <itunes:duration>01:49:24</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000007D4 00000000 0001E172 00000000 0050B01F 00000000 0000A094 00000000 0034B697 00000000</itunes:subtitle>
+      <dc:date>2008-03-16T05:21:50Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast76.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast76.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast76.mp3" length="49925726" type="audio/mpeg" />
+      <pubDate>Sun, 09 Mar 2008 07:02:25 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast76.mp3</guid>
+      <itunes:duration>01:43:59</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000005EF 00000000 00016FB4 00000000 00440578 00000000 00008B10 00000000 004BEBD1 00000000</itunes:subtitle>
+      <dc:date>2008-03-09T07:02:25Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast75.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast75.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast75.mp3" length="37240346" type="audio/mpeg" />
+      <pubDate>Sun, 02 Mar 2008 05:54:21 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast75.mp3</guid>
+      <itunes:duration>01:17:33</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000600 00000000 00023F22 00000000 003AC16D 00000000 00009017 00000000 0022ADF5 00000000</itunes:subtitle>
+      <dc:date>2008-03-02T05:54:21Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast74.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast74.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast74.mp3" length="43047309" type="audio/mpeg" />
+      <pubDate>Sun, 24 Feb 2008 00:34:18 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast74.mp3</guid>
+      <itunes:duration>01:29:39</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000007E4 00000000 0000E66D 00000000 0048413F 00000000 000089D0 00000000 0031799C 00000000</itunes:subtitle>
+      <dc:date>2008-02-24T00:34:18Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast73.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast73.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast73.mp3" length="58068034" type="audio/mpeg" />
+      <pubDate>Sun, 17 Feb 2008 03:08:28 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast73.mp3</guid>
+      <itunes:duration>02:00:56</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000005CB 00000000 00019397 00000000 002DDE0A 00000000 00008B6F 00000000 0034BE59 00000000</itunes:subtitle>
+      <dc:date>2008-02-17T03:08:28Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast72.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast72.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast72.mp3" length="32265260" type="audio/mpeg" />
+      <pubDate>Sun, 03 Feb 2008 00:19:41 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast72.mp3</guid>
+      <itunes:duration>01:07:11</itunes:duration>
+      <itunes:author>Umputun &amp; Olyapka &amp; Alexey</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000006E2 00000000 0001A951 00000000 0024EFB7 00000000 0000899A 00000000 003AA115 00000000</itunes:subtitle>
+      <dc:date>2008-02-03T00:19:41Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast71.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast71.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast71.mp3" length="36221777" type="audio/mpeg" />
+      <pubDate>Sun, 27 Jan 2008 02:21:36 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast71.mp3</guid>
+      <itunes:duration>01:15:26</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000004CE 00000000 00016AB8 00000000 001348D6 00000000 00008E84 00000000 0008A958 00000000</itunes:subtitle>
+      <dc:date>2008-01-27T02:21:36Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast70.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast70.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast70.mp3" length="51930780" type="audio/mpeg" />
+      <pubDate>Sun, 20 Jan 2008 02:08:17 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast70.mp3</guid>
+      <itunes:duration>01:48:09</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000538 00000000 00015194 00000000 003334AC 00000000 00008B2D 00000000 005EDE05 00000000</itunes:subtitle>
+      <dc:date>2008-01-20T02:08:17Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast69.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast69.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast69.mp3" length="42083718" type="audio/mpeg" />
+      <pubDate>Sun, 13 Jan 2008 01:25:34 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast69.mp3</guid>
+      <itunes:duration>01:27:39</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka &amp; Rosnovsky</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000066B 00000000 00019AF6 00000000 004D1CB7 00000000 0000A802 00000000 0045D868 00000000</itunes:subtitle>
+      <dc:date>2008-01-13T01:25:34Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast68.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast68.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast68.mp3" length="47338498" type="audio/mpeg" />
+      <pubDate>Sun, 06 Jan 2008 03:16:59 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast68.mp3</guid>
+      <itunes:duration>01:38:35</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000007F5 00000000 000147C6 00000000 0041B7C6 00000000 000091D3 00000000 00190758 00000000</itunes:subtitle>
+      <dc:date>2008-01-06T03:16:59Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast67.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast67.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast67.mp3" length="52068539" type="audio/mpeg" />
+      <pubDate>Sun, 30 Dec 2007 02:05:59 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast67.mp3</guid>
+      <itunes:duration>01:48:27</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Alex</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000671 00000000 00019CF9 00000000 004A0288 00000000 00008B90 00000000 004095AC 00000000</itunes:subtitle>
+      <dc:date>2007-12-30T02:05:59Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast66.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast66.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast66.mp3" length="45599797" type="audio/mpeg" />
+      <pubDate>Sun, 23 Dec 2007 01:57:33 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast66.mp3</guid>
+      <itunes:duration>01:34:58</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000005A2 00000000 00010587 00000000 0023151F 00000000 00008231 00000000 0035F353 00000000</itunes:subtitle>
+      <dc:date>2007-12-23T01:57:33Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast65.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast65.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast65.mp3" length="44577865" type="audio/mpeg" />
+      <pubDate>Sun, 16 Dec 2007 03:15:52 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast65.mp3</guid>
+      <itunes:duration>01:32:50</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Olyapka</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000007BD 00000000 00019C43 00000000 004875E6 00000000 00008742 00000000 0040FE92 00000000</itunes:subtitle>
+      <dc:date>2007-12-16T03:15:52Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast63.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast63.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast63.mp3" length="47414544" type="audio/mpeg" />
+      <pubDate>Sun, 02 Dec 2007 00:29:20 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast63.mp3</guid>
+      <itunes:duration>01:38:45</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000A0B 00000000 0001856F 00000000 001B726D 00000000 000086D6 00000000 001A3134 00000000</itunes:subtitle>
+      <dc:date>2007-12-02T00:29:20Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast62.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast62.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast62.mp3" length="35301461" type="audio/mpeg" />
+      <pubDate>Sat, 24 Nov 2007 22:47:37 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast62.mp3</guid>
+      <itunes:duration>01:13:31</itunes:duration>
+      <itunes:author>Umputun &amp; Gimlis</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000773 00000000 0002304E 00000000 0021C259 00000000 00008425 00000000 000AD7EB 00000000</itunes:subtitle>
+      <dc:date>2007-11-24T22:47:37Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast61.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast61.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast61.mp3" length="44334406" type="audio/mpeg" />
+      <pubDate>Sun, 18 Nov 2007 02:20:39 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast61.mp3</guid>
+      <itunes:duration>01:32:20</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000003A1 00000000 000092C8 00000000 0006C043 00000000 00008230 00000000 00154463 00000000</itunes:subtitle>
+      <dc:date>2007-11-18T02:20:39Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast60.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast60.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast60.mp3" length="44598544" type="audio/mpeg" />
+      <pubDate>Sun, 11 Nov 2007 03:27:51 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast60.mp3</guid>
+      <itunes:duration>01:32:53</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000004EE 00000000 0000CAAF 00000000 004E5888 00000000 000081A7 00000000 0031436D 00000000</itunes:subtitle>
+      <dc:date>2007-11-11T03:27:51Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast59.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast59.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast59.mp3" length="43077072" type="audio/mpeg" />
+      <pubDate>Sun, 04 Nov 2007 00:50:18 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast59.mp3</guid>
+      <itunes:duration>01:29:42</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000003CB 00000000 00008F9B 00000000 00265353 00000000 00007E30 00000000 0051DCA2 00000000</itunes:subtitle>
+      <dc:date>2007-11-04T00:50:18Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast58.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast58.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast58.mp3" length="38491015" type="audio/mpeg" />
+      <pubDate>Sat, 27 Oct 2007 22:37:24 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast58.mp3</guid>
+      <itunes:duration>01:20:09</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000064B 00000000 000138C1 00000000 002E821F 00000000 0000859F 00000000 00362DE6 00000000</itunes:subtitle>
+      <dc:date>2007-10-27T22:37:24Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast57.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast57.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast57.mp3" length="40938375" type="audio/mpeg" />
+      <pubDate>Sat, 20 Oct 2007 22:41:41 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast57.mp3</guid>
+      <itunes:duration>01:25:15</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000666 00000000 0000CE25 00000000 000F66F5 00000000 00008084 00000000 000E775E 00000000</itunes:subtitle>
+      <dc:date>2007-10-20T22:41:41Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast56.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast56.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast56.mp3" length="38696024" type="audio/mpeg" />
+      <pubDate>Sat, 13 Oct 2007 22:46:20 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast56.mp3</guid>
+      <itunes:duration>01:20:34</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000631 00000000 000194BA 00000000 0011F405 00000000 000089AB 00000000 000017AC 00000000</itunes:subtitle>
+      <dc:date>2007-10-13T22:46:20Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast54.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast54.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast54.mp3" length="38186022" type="audio/mpeg" />
+      <pubDate>Sun, 30 Sep 2007 00:12:21 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast54.mp3</guid>
+      <itunes:duration>01:19:33</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000608 00000000 0000F38D 00000000 00030E58 00000000 00008C48 00000000 001F2458 00000000</itunes:subtitle>
+      <dc:date>2007-09-30T00:12:21Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast53.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast53.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast53.mp3" length="37227346" type="audio/mpeg" />
+      <pubDate>Sat, 22 Sep 2007 22:58:16 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast53.mp3</guid>
+      <itunes:duration>01:17:27</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000065C 00000000 0000B223 00000000 003D6573 00000000 00008CDB 00000000 002FDF34 00000000</itunes:subtitle>
+      <dc:date>2007-09-22T22:58:16Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast52.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast52.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast52.mp3" length="36542900" type="audio/mpeg" />
+      <pubDate>Mon, 17 Sep 2007 00:30:21 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast52.mp3</guid>
+      <itunes:duration>01:16:06</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000665 00000000 00012B79 00000000 000A2249 00000000 0000AD23 00000000 00455549 00000000</itunes:subtitle>
+      <dc:date>2007-09-17T00:30:21Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast51.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast51.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast51.mp3" length="32165093" type="audio/mpeg" />
+      <pubDate>Sun, 09 Sep 2007 05:03:38 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast51.mp3</guid>
+      <itunes:duration>01:06:59</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <dc:date>2007-09-09T05:03:38Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast50.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast50.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast50.mp3" length="36456629" type="audio/mpeg" />
+      <pubDate>Sat, 01 Sep 2007 22:55:46 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast50.mp3</guid>
+      <itunes:duration>01:15:51</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000004E2 00000000 0000717E 00000000 0030BBB7 00000000 00008A58 00000000 003236CB 00000000</itunes:subtitle>
+      <dc:date>2007-09-01T22:55:46Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast49_intro.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast49_intro.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast49_intro.mp3" length="2304562" type="audio/mpeg" />
+      <pubDate>Sat, 25 Aug 2007 23:49:49 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast49_intro.mp3</guid>
+      <itunes:duration>00:04:42</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000003F0 00000000 0000A0B8 00000000 0001D992 00000000 00008BDA 00000000 0001B868 00000000</itunes:subtitle>
+      <dc:date>2007-08-25T23:49:49Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast49.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast49.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast49.mp3" length="34288466" type="audio/mpeg" />
+      <pubDate>Sat, 25 Aug 2007 23:49:14 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast49.mp3</guid>
+      <itunes:duration>01:11:20</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000035F 00000000 00013D73 00000000 000B4FD1 00000000 00008C41 00000000 000B0CFA 00000000</itunes:subtitle>
+      <dc:date>2007-08-25T23:49:14Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast1.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast1.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast1.mp3" length="14687163" type="audio/mpeg" />
+      <pubDate>Wed, 22 Aug 2007 23:10:49 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast1.mp3</guid>
+      <itunes:duration>00:30:34</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000A2D 00000000 0000EA7E 00000000 0007A4BC 00000000 000087DD 00000000 0003A2EB 00000000</itunes:subtitle>
+      <dc:date>2007-08-22T23:10:49Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast47.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast47.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast47.mp3" length="33879246" type="audio/mpeg" />
+      <pubDate>Sat, 11 Aug 2007 23:13:08 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast47.mp3</guid>
+      <itunes:duration>01:10:33</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000033C 00000000 00007A14 00000000 00407ED1 00000000 0000968D 00000000 00407C5E 00000000</itunes:subtitle>
+      <dc:date>2007-08-11T23:13:08Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast46.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast46.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast46.mp3" length="37647148" type="audio/mpeg" />
+      <pubDate>Sun, 05 Aug 2007 01:43:34 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast46.mp3</guid>
+      <itunes:duration>01:18:24</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000583 00000000 0000DEBD 00000000 00098C49 00000000 00008AEC 00000000 000534F5 00000000</itunes:subtitle>
+      <dc:date>2007-08-05T01:43:34Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast45.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast45.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast45.mp3" length="18544562" type="audio/mpeg" />
+      <pubDate>Sun, 22 Jul 2007 02:58:07 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast45.mp3</guid>
+      <itunes:duration>00:38:32</itunes:duration>
+      <itunes:author>Umputun</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000463 00000000 000095D0 00000000 000670C6 00000000 00008752 00000000 0016C9C6 00000000</itunes:subtitle>
+      <dc:date>2007-07-22T02:58:07Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast44.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast44.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast44.mp3" length="33216546" type="audio/mpeg" />
+      <pubDate>Sun, 15 Jul 2007 00:50:29 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast44.mp3</guid>
+      <itunes:duration>01:09:06</itunes:duration>
+      <itunes:author>Bobuk &amp; Umputun</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000003C8 00000000 00008688 00000000 000F00D1 00000000 00008C60 00000000 001AA18D 00000000</itunes:subtitle>
+      <dc:date>2007-07-15T00:50:29Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast43.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast43.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast43.mp3" length="33639335" type="audio/mpeg" />
+      <pubDate>Sun, 08 Jul 2007 03:36:28 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast43.mp3</guid>
+      <itunes:duration>01:10:03</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000003CE 00000000 0000C244 00000000 001B4505 00000000 0000889C 00000000 000D11EB 00000000</itunes:subtitle>
+      <dc:date>2007-07-08T03:36:28Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast42.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast42.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast42.mp3" length="35624470" type="audio/mpeg" />
+      <pubDate>Sun, 01 Jul 2007 00:19:06 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast42.mp3</guid>
+      <itunes:duration>01:14:07</itunes:duration>
+      <itunes:author>Bobuk &amp; Umputun</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000209 00000000 000056B7 00000000 00001CFA 00000000 00009605 00000000 000017C6 00000000</itunes:subtitle>
+      <dc:date>2007-07-01T00:19:06Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast41.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast41.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast41.mp3" length="32920483" type="audio/mpeg" />
+      <pubDate>Sun, 24 Jun 2007 03:26:04 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast41.mp3</guid>
+      <itunes:duration>01:08:29</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000064D 00000000 0000BF96 00000000 00238700 00000000 00008AF2 00000000 002B0A2A 00000000</itunes:subtitle>
+      <dc:date>2007-06-24T03:26:04Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast40.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast40.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast40.mp3" length="26240451" type="audio/mpeg" />
+      <pubDate>Sun, 17 Jun 2007 02:31:33 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast40.mp3</guid>
+      <itunes:duration>00:54:34</itunes:duration>
+      <itunes:author>Bobuk &amp; Umputun</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000044C 00000000 00007306 00000000 0000E5B1 00000000 000087F4 00000000 00001982 00000000</itunes:subtitle>
+      <dc:date>2007-06-17T02:31:33Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast39.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast39.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast39.mp3" length="30903165" type="audio/mpeg" />
+      <pubDate>Sun, 10 Jun 2007 18:12:33 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast39.mp3</guid>
+      <itunes:duration>01:04:21</itunes:duration>
+      <itunes:author>Bobuk &amp; Umputun</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000001EA 00000000 00003FC9 00000000 003763CC 00000000 00008536 00000000 00347C6D 00000000</itunes:subtitle>
+      <dc:date>2007-06-10T18:12:33Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast38.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast38.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast38.mp3" length="27183328" type="audio/mpeg" />
+      <pubDate>Sun, 03 Jun 2007 00:39:26 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast38.mp3</guid>
+      <itunes:duration>00:56:36</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000265 00000000 0000445D 00000000 0024DD0A 00000000 0000829A 00000000 0007C824 00000000</itunes:subtitle>
+      <dc:date>2007-06-03T00:39:26Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast36.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast36.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast36.mp3" length="26945759" type="audio/mpeg" />
+      <pubDate>Tue, 22 May 2007 00:30:40 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast36.mp3</guid>
+      <itunes:duration>00:56:02</itunes:duration>
+      <itunes:author>Bobuk &amp; Umputun</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000003B5 00000000 00008B36 00000000 0018B139 00000000 00008657 00000000 0015A94E 00000000</itunes:subtitle>
+      <dc:date>2007-05-22T00:30:40Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast35.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast35.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast35.mp3" length="45119213" type="audio/mpeg" />
+      <pubDate>Sun, 13 May 2007 04:31:41 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast35.mp3</guid>
+      <itunes:duration>01:33:58</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000005D9 00000000 0001368B 00000000 002FB9F5 00000000 0000AA2F 00000000 00391B7D 00000000</itunes:subtitle>
+      <dc:date>2007-05-13T04:31:41Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast34.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast34.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast34.mp3" length="39919174" type="audio/mpeg" />
+      <pubDate>Sun, 06 May 2007 05:58:16 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast34.mp3</guid>
+      <itunes:duration>01:23:08</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000003CF 00000000 00009ECC 00000000 0007F9D6 00000000 0000A107 00000000 003347F5 00000000</itunes:subtitle>
+      <dc:date>2007-05-06T05:58:16Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast33.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast33.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast33.mp3" length="28668169" type="audio/mpeg" />
+      <pubDate>Mon, 30 Apr 2007 00:34:10 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast33.mp3</guid>
+      <itunes:duration>00:59:38</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000049D 00000000 0000B55C 00000000 00101ED6 00000000 00008404 00000000 00139473 00000000</itunes:subtitle>
+      <dc:date>2007-04-30T00:34:10Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast32.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast32.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast32.mp3" length="41748163" type="audio/mpeg" />
+      <pubDate>Mon, 23 Apr 2007 15:33:32 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast32.mp3</guid>
+      <itunes:duration>01:26:57</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000482 00000000 0000AD5F 00000000 001388EB 00000000 00009123 00000000 00125D6D 00000000</itunes:subtitle>
+      <dc:date>2007-04-23T15:33:32Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast48.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast48.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast48.mp3" length="36847174" type="audio/mpeg" />
+      <pubDate>Mon, 23 Apr 2007 05:00:00 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast48.mp3</guid>
+      <itunes:duration>01:16:44</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000002FB 00000000 000095AA 00000000 00177463 00000000 000089E4 00000000 0039ED15 00000000</itunes:subtitle>
+      <dc:date>2007-04-23T05:00:00Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast30.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast30.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast30.mp3" length="31914837" type="audio/mpeg" />
+      <pubDate>Sun, 08 Apr 2007 04:15:25 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast30.mp3</guid>
+      <itunes:duration>01:06:28</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000007FF 00000000 0001B2E6 00000000 0037E5CC 00000000 00008F7A 00000000 000017C6 00000000</itunes:subtitle>
+      <dc:date>2007-04-08T04:15:25Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast29.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast29.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast29.mp3" length="28432819" type="audio/mpeg" />
+      <pubDate>Sun, 01 Apr 2007 02:37:42 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast29.mp3</guid>
+      <itunes:duration>00:59:12</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000859 00000000 00018F72 00000000 0035183E 00000000 00008839 00000000 000C6458 00000000</itunes:subtitle>
+      <dc:date>2007-04-01T02:37:42Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast28.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast28.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast28.mp3" length="40607344" type="audio/mpeg" />
+      <pubDate>Mon, 26 Mar 2007 04:36:50 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast28.mp3</guid>
+      <itunes:duration>01:24:34</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000073F 00000000 0001612F 00000000 004AF14E 00000000 00008895 00000000 001C45C1 00000000</itunes:subtitle>
+      <dc:date>2007-03-26T04:36:50Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast27.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast27.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast27.mp3" length="32066348" type="audio/mpeg" />
+      <pubDate>Mon, 19 Mar 2007 04:30:43 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast27.mp3</guid>
+      <itunes:duration>01:06:46</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000016B 00000000 00016B99 00000000 002069A7 00000000 00008E81 00000000 0020ED97 00000000</itunes:subtitle>
+      <dc:date>2007-03-19T04:30:43Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast25.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast25.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast25.mp3" length="23759408" type="audio/mpeg" />
+      <pubDate>Tue, 06 Mar 2007 02:22:11 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast25.mp3</guid>
+      <itunes:duration>00:49:28</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000AFC 00000000 0001DBC8 00000000 0020FCCB 00000000 00008B46 00000000 0020804E 00000000</itunes:subtitle>
+      <dc:date>2007-03-06T02:22:11Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast23.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast23.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast23.mp3" length="30252443" type="audio/mpeg" />
+      <pubDate>Sun, 18 Feb 2007 05:14:15 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast23.mp3</guid>
+      <itunes:duration>01:02:56</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000892 00000000 0000C1F9 00000000 001CC61F 00000000 00008838 00000000 0027B892 00000000</itunes:subtitle>
+      <dc:date>2007-02-18T05:14:15Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast21.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast21.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast21.mp3" length="32956430" type="audio/mpeg" />
+      <pubDate>Sun, 04 Feb 2007 09:42:27 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast21.mp3</guid>
+      <itunes:duration>01:08:34</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000072D 00000000 00016D00 00000000 001E6363 00000000 00008BB4 00000000 000596EB 00000000</itunes:subtitle>
+      <dc:date>2007-02-04T09:42:27Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast20.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast20.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast20.mp3" length="39135292" type="audio/mpeg" />
+      <pubDate>Sun, 28 Jan 2007 05:17:33 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast20.mp3</guid>
+      <itunes:duration>01:21:30</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000346 00000000 0001275A 00000000 00256115 00000000 00008538 00000000 0016FCE5 00000000</itunes:subtitle>
+      <dc:date>2007-01-28T05:17:33Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast19.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast19.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast19.mp3" length="31314648" type="audio/mpeg" />
+      <pubDate>Sun, 21 Jan 2007 13:43:47 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast19.mp3</guid>
+      <itunes:duration>01:05:12</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000003B5 00000000 00014B0E 00000000 001D2F05 00000000 000085FF 00000000 001838EB 00000000</itunes:subtitle>
+      <dc:date>2007-01-21T13:43:47Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast18.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast18.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast18.mp3" length="54325817" type="audio/mpeg" />
+      <pubDate>Mon, 15 Jan 2007 08:16:40 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast18.mp3</guid>
+      <itunes:duration>01:53:09</itunes:duration>
+      <itunes:author>Bobuk &amp; Umputun &amp; Alex</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000038C 00000000 0000ADE7 00000000 002B7F00 00000000 00009026 00000000 0062D968 00000000</itunes:subtitle>
+      <dc:date>2007-01-15T08:16:40Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast17.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast17.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast17.mp3" length="29307607" type="audio/mpeg" />
+      <pubDate>Mon, 08 Jan 2007 06:08:58 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast17.mp3</guid>
+      <itunes:duration>01:01:02</itunes:duration>
+      <itunes:author>Umputun &amp; Alex</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000955 00000000 00010F31 00000000 0020A073 00000000 00008D7E 00000000 0013A95E 00000000</itunes:subtitle>
+      <dc:date>2007-01-08T06:08:58Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast16.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast16.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast16.mp3" length="42045123" type="audio/mpeg" />
+      <pubDate>Tue, 26 Dec 2006 04:14:36 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast16.mp3</guid>
+      <itunes:duration>01:27:34</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000054F 00000000 0001B94B 00000000 001EC50A 00000000 00008594 00000000 000D38CB 00000000</itunes:subtitle>
+      <dc:date>2006-12-26T04:14:36Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast15.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast15.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast15.mp3" length="25394465" type="audio/mpeg" />
+      <pubDate>Sun, 17 Dec 2006 13:17:34 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast15.mp3</guid>
+      <itunes:duration>00:52:52</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000715 00000000 0001010C 00000000 001EE858 00000000 0000869B 00000000 000FF1D6 00000000</itunes:subtitle>
+      <dc:date>2006-12-17T13:17:34Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast14.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast14.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast14.mp3" length="30531810" type="audio/mpeg" />
+      <pubDate>Sun, 10 Dec 2006 02:59:04 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast14.mp3</guid>
+      <itunes:duration>01:03:35</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000005C7 00000000 0000C7E6 00000000 0029B4A2 00000000 0000827C 00000000 00004597 00000000</itunes:subtitle>
+      <dc:date>2006-12-10T02:59:04Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast13.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast13.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast13.mp3" length="20686363" type="audio/mpeg" />
+      <pubDate>Thu, 07 Dec 2006 00:12:40 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast13.mp3</guid>
+      <itunes:duration>00:43:04</itunes:duration>
+      <itunes:author>Bobuk &amp; Umputun</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000007AD 00000000 000157E7 00000000 000963C6 00000000 00008DBA 00000000 001826A7 00000000</itunes:subtitle>
+      <dc:date>2006-12-07T00:12:40Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast12.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast12.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast12.mp3" length="23340404" type="audio/mpeg" />
+      <pubDate>Sun, 26 Nov 2006 07:42:22 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast12.mp3</guid>
+      <itunes:duration>00:48:36</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000009A7 00000000 00015950 00000000 002B88B1 00000000 0000844E 00000000 00047397 00000000</itunes:subtitle>
+      <dc:date>2006-11-26T07:42:22Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast11.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast11.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast11.mp3" length="24260960" type="audio/mpeg" />
+      <pubDate>Mon, 20 Nov 2006 01:48:10 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast11.mp3</guid>
+      <itunes:duration>00:50:31</itunes:duration>
+      <itunes:author>Bobuk &amp; Umputun</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000A39 00000000 00029CB2 00000000 00209624 00000000 00008829 00000000 00288C34 00000000</itunes:subtitle>
+      <dc:date>2006-11-20T01:48:10Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast10.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast10.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast10.mp3" length="24423158" type="audio/mpeg" />
+      <pubDate>Sun, 12 Nov 2006 07:22:36 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast10.mp3</guid>
+      <itunes:duration>00:50:53</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>0000056B 00000000 000109F2 00000000 00274C1A 00000000 00007CF4 00000000 0029612A 00000000</itunes:subtitle>
+      <dc:date>2006-11-12T07:22:36Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast9.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast9.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast9.mp3" length="26475306" type="audio/mpeg" />
+      <pubDate>Fri, 03 Nov 2006 04:40:34 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast9.mp3</guid>
+      <itunes:duration>00:55:08</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000623 00000000 0000CAB2 00000000 00194992 00000000 00008B1B 00000000 001E4FCB 00000000</itunes:subtitle>
+      <dc:date>2006-11-03T04:40:34Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast8.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast8.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast8.mp3" length="23247198" type="audio/mpeg" />
+      <pubDate>Sun, 29 Oct 2006 03:24:38 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast8.mp3</guid>
+      <itunes:duration>00:48:24</itunes:duration>
+      <itunes:author>Bobuk &amp; Umputun</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000393 00000000 00008522 00000000 0013EA78 00000000 00007D2F 00000000 002BF234 00000000</itunes:subtitle>
+      <dc:date>2006-10-29T03:24:38Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast7.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast7.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast7.mp3" length="17776113" type="audio/mpeg" />
+      <pubDate>Wed, 25 Oct 2006 02:26:18 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast7.mp3</guid>
+      <itunes:duration>00:37:00</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000B24 00000000 00016EEF 00000000 001389BC 00000000 00008945 00000000 001A6C7D 00000000</itunes:subtitle>
+      <dc:date>2006-10-25T02:26:18Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast5.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast5.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast5.mp3" length="18023342" type="audio/mpeg" />
+      <pubDate>Wed, 25 Oct 2006 02:26:01 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast5.mp3</guid>
+      <itunes:duration>00:37:31</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Alex</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000A03 00000000 00013CBB 00000000 0008882F 00000000 000089BB 00000000 001CB7BC 00000000</itunes:subtitle>
+      <dc:date>2006-10-25T02:26:01Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast4.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast4.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast4.mp3" length="16623172" type="audio/mpeg" />
+      <pubDate>Wed, 25 Oct 2006 02:25:56 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast4.mp3</guid>
+      <itunes:duration>00:34:36</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000AD1 00000000 00012B05 00000000 001F4E49 00000000 000088AE 00000000 000A4872 00000000</itunes:subtitle>
+      <dc:date>2006-10-25T02:25:56Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast6.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast6.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast6.mp3" length="22311186" type="audio/mpeg" />
+      <pubDate>Sun, 15 Oct 2006 04:49:20 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast6.mp3</guid>
+      <itunes:duration>00:46:27</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Alex</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000005E5 00000000 0000D71A 00000000 00055A68 00000000 000082E2 00000000 001C41C6 00000000</itunes:subtitle>
+      <dc:date>2006-10-15T04:49:20Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast3.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast3.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast3.mp3" length="16155892" type="audio/mpeg" />
+      <pubDate>Sat, 23 Sep 2006 22:43:46 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast3.mp3</guid>
+      <itunes:duration>00:33:38</itunes:duration>
+      <itunes:author>Bobuk &amp; Umputun</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>00000833 00000000 0000E4CB 00000000 0002F3B6 00000000 00008513 00000000 001E0DC6 00000000</itunes:subtitle>
+      <dc:date>2006-09-23T22:43:46Z</dc:date>
+    </item>
+    <item>
+      <title>rt_podcast2.mp3</title>
+      <link>http://rucast.net/hist/radio-t/rt_podcast2.mp3</link>
+      <description />
+      <enclosure url="http://rucast.net/hist/radio-t/rt_podcast2.mp3" length="15999163" type="audio/mpeg" />
+      <pubDate>Thu, 14 Sep 2006 01:09:14 GMT</pubDate>
+      <guid isPermaLink="false">http://rucast.net/hist/radio-t/rt_podcast2.mp3</guid>
+      <itunes:duration>00:33:18</itunes:duration>
+      <itunes:author>Umputun &amp; Bobuk &amp; Alex F.</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle>000008E0 00000000 0000ECE8 00000000 0009A57D 00000000 000085DD 00000000 00110FA7 00000000</itunes:subtitle>
+      <dc:date>2006-09-14T01:09:14Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

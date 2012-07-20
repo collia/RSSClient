@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>IT happens</title>
+    <link>http://localhost:8080/rss/testRSS2.xml</link>
+    <description>IT истории из жизни</description>
+    <item>
+      <title>#3050: Ещё бы коррекцию ошибок приладить</title>
+      <link>http://ithappens.ru/story/3050</link>
+      <description>В здании переезжает отдел. Админы транспортируют огромные коробки с каким-то железом по относительно длинному коридору; пол достаточно скользкий, так что в процессе участвуют всего три человека. Толчка первого из них хватает, чтобы коробка доскользила до середины, оттуда следующим толчком коробка отправляется до конца коридора, где её ловят и складывают на тележку. Один из участников, довольно:&lt;br&gt;&lt;br&gt;— Протокол наладили, пакеты идут.</description>
+      <pubDate>Fri, 07 May 2010 05:00:02 GMT</pubDate>
+      <guid isPermaLink="false">http://ithappens.ru/story/3050</guid>
+      <dc:date>2010-05-07T05:00:02Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

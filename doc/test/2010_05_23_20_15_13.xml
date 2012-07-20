@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>TESTING</title>
+    <link>http://localhost:8080/rss/testRSS2.xml</link>
+    <description>test description</description>
+    <dc:creator>collia</dc:creator>
+    <item>
+      <description>HELLO WORLD</description>
+      <dc:creator>collia</dc:creator>
+    </item>
+    <item>
+      <description>HELLO WORLD number two</description>
+      <dc:creator>collia!!!</dc:creator>
+    </item>
+  </channel>
+</rss>
+

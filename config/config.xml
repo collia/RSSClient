@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?><config>
+<updatePeriod>3600000</updatePeriod><updateNumber>-1</updateNumber><bufferLength>50</bufferLength><showNumber>24</showNumber><keyFile>config/key</keyFile><passFile>config/passwd</passFile></config>

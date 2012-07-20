@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>-=RTFM=- - сайт MANуальной терапии. RSS 2.0</title>
+    <link>http://rtfm.fsay.net/rss.php</link>
+    <description />
+    <dc:creator>Ch1t3r@gmail.com</dc:creator>
+    <item>
+      <title>Slackware 13.1 - встречаем</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=306</link>
+      <description>&lt;img src="http://www.shoplinuxonline.com/images/slack200x.jpg" alt="slackware" title="linux" align="right"&gt;После девяти месяцев разработки официально выпущен релиз Linux дистрибутива Slackware 13.1, в котором присутствует поддержка двух графических окружений — легковесного на базе Xfce 4.6.1 и полнофункционального на основе KDE 4.4.3. Пакеты в новой версии собраны с использованием компилятора GCC 4.4.4, система работает под управлением Linux ядра 2.6.33.4 и системной библиотеки Glibc 2.11.1.&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Особенности Slackware 13.1:&lt;/b&gt;&lt;br /&gt;
+* В дистрибутиве задействованы подсистемы ConsoleKit и PolicyKit, первый для управления сессиями и трекингом работы пользователей, а второй для предоставления расширенных прав доступа, давая возможность пользователям выполнять некоторые привилегированные действия, не имея прав суперпользователя;&lt;br /&gt;
+* Переход на Linux-ядро серии 2.6.33 позволило увеличить поддержку в Slackware журналируемых и шифрованных ФС, SCSI и ATA RAID, SATA, Software RAID, LVM (Logical Volume Manager). Улучшена поддержка PCMCIA, CardBus, USB, IEE1394 (FireWire) и ACPI;&lt;br /&gt;
+* Ядро собрано с дополнительными патчами от проекта Speakup, что позволяет задействовать синтезатор речи для обеспечения работы людей, имеющих проблемы со зрением.&lt;br /&gt;
+* Обновлены инструменты для управления пакетами. Функция отслеживания пакетов позволит упростить обновление с версии Slackware 13.0, а утилита slackpkg окажется полезной при переходе с более старой версии дистрибутива и поддержании системы в актуальном состоянии. Для подготовки и поддержки собственных пакетов в extra-репозиторий включена утилита slacktrack;&lt;br /&gt;
+* Новые версии программ:&lt;br&gt;&lt;br&gt;[&lt;a href="http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=306"&gt;читать дальше&lt;/a&gt;]</description>
+      <pubDate>Wed, 26 May 2010 08:14:52 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=306</guid>
+      <dc:date>2010-05-26T08:14:52Z</dc:date>
+    </item>
+    <item>
+      <title>Вышел IPFire 2.5 Core 37</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=305</link>
+      <description>&lt;img src="http://www.linux-magazine.com/var/linux_magazin/storage/images/media/linux-magazine-eng-us/images/news-images/ipfire/391873-1-eng-US/IPFire_medium.png" alt="IPFire 2.5" title="IPFire 2.5" align="left"&gt;Вышел релиз специализированного Linux-дистрибутива IPFire 2.5 Core 37, предназначенного для создания межсетевых экранов. IPFire отличается предельно простым процессом установки и организацией настройки через интуитивно понятный web-интерфейс, изобилующий наглядными графиками. Размер установочного iso-образа  составляет всего 78 Мб. Для установки дополнений в IPFire используется специальный пакетный менеджер Pakfire.&lt;br /&gt;
+&lt;br /&gt;
+Система модульная, кроме базовых функций пакетной фильтрации и управления трафиком для IPFire доступны модули с реализацией системы для предотвращения атак на базе Snort, для создания файлового сервера (Samba, FTP, NFS), почтового сервера (Cyrus-IMAPd, Postfix, Spamassassin, ClamAV и Openmailadmin) и сервера печати (CUPS), организации VoIP шлюза на базе Asterisk и Teamspeak, создания беспроводной точки доступа, организации потокового аудио и видео-сервера (MPFire, Videolan, Icecast, Gnump3d, VDR).&lt;br /&gt;
+&lt;br /&gt;
+В новой версии произведено обновление следующих программ: openssh 5.4p1, openssl 0.9.8n, apache 2.2.15, в комплект включены последние стабильные сборки sslh, madwifi, lm_sensors. Исправлены проблемы с работой cyrus-sasl, pakfire, ath5k, mISDN-hfcusb, urlfilter, построением графиков. В p4-clockmod добавлена поддержка процессоров Atom, в комплект включен ethernet-драйвер ET131x.&lt;br /&gt;
+&lt;br /&gt;
+&lt;noindex&gt;&lt;a href="http://www.ipfire.org/en/index" rel="nofollow"&gt;Оффициальный&lt;/a&gt;&lt;/noindex&gt; сайт.&lt;br /&gt;
+&lt;noindex&gt;&lt;a href="http://www.ipfire.org/en/download" rel="nofollow"&gt;Download | Скачать&lt;/a&gt;&lt;/noindex&gt;&lt;br&gt;</description>
+      <pubDate>Thu, 08 Apr 2010 16:32:47 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=305</guid>
+      <dc:date>2010-04-08T16:32:47Z</dc:date>
+    </item>
+    <item>
+      <title>Появилась возможность чтения EXT4 в Windows</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=304</link>
+      <description>&lt;img src="http://news.softportal.com/news/Image/2010/02/08/page_id400_content_hdd.jpg" alt="ext4" title="ext4" align="right"&gt;Уже прошло не меньше года с того момента как ext4 стала стабильной и активной используемой файловой системой в Linux, а в Windows до сих пор не было ни одной программы, которая бы позволяла читать файлы с ext4-разделов. Пробел наконец-то восполнен  c выходом версии 2.1 приложения Ext2read, которая имеет следующие особенности:&lt;br /&gt;
+&lt;br /&gt;
+    * Интерфейс на основе Qt4;&lt;br /&gt;
+    * Чтение и просмотр файловых систем ext2/ext3/ext4;&lt;br /&gt;
+    * Рекурсивное чтение любых директорий включая корневую ("/");&lt;br /&gt;
+    * Поддержка внешних носителей - flash-брелоков и USB-дисков;&lt;br /&gt;
+    * Поддержка работы с образом целого диска, а также отдельных разделов. Таким образом пользователи Wubi могут открыть файл root.disk прямо внутри программы;&lt;br /&gt;
+    * Для ускорения доступа добавлена поддержка кэширования на уроне блоков, основанная на алгоритме LRU. &lt;br /&gt;
+&lt;br /&gt;
+Исходные тексты и бинарную сборку можно загрузить с &lt;noindex&gt;&lt;a href="https://sourceforge.net/projects/ext2read/files/" rel="nofollow"&gt;https://sourceforge.net/&lt;/a&gt;&lt;/noindex&gt;&lt;br /&gt;
+&lt;noindex&gt;&lt;a href="http://www.opennet.ru/opennews/art.shtml?num=26111" rel="nofollow"&gt;Источник&lt;/a&gt;&lt;/noindex&gt;&lt;br&gt;</description>
+      <pubDate>Thu, 08 Apr 2010 16:08:05 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=304</guid>
+      <dc:date>2010-04-08T16:08:05Z</dc:date>
+    </item>
+    <item>
+      <title>Встречаем ОС DragonFlyBSD 2.6</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=303</link>
+      <description>&lt;img src="http://lafox.net/shop/news/pic/dragonflybsd.png" alt="DragonFlyBSD" title="DragonFlyBSD" align="left"&gt;Вышел  релиз DragonFlyBSD 2.6, операционной системы с гибридным ядром, созданной шесть лет назад с целью альтернативного развития ветки FreeBSD 4.x. Для загрузки доступны 32- и 64-разрядные CD-образы. Вместо DVD-сборки в ближайшее время будет подготовлен расширенный образ с десктоп-окружением для установки на USB Flash. Репозиторий pkgsrc в версии DragonFlyBSD 2.6 включает в себя примерно 8 тыс. предкомпилированных пакетов, для CVS-репозитория pkgsrc поддерживается активное GIT-зеркало.&lt;br /&gt;
+&lt;br /&gt;
+Основные улучшения, добавленные в DragonFlyBSD 2.6: &lt;br /&gt;
+    &lt;b&gt;Ядро&lt;/b&gt;&lt;br /&gt;
+          * Из NetBSD портирована поддержка файловой системы tmpfs, позволяющей организовать эффективное размещение данных в ОЗУ (VM page cache). В отличие от MFS в tmpfs для дублирующихся данных сохраняется только одна копия;&lt;br /&gt;
+          * В swapcache реализована поддержка SSD-накопителей, что позволяет организовать кэширование на высокопроизводительных SSD-накопителях данных и мета-данных из других файловых систем. Подобное кэширование может заметно увеличить производительность ФС, на которых хранятся миллионы файлов;&lt;br /&gt;
+          * Из NetBSD портирована реализация очередей сообщений POSIX (POSIX Message Queues);&lt;br /&gt;
+          * Обновлен код эмулятора Linux, Linuxulator теперь может запускать java и flash;&lt;br /&gt;
+          * Добавлен фреймворк gpio;&lt;br /&gt;
+          * Добавлен совместимый с watchdogd фреймворк для создания watchdog-в&lt;br /&gt;
+          * Подготовлено экспериментальное 64-разрядное ядро vkernel64, в названиях вместо amd64 теперь упоминается x86_64;&lt;br /&gt;
+          * Реализовано псевдо-устройство hotplug;&lt;br /&gt;
+          * В vinum налажена возможность размещения корневого раздела на программном RAID;&lt;br /&gt;
+          * Из FreeBSD портирован код minidumps и произведена синхронизация кода opencrypto, ACPI и инициализации CPU;&lt;br /&gt;
+          * Проведена работа по устранению ошибок, влияющих на производительность ввода/вывода. &lt;br /&gt;
+&lt;br&gt;&lt;br&gt;[&lt;a href="http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=303"&gt;читать дальше&lt;/a&gt;]</description>
+      <pubDate>Thu, 08 Apr 2010 16:02:24 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=303</guid>
+      <dc:date>2010-04-08T16:02:24Z</dc:date>
+    </item>
+    <item>
+      <title>Вышли редакции Linux Mint 8 «Helena» с Xfce и LXDE</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=302</link>
+      <description>&lt;img src="http://www.nixp.ru/uploads/news/large_image/18465324c620b9b63cbc2edabeacfc593b54cded.png" alt="linux mint 8" title="linux mint 8" align="right"&gt;Проект Linux-дистрибутива Linux Mint, основанного на Ubuntu, объявил о выпуске новых версий своих редакций с легковесными графическими рабочими средами: 8 «Helena» Xfce и 8 «Helena» LXDE.&lt;br /&gt;
+&lt;br /&gt;
+В основе обеих редакций дистрибутива — Linux-ядро 2.6.31 и Xorg 7.4. При этом версия с LXDE основана на Linux Mint 8 Main Edition (с оконным менеджером Openbox 3.4.7.2 и файловым менеджером PCManFM 0.5.2), а с Xfce — на Xubuntu 9.10 «Karmic Koala» с Xfce 4.6.1. При сравнении производительности дистрибутивов на одной и той же конфигурации они показали почти идентичные результаты: 141 Мб RAM в режиме «простоя» у LXDE против 154 Мб у Xfce; 246 Мб RAM при максимальном потреблении у LXDE против 262 Мб у Xfce.&lt;br /&gt;
+&lt;br /&gt;
+В минимальных системных требованиях для Linux Mint 8 «Helena» Xfce и LXDE значатся: 256 Мб RAM, графическая карта с поддержкой разрешения 800 x 600 и выше, 3 Гб свободного дискового пространства.&lt;br /&gt;
+&lt;br /&gt;
+&lt;noindex&gt;&lt;a href="http://www.nixp.ru/news/%D0%92%D1%8B%D1%88%D0%BB%D0%B8-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%86%D0%B8%D0%B8-Linux-Mint-8-Helena-%D1%81-Xfce-%D0%B8-LXDE.html" rel="nofollow"&gt;Источник&lt;/a&gt;&lt;/noindex&gt;&lt;br /&gt;
+&lt;noindex&gt;&lt;a href="http://www.linuxmint.com/" rel="nofollow"&gt;Сайт&lt;/a&gt;&lt;/noindex&gt;&lt;br /&gt;
+&lt;noindex&gt;&lt;a href="http://www.linuxmint.com/download.php" rel="nofollow"&gt;Download | Скачать&lt;/a&gt;&lt;/noindex&gt;&lt;br&gt;</description>
+      <pubDate>Thu, 08 Apr 2010 14:37:35 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=302</guid>
+      <dc:date>2010-04-08T14:37:35Z</dc:date>
+    </item>
+    <item>
+      <title>Проекты OpenBSD и NetBSD объединяются</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=301</link>
+      <description>&lt;img src="http://www.nixp.ru/uploads/news/large_image/0276d2e72163507f91ebd2b15330aac8d1552d41.png" alt="openbsd netbsd" title="openbsd netbsd" align="left"&gt;Проекты популярных операционных систем с открытым кодом, OpenBSD и NetBSD, решили забыть о противоречиях и объединиться на благо всего Open Source-сообщества. Ожидается, что единая платформа составит серьезную конкуренцию другому, более популярному, BSD-проекту — FreeBSD.&lt;br /&gt;
+&lt;br /&gt;
+Как многие знают, система OpenBSD появилась как форк ОС NetBSD. Благодаря усилиям многоуважаемого в сообществе лидера Тео де Раадта (Theo de Raadt) новой системе удалось за свое почти 15-летнее существование собрать немалое сообщество. Однако популярность OpenBSD и NetBSD меркнет на фоне распространенности FreeBSD. И теперь разработчики этих проектов решили воссоединить кодовую базу для того, чтобы развивать единую платформу.&lt;br /&gt;
+&lt;br /&gt;
+Пока нет точных данных о сроках появления первых релизов новой системы, равно как и не объявлено ее название. Среди предлагаемых вариантов встречаются NetOpenBSD и куда более концептуальное NoBSD.&lt;br /&gt;
+&lt;br /&gt;
+Лидером NoBSD назначен харизматичный Тео де Раадт, который так прокомментировал событие: «Нам пригодятся наработки NetBSD для поддержки множества архитектур, однако работа предстоит серьезная. Код NetBSD, как, впрочем, и любой другой из существующих систем, нуждается в тотальном рефакторинге для того, чтобы приблизиться по уровню качества к OpenBSD. Но я надеюсь, что результат оправдает ожидания, и победное шествие новой системы не ограничится тостерами».&lt;br /&gt;
+&lt;br /&gt;
+&lt;noindex&gt;&lt;a href="http://www.nixp.ru/news/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B-OpenBSD-%D0%B8-NetBSD-%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D1%8F%D1%8E%D1%82%D1%81%D1%8F.html" rel="nofollow"&gt;Источник&lt;/a&gt;&lt;/noindex&gt; новости.&lt;br&gt;</description>
+      <pubDate>Thu, 08 Apr 2010 14:34:13 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=301</guid>
+      <dc:date>2010-04-08T14:34:13Z</dc:date>
+    </item>
+    <item>
+      <title>НауЛинукс Школа 5.4</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=300</link>
+      <description>&lt;img src="http://www.linux-ink.ru/static/Docs/NauLinux/School/5.4/Docs/Nau/img/Nau.png" alt="НауЛинукс" title="НауЛинукс" align="right"&gt;Отечественный Linux-дистрибутив НауЛинукс Школа 5.4, основанный на Scientific Linux и выпускаемый компанией Linux Ink, был переведен в состояние опубликованного релиза.&lt;br /&gt;
+&lt;br /&gt;
+Релиз НауЛинукс Школа 5.4 базируется на Scientific Linux 5.4 с обновлениями от 2 марта 2010 года. Кроме того, проведен ряд модификаций, таких как замена стандартного загрузчика isolinux на GRUB с русифицированным интерфейсом; свои конфигурационные файлы kickstart для проведения различных вариантов установки; переработанные руководства (по установке и пользовательское); изменение элементов дизайна; добавленная поддержка файловой системы NTFS в установку; включение на DVD автоматически запускающихся скриптов, позволяющих после инсталляции системы доустановить недостающие пакеты с диска.&lt;br /&gt;
+&lt;br /&gt;
+Образы дисков НауЛинукс Школа 5.4 доступны на &lt;noindex&gt;&lt;a href="ftp://ftp.naulinux.ru/pub/NauLinux/5.4/iso/i386/" rel="nofollow"&gt;ftp://ftp.naulinux.ru/&lt;/a&gt;&lt;/noindex&gt;&lt;br /&gt;
+&lt;br /&gt;
+Оффициальный &lt;noindex&gt;&lt;a href="http://www.linux-ink.ru/events/NauLinux_5.4_fin" rel="nofollow"&gt;сайт.&lt;/a&gt;&lt;/noindex&gt;&lt;br&gt;</description>
+      <pubDate>Thu, 08 Apr 2010 14:31:04 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=300</guid>
+      <dc:date>2010-04-08T14:31:04Z</dc:date>
+    </item>
+    <item>
+      <title>Mandriva Linux 2010 Powerpack</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=299</link>
+      <description>&lt;img src="http://comphealth.com.ua/img/box/mandriva.png" alt="mandriva Linux" title="mandriva Linux" align="left"&gt;Mandriva объявила о выпуске на российский рынок дистрибутива Mandriva 2010 Powerpack — «профессиональной версии Mandriva Linux», включающей в себя закрытое и коммерческое ПО.&lt;br /&gt;
+&lt;br /&gt;
+Среди офисного ПО, входящего в состав Mandriva Linux 2010 Powerpack: офисный пакет OpenOffice.org 3.1.1, OCR-система Cuneiform, Acrobat Reader, браузеры Mozilla Firefox 3.5 и Opera, почтовый клиент Mozilla Thunderbird, ПО для общения Kopete, Skype, мультимедийные приложения. Также в дистрибутиве можно найти интеграцию с Mandriva Directory Server, решения для виртуализации Virtualbox 3.0.8, Xen и VMWare player, веб-сервер Apache 2.2.14, систему контроля и учета трафика Traffpro (свободная версия), ограниченную версию ПО резервного копирования Arkeia и другое ПО.&lt;br /&gt;
+&lt;br /&gt;
+Отдельно отмечается включение в дистрибутив российской СУБД «Ред База Данных 2.1» (на базе Firebird), а также приложения WINE@Etersoft Local для работы с «1С: Предприятие», Гарант, Консультант и другими популярными в России бизнес-программами.&lt;br /&gt;
+&lt;br /&gt;
+Подробности на &lt;noindex&gt;&lt;a href="http://www.mandriva.ru/novosti/vyshel_mandriva_linux_2010_powerpack/" rel="nofollow"&gt;оффициальном сайте&lt;/a&gt;&lt;/noindex&gt;&lt;br&gt;</description>
+      <pubDate>Thu, 08 Apr 2010 14:27:50 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=299</guid>
+      <dc:date>2010-04-08T14:27:50Z</dc:date>
+    </item>
+    <item>
+      <title>Вышел Calculate Linux 10.4</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=298</link>
+      <description>&lt;img src="http://www.calculate-linux.org/attachments/download/77" alt="Calculate linux" title="Calculate linux" align="right"&gt;Обновилась линейка отечественных дистрибутивов, основанных на Gentoo Linux, — Calculate Linux 10.4.&lt;br /&gt;
+&lt;br /&gt;
+Среди основных изменений, общих для дистрибутивов в составе Calculate Linux 10.4, разработчики отмечают:&lt;br /&gt;
+&lt;br /&gt;
+    * Calculate Linux включает новый дистрибутив Calculate Linux Desktop с рабочим столом GNOME (CLDG).&lt;br /&gt;
+    * Добавлена утилита cl-passwd для изменения пароля пользователя на сервере авторизации.&lt;br /&gt;
+    * Уменьшен объем занимаемого на жестком диске места.&lt;br /&gt;
+    * Сокращено время передачи данных перемещаемого профиля с удаленного сервера.&lt;br /&gt;
+    * Добавлена возможность управления обновлениями настроек приложений пользователя через файл ~/.calculate/ini.env.&lt;br /&gt;
+    * По умолчанию включена параллельная установка пакетов.&lt;br /&gt;
+    * Расширена поддержка моделей принтеров HP, Epson и др.&lt;br /&gt;
+&lt;br /&gt;
+Кроме того, в CLD (Desktop) вид рабочего стола изменен на отображение директории ~/Desktop, а в OpenOffice.org используется стиль Oxygen, добавлена поддержка KDE-меню открытия и сохранения файлов. В CLDX была изменена структура меню по аналогии с версиями с KDE и GNOME; добавлены клиент LinuxDC++, RSS-агрегатор Liferea,  поддержка Facebook и горячих клавиш в Pidgin, плагин xclear для Firefox, а также исправлена раскладка клавиатуры в tty1 после запуска графической сессии.&lt;br /&gt;
+&lt;br /&gt;
+Ссылка на &lt;noindex&gt;&lt;a href="http://www.calculate-linux.org/ru" rel="nofollow"&gt;сайт&lt;/a&gt;&lt;/noindex&gt;&lt;br /&gt;
+&lt;noindex&gt;&lt;a href="http://www.calculate-linux.org/main/ru/download" rel="nofollow"&gt;Download | Скачать&lt;/a&gt;&lt;/noindex&gt;&lt;br&gt;</description>
+      <pubDate>Thu, 08 Apr 2010 14:25:11 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=298</guid>
+      <dc:date>2010-04-08T14:25:11Z</dc:date>
+    </item>
+    <item>
+      <title>Samba 3.5.0  - наконец-то поддерживает протокол SMB2</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=297</link>
+      <description>&lt;img src="http://www.nixp.ru/uploads/news/large_image/71f2031d802f1c71f8e742a38666686698d14962.png" alt="samba 3.5.0" title="samba 3.5.0" align="left"&gt;Вышла новая версия свободной реализации протоколов SMB/CIFS — Samba 3.5.0.&lt;br /&gt;
+&lt;br /&gt;
+Одним из главных изменений в релизе Samba 3.5 стала экспериментальная поддержка протокола SMB2. SMB второй версии был представлен корпорацией Microsoft в 2006 году с релизом операционной системы Windows Vista.&lt;br /&gt;
+&lt;br /&gt;
+Среди прочих новшеств в Samba 3.5 отмечаются:&lt;br /&gt;
+&lt;br /&gt;
+    * поддержка Windows timestamp resolution;&lt;br /&gt;
+    * команды net, smbclient и библиотека libsmbclient теперь могут использовать данные из кэша Winbind;&lt;br /&gt;
+    * поддержка шифрования для подключений к серверу печати CUPS;&lt;br /&gt;
+    * крупный рефакторинг кода Winbind;&lt;br /&gt;
+    * поддержка асинхронного режима в Winbind;&lt;br /&gt;
+    * новый модуль виртуальной файловой системы — vfs_scannedonly.&lt;br /&gt;
+&lt;br&gt;</description>
+      <pubDate>Tue, 02 Mar 2010 16:15:46 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=297</guid>
+      <dc:date>2010-03-02T16:15:46Z</dc:date>
+    </item>
+    <item>
+      <title>Ubuntu Linux одобрена для использования в гос органах США</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=296</link>
+      <description>Независимое агентство американского правительства GSA (General Services Administration, «Администрация общих служб») одобрило Ubuntu Linux в качестве системы для использования в государственном секторе.&lt;br /&gt;
+&lt;br /&gt;
+Ubuntu — третий Linux-дистрибутив (после решений от Red Hat и Novell), который стал доступен в GSA Advantage — специальный сервис для распространения продуктов и услуг, предназначенных для федеральных покупателей. Вместе с Ubuntu через него теперь можно найти и другую разработку Canonical — инструмент управления системами и мониторинга Landscape.&lt;br /&gt;
+&lt;br /&gt;
+Продукты Canonical были представлены в GSA через компанию Autonomic Resources, которая специализируется на системной интеграции и имеет право предлагать продукты общегосударственным американским заказчикам. Canonical Landscape будет предлагаться как часть платформы облачных вычислений Autonomic Resources.&lt;br /&gt;
+&lt;br /&gt;
+Коул Крофорд (Cole Crawford), технический директор Autonomic Resources, считает, что Ubuntu Linux является на сегодняшний день самой популярной операционной системой для разработчиков решений на базе облачных вычислений. И она уже используется в ряде государственных агентств (например, NASA), однако для более широкого распространения ей не хватало присутствия в GSA. По его словам, теперь вряд ли стоит ждать невероятного роста популярности Ubuntu Linux в государственном секторе, однако появление такой опции не может не радовать.&lt;br /&gt;
+&lt;br /&gt;
+Autonomic Resources сотрудничает еще и с компаниями Novell и Red Hat, помогая им во взаимодействии с клиентами из государственного сектора.&lt;br&gt;</description>
+      <pubDate>Tue, 02 Mar 2010 16:14:11 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=296</guid>
+      <dc:date>2010-03-02T16:14:11Z</dc:date>
+    </item>
+    <item>
+      <title>PC-BSD 8.0 — новая версия FreeBSD для домашних PC</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=295</link>
+      <description>&lt;img src="http://www.nixp.ru/uploads/news/large_image/f958ef801a3e8330dc3927cad5da67df257bfe6e.png" alt="pc-bsd 8.0" title="pc-bsd 8.0" align="right"&gt;Компания iXsystems представила новую версию своей операционной системы, позиционируемой как FreeBSD для использования на настольных компьютерах, — PC-BSD 8.0 «Hubble Edition».&lt;br /&gt;
+&lt;br /&gt;
+Последний релиз PC-BSD основан на FreeBSD версии 8.0-RELEASE-P2 с графической рабочей средой KDE 4.3.5. Теперь система оснащена новым инсталлятором (System Installer), позволяющим устанавливать как саму PC-BSD, так и FreeBSD. Кроме того, появилась возможность запуска PC-BSD в «живом» (Live) режиме прямо с DVD-диска (без необходимости в установке).&lt;br /&gt;
+&lt;br /&gt;
+Среди прочих изменений в релизе PC-BSD 8.0 отмечаются: обновленный менеджер управления программным обеспечением с возможностью выбора нужных приложений и их простой установки; поддержка трехмерного ускорения с драйверами NVIDIA на компьютерах с архитектурой AMD64; обновленные пакеты ПО (X.Org 7.4, OpenOffice.org 3.1.1, Firefox 3.5.7 и Opera 10.10, Pidgin 2.6.4 и другие).&lt;br /&gt;
+&lt;br /&gt;
+В рекомендуемых системных требованиях к PC-BSD 8.0 упоминаются Pentium 4 и выше, 512 Мб оперативной памяти, 20 Гб дискового пространства, видеокарта с 3D-ускорением.&lt;br /&gt;
+&lt;br /&gt;
+Сайт &lt;noindex&gt;&lt;a href="http://www.pcbsd.org/" rel="nofollow"&gt;http://www.pcbsd.org/&lt;/a&gt;&lt;/noindex&gt;&lt;br /&gt;
+Download &lt;noindex&gt;&lt;a href="http://www.pcbsd.org/content/view/152/11/" rel="nofollow"&gt;Скачать | Download&lt;/a&gt;&lt;/noindex&gt;&lt;br&gt;</description>
+      <pubDate>Tue, 02 Mar 2010 16:12:34 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=295</guid>
+      <dc:date>2010-03-02T16:12:34Z</dc:date>
+    </item>
+    <item>
+      <title>Toshiba Satellite U500-1EX: ноутбук с мультитач-дисплеем</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=294</link>
+      <description>&lt;img src="http://2.bp.blogspot.com/_XMKuynyGGwc/SnN8xzYZyyI/AAAAAAAABds/V5L-lnD4EqI/s400/toshiba-satellite-u500-119-1.jpg" alt="toshiba" title="satelite" align="left"&gt;В арсенале компании Toshiba появился новый ноутбук, построенный на основе Intel Calpella, — Satellite U500-1EX. Данная модель призвана привлекать внимание публики, прежде всего, 13-дюймовым сенсорным экраном, который распознает не только одиночные нажатия, но и жесты Multi-Touch. За адаптацию ноутбука под сенсорное управление отвечает пакет Microsoft Touch Pack, а в качестве операционной системы авторами была выбрана Windows 7.&lt;br /&gt;
+&lt;br /&gt;
+Satellite U500-1EX — это не игровое решение. Отчасти об этом свидетельствует отсутствие дискретного видеоадаптера: обработку графики полностью берет на себя ядро чипсета HM55. Используемый процессор — Core i3-330M, работающий на частоте 2,13 ГГц. Завершают картину 4 Гб памяти типа DDR3 и винчестер на 320 Гб. Как и большинство ноутбуков, Satellite U500-1EX оснащается веб-камерой на 1,3 мегапикселя и DVD-приводом с функцией записи.&lt;br /&gt;
+Новинка от Toshiba доступна для приобретения по цене около 1000 долларов. &lt;br&gt;</description>
+      <pubDate>Mon, 15 Feb 2010 08:49:13 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=294</guid>
+      <dc:date>2010-02-15T08:49:13Z</dc:date>
+    </item>
+    <item>
+      <title>Midnight Commander обновился до 4.7.0</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=293</link>
+      <description>После продолжительного затишья наконец-то вышла новая версия популярного консольного файлового менеджера Midnight Commander (MC) — 4.7.0 — с рядом интересных новшеств.&lt;br /&gt;
+&lt;br /&gt;
+Среди ключевых изменений в релизе MC 4.7.0 по сравнению с версией 4.6.2 выделяются: родная поддержка UTF-8; масштабируемый текстовый пользовательский интерфейс(TUI); поддержка скинов; поддержка произвольных клавиатурных сочетаний; автоматическое определение кодовой страницы по текущей локали; поддержка файлов .ico и .djvu; частичная поддержка архивов CAB; поддержка IPv6 в FTPFS; отображение номеров строк, подсветка табов и пробелов в окончании, возможность поиска/замены в выбранной части текста в редакторе (mcedit).&lt;br /&gt;
+&lt;br /&gt;
+Стоит также отметить, что теперь разработкой Midnight Commander занимается новый коллектив, костяк которого составляют выходцы из России и Белоруссии.&lt;br&gt;</description>
+      <pubDate>Mon, 08 Feb 2010 16:35:09 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=293</guid>
+      <dc:date>2010-02-08T16:35:09Z</dc:date>
+    </item>
+    <item>
+      <title>Вышел ALT Linux 5.0.0 Desktop на базе KDE 4</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=292</link>
+      <description>Компания Альт Линукс объявила о выпуске дистрибутива для настольных компьютеров и ноутбуков — ALT Linux 5.0.0 Desktop.&lt;br /&gt;
+&lt;br /&gt;
+ALT Linux 5.0 создан на базе Пятой платформы, а в качестве графической рабочей среды по умолчанию используется KDE 4.3.4. Среди другого программного обеспечения, включенного в состав дистрибутива: Linux-ядро 2.6.30 c патчами, glibc 2.10.1, Xorg 7.4, OpenOffice.org 3.1.1, Firefox 3.5.5, GIMP 2.6.7, Inkscape 0.47.&lt;br /&gt;
+&lt;br /&gt;
+Образы ISO с ALT Linux 5.0 в сборках для архитектур i586 и x86_64 доступны на ftp.altlinux.ru.&lt;br&gt;</description>
+      <pubDate>Mon, 08 Feb 2010 16:33:20 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=292</guid>
+      <dc:date>2010-02-08T16:33:20Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

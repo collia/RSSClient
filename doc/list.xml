@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<list xmlns:atom="http://www.w3.org/2005/Atom"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"> 
+	<channel name="IT" modify="11.05.2010">
+		<title>IT happens</title>
+		<link>http://ithappens.ru/</link>
+		<atom:link href="http://ithappens.ru/rss/" rel="self" type="application/rss+xml" />
+		<description>IT-истории из жизни</description>
+		<language>ru</language>
+	</channel>
+	<channel name="bash" modify="11.05.2010">
+		<title>Bash</title>
+		<link>http://ppens.ru/</link>
+		<atom:link href="http://ithappens.ru/rss/" rel="self" type="application/rss+xml" />
+		<description>истории из жизни</description>
+		<language>ru</language>
+	</channel>
+	
+	
+</list>

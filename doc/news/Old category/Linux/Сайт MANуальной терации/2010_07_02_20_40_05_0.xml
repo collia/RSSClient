@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>-=RTFM=- - сайт MANуальной терапии. RSS 2.0</title>
+    <link>http://rtfm.fsay.net/rss.php</link>
+    <description>Сайт MANуальной терации.</description>
+    <dc:creator>Ch1t3r@gmail.com</dc:creator>
+    <item>
+      <title>Обновился Transmission</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=310</link>
+      <description>&lt;img src="http://www.nixp.ru/uploads/news/large_image/8199a530904004be594ded908c413a7bf7f74a42.png" alt="transmission" title="transmission" align="left"&gt;15 июня состоялся релиз новой версии популярного BitTorrent-клиента с открытым кодом — Transmission 2.0.&lt;br /&gt;
+&lt;br /&gt;
+За время подготовки релиза Transmission 2.0 разработчиками было закрыто 69 тикетов. Среди изменений, которые затронули все платформы, можно выделить функцию поиска пользователей в локальной сети («Local Peer Discovery»), уменьшение времени запуска программы и проверки локальных данных, поддержку большего числа форматов файлов с блок-листами, переход на стандарт системы измерения IEC (с двоичными приставками; т.е. KiB, MiB, GiB), улучшенную обработку ошибок трекера 404, оптимизацию запросов на скачку для доступной пропускной полосы.&lt;br /&gt;
+&lt;br /&gt;
+Кроме того, в демоне Transmission 2.0 появилась возможность выполнения произвольного скрипта после закачки torrent-файла, опциональная поддержка PID-файлов. В GTK-версии Transmission «минимальный вид» (Minimal View) был заменен на «компактный» (Compact View) и представлена новая панель для фильтрации по трекеру и т.п.&lt;br&gt;</description>
+      <pubDate>Sun, 20 Jun 2010 18:08:06 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=310</guid>
+      <dc:date>2010-06-20T18:08:06Z</dc:date>
+    </item>
+    <item>
+      <title>WordPress 3.0 - новая версия движка</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=309</link>
+      <description>&lt;img src="http://www.nixp.ru/uploads/news/large_image/d6c1b44cd5244462ece5d7586c4e7373238ff75e.png" alt="wordpress" title="wordpress" align="right"&gt;Вышла новая крупная версия популярного движка с открытым кодом для создания блогов и сайтов, написанного на PHP, — WordPress 3.0 (под кодовым названием «Thelonious»).&lt;br /&gt;
+&lt;br /&gt;
+WordPress 3.0 стал тринадцатым крупным релизом проекта и кульминацией полугода работы 218 контрибьюторов. Среди ключевых изменений авторы отмечают новую тему по умолчанию («Twenty Ten»; в ней представлены все новые возможности в API для создателей тем), завершение слияния WordPress и MU (редакция WordPress для возможности использования одной инсталляции движка для многих пользователей и сайтов), облегченный пользовательский интерфейс с контекстной помощью, функцию пакетного обновления плагинов (возможность обновить множество дополнений к WordPress в один клик).&lt;br /&gt;
+&lt;br /&gt;
+Интересны и дальнейшие планы разработчиков WordPress, которые намерены в ближайшее время сосредоточить свои усилия не на написании кода, а на «инфраструктуре», «окружении» и сообществе вокруг WordPress. Ожидается, что они разобьются на несколько коллективов, каждый из которых будет заниматься различными компонентами инфраструктуры, такими как Codex, форумы, совместимые API, каталоги тем и плагинов, почтовые подписки, wordcamp.org и т.п.&lt;br&gt;</description>
+      <pubDate>Sun, 20 Jun 2010 18:06:44 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=309</guid>
+      <dc:date>2010-06-20T18:06:44Z</dc:date>
+    </item>
+    <item>
+      <title>Вышел дистрибутив Fedora 13 Goddard</title>
+      <link>http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=308</link>
+      <description>&lt;img src="http://fedoraproject.org/static/images/f13launch.png" alt="Fedora" title="linux" align="left"&gt;&lt;br /&gt;
+&lt;br /&gt;
+Основные особенности и нововведения Fedora 13:&lt;br /&gt;
+&lt;br /&gt;
+    * Автоматическая установка драйвера принтера&lt;br /&gt;
+    * Автоматическая установка пакетов языковой поддержки&lt;br /&gt;
+    * Переработан инструмент для работы с учетными записями пользователей&lt;br /&gt;
+    * Управление цветом для калибрации мониторов и сканеров&lt;br /&gt;
+    * Экспериментальная поддержка 3D для видеоплат NVIDIA&lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;p&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;p&gt;Некоторые другие особенности данного выпуска:&lt;br /&gt;
+&lt;br /&gt;
+    * Новый способ установки Fedora через Интернет&lt;br /&gt;
+    * Удостоверение подлинности для пользователей с использованием SSSD&lt;br /&gt;
+    * Обновления в NFS&lt;br /&gt;
+    * Zarafa Open Source Edition, новый открытый пакет для совместной работы&lt;br /&gt;
+    * Откат системы для файловой системы Btrfs&lt;br /&gt;
+    * Улучшения в обработчиках SystemTap&lt;br /&gt;
+    * Стек Python 3, который может быть установлен одновременно с существующим стеком Python&lt;br /&gt;
+    * Поддержка полной спецификации Java EE 6 в Netbeans 6.8&lt;br /&gt;
+&lt;br /&gt;
+Release notes &lt;noindex&gt;&lt;a href="http://www.fedoraproject.org/wiki/Releases/13/FeatureList" rel="nofollow"&gt;Link&lt;/a&gt;&lt;/noindex&gt;&lt;br /&gt;
+Download | Скачать версию &lt;noindex&gt;&lt;a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/i386/iso/Fedora-13-i386-DVD.iso" rel="nofollow"&gt;32bit&lt;/a&gt;&lt;/noindex&gt;&lt;br /&gt;
+Download | Скачать версию &lt;noindex&gt;&lt;a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/x86_64/iso/Fedora-13-x86_64-DVD.iso" rel="nofollow"&gt;64bit&lt;/a&gt;&lt;/noindex&gt;&lt;br&gt;</description>
+      <pubDate>Wed, 26 May 2010 08:25:13 GMT</pubDate>
+      <guid isPermaLink="false">http://rtfm.fsay.net/modules.php?name=News&amp;file=view&amp;news_id=308</guid>
+      <dc:date>2010-05-26T08:25:13Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

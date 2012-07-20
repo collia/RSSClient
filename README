@@ -1,0 +1,11 @@
+Simple RSS client. 
+Already contains several RSS feeds. Has filtration, crypting.
+
+Has dependencies:
+junit4.8.1/junit-4.8.1.jar
+rome-1.0.jar
+jdom.jar
+modules-0.2.jar
+
+
+

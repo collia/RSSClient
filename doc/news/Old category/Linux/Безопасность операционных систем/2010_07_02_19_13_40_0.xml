@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</title>
+    <link>http://feeds.feedburner.com/securos/feed</link>
+    <description>Безопасность операционных систем</description>
+    <item>
+      <title>Формат конфигурационного файла Linux-PAM</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/NzSkruWzE0Q/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/format-konfiguracionnogo-fajla-linux-pam/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/format-konfiguracionnogo-fajla-linux-pam/</feedburner:origLink>
+      <description>Давайте рассмотрим подробнее конфигурационный файл службы подключаемых модулей аутентификации.
+Что есть конфигурационный файл? Это файл /etc/pam.conf или набор файлов в каталоге /etc/pam.d с именами, которые совпадают с именами отдельных служб.
+Оформляется как последовательность строк, каждая из которых информирует о подключении отдельного аутентификационного модуля и имеет следующий формат:
+service     module_type     control_flag     module_path   [...]</description>
+      <category>Модули аутентификации PAM</category>
+      <pubDate>Wed, 30 Jun 2010 21:04:18 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1675</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-30T21:04:18Z</dc:date>
+      <content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-1676" title="pam.conf_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/pam.conf_securos.org_.ua_.png" alt="pam.conf securos.org .ua  Формат конфигурационного файла Linux PAM" width="454" height="252" /></p>
+<p>Давайте рассмотрим подробнее конфигурационный файл службы подключаемых модулей аутентификации.</p>
+<p style="text-align: justify;">Что есть конфигурационный файл? Это файл /etc/pam.conf или набор файлов в каталоге /etc/pam.d с именами, которые совпадают с именами отдельных служб.</p>
+<p style="text-align: justify;">Оформляется как последовательность строк, каждая из которых информирует о подключении отдельного аутентификационного модуля и имеет следующий формат:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >service     module_type     control_flag     module_path     options</div></p>
+<p style="text-align: justify;">Поле service определяет прикладную службу и может принимать, например,  такие значение: login, rlogin, rsh, telnet, ftp, passwd, OTHER (последнее отвечает всем тем службам, которые не указаны явным образом). Присутствует, только если в качестве конфигурационного файла используется файл /etc/pam.conf.</p>
+<p style="text-align: justify;">Поле module_type определяет тип аутентификационного модуля. Возможные значения: auth, account, session, password.</p>
+<p style="text-align: justify;">Поле control_flag определяет поведение системы в случаях, когда с одной службой связывается несколько аутентификационных модулей одного типа (когда <em>стекуется </em>несколько аутентификационных модулей). Возможные значения: requisite, required, sufficient, optional.</p>
+<p style="text-align: justify;">Поле module_path указывает на расположение аутентификационных модулей в файловой системе (содержит имена файлов с аутентификационными модулями).</p>
+<p style="text-align: justify;">Поле options содержит специфические для всех аутентификационных модулей опции (например, use_smart_card).</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Пример конфигурационного файла:</div><div class='stb-grey-body_box' ></p>
+<p style="text-align: justify;">login        auth             required     pam_unix_auth.so<br />
+login        session        required     pam_unix_session.so<br />
+login        account       required     pam_unix_account.so<br />
+ftp             auth              required     pam_skey_auth.so<br />
+ftp             session         required     pam_unix_session.so<br />
+passwd    password    required     pam_unix_passwd.so<br />
+OTHER     auth             required     pam_unix_auth.so<br />
+OTHER     session        required     pam_unix_session.so<br />
+OTHER     account       required     pam_unix_account.so</div></p>
+<p style="text-align: justify;"><strong>При связывании нескольких аутентификационных механизмов с одной службой</strong> возникают следующие две проблемы:</p>
+<ul>
+<li style="text-align: justify;">реализация самой возможности подключать к одной службе несколько произвольных альтернативных аутентификационных механизмов одновременно (без переработки программного обеспечения этой службы);</li>
+<li>упрощение процедуры, через которую приходится проходить пользователю, когда применяется несколько аутентификационных механизмов одновременно.</li>
+</ul>
+<p style="text-align: justify;">Первая проблема в системе PAM решается путем реализации возможности динамического связывания программного обеспечения прикладных служб с несколькими произвольными аутентификационными модулями одного типа одновременно (в терминологии PAM это называется <em>стековкой</em> аутентификационных модулей). Для этого в конфигурационном файле нужно поместить несколько строк с одинаковым значением полей service и module_type. Стекуемые аутентификационные модули вызываются в той последовательности, в которой они перечислены в конфигурационном файле.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Фрагмент конфигурационного файла со стековкой аутентификационных модулей:</div><div class='stb-grey-body_box' ></p>
+<p style="text-align: justify;">login     auth     required     pam_unix_auth.so<br />
+login     auth     required     pam_kerb_auth.so     use_mapped_pass<br />
+login     auth     optional     pam_rsa_auth.so      use_first_pass<br />
+rlogin    auth     sufficient   pam_rhosts_auth.so<br />
+rlogin    auth     required     pam_unix_auth.so</div></p>
+<p style="text-align: justify;"><div id="stb-container" class="stb-container"><div id='caption' class='stb-info-caption_box' >ПРИМЕЧАНИЕ:</div><div id='body' class='stb-info-body_box' > Модуль pam_rhosts_auth.so реализует ту часть стандартного поведения rlogin-сервера, согласно которой пароль не спрашивается, если клиентский узел обозначен в файлах /etc/hosts.equiv или ~/.rhosts.</div></div></p>
+<p style="text-align: justify;">Поле control_flag определяет поведение системы в зависимости от результата выполнение соответствующего аутентификационного модуля.</p>
+<p style="text-align: justify;">На практике применяется, главным образом, стековка модулей аутентификации. Дальше рассмотрим семантику значений поля control_flag<em> </em>по отношению к модулям аутентификации:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' ></p>
+<ul>
+<li style="text-align: justify;"><strong>requisite</strong>: как только соответствующий модуль возвратит ошибку, принимается решение о неуспехе аутентификации, при этом остальные стекуемые модули уже не выполняются;</li>
+<li><strong>required</strong>: если соответствующий модуль возвратит ошибку, принимается решение о неуспехе аутентификации, но при этом остальные стекуемые модули тоже выполняются;</li>
+<li><strong>sufficient</strong>: если соответствующий модуль будет выполнен успешно, принимается решение об успехе аутентификации, при этом остальные стекуемые модули уже не выполняются (но только если все предыдущие модули, помеченные как <em>required</em>, тоже выполнены успешно);</li>
+<li><strong>optional</strong>: успех и ошибка соответствующего модуля имеют значение, только если это единый модуль, подключенный к данной службе (в других случаях неуспех выполнения такого модуля не считается основанием для отказа в аутентификации).</div></li>
+</ul>
+<p style="text-align: justify;">Применение нескольких аутентификационных механизмов одновременно может требовать от пользователей запоминания нескольких паролей. Это неудобно, однако, использование одного пароля для разных механизмов приводит к уязвимости стойкости системы аутентификации в общем, поскольку компрометация одного пароля приводила бы в таком случае к компрометации системы в целом. Кроме того, разные аутентификационные механизмы предъявляют разные требования относительно паролей (относительно длины, алфавита, интервала обновления и т.п.), что усложняет применение одного пароля для нескольких аутентификационных механизмов.</p>
+<p style="text-align: justify;">Для решения этой проблемы в системе PAM предусмотренный механизм <em><strong>маппинга паролей (password mapping)</strong></em>. Благодаря этому механизму пользователю, который реально имеет разные пароли для разных аутентификационных механизмов, достаточно помнить лишь один из своих паролей &#8211; основной (primary). Предполагается, что это наиболее стойкий из паролей пользователя. Другие – дополнительные (secondary) – пароли пользователя сохраняются в домашнем каталоге пользователя или другом защищенном месте (например, на флеш-карте пользователя) в зашифрованном виде; при этом в качестве ключа шифрования используется основной пароль пользователя.</p>
+<p style="text-align: justify;">Для поддержки возможности использовать одного пароля для нескольких аутентификационных механизмов разработчики аутентификационных модулей должны поддерживать следующие опции:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' ></p>
+<ul>
+<li style="text-align: justify;"><strong>use_first_pass</strong>: использовать тот же пароль, что и первый для стекуемых аутентификационных модулей, при этом в случае неудачной аутентификации по этому паролю не спрашивать новый;</li>
+<li><strong>try_first_pass</strong>: использовать тот же пароль, что и первый для стекуемых аутентификационных модулей, при этом в случае неудачной аутентификации по этому паролю спросить новый;</li>
+<li><strong>use_mapped_pass</strong>: получить пароль с использованием механизма маппинга паролей, при этом в случае неудачной аутентификации по этому паролю не спрашивать новый;</li>
+<li><strong>try_mapped_pass</strong>: получить пароль с использованием механизма маппинга паролей, при этом в случае неудачной аутентификации по этому паролю спросить новый.</div></li>
+</ul>
+<p style="text-align: justify;">Механизм маппинга паролей не может быть применен для аутентификационных модулей, которые предусматривают использование одноразовых паролей.</p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/ZpRBxtEGSdEk0Z8SonYwhiiGs6w/0/da"><img src="http://feedads.g.doubleclick.net/~a/ZpRBxtEGSdEk0Z8SonYwhiiGs6w/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/ZpRBxtEGSdEk0Z8SonYwhiiGs6w/1/da"><img src="http://feedads.g.doubleclick.net/~a/ZpRBxtEGSdEk0Z8SonYwhiiGs6w/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=NzSkruWzE0Q:cY05uHTAJQw:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/NzSkruWzE0Q" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>0</slash:comments>
+    </item>
+    <item>
+      <title>Сканер SQL-Injection на PHP</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/w3aH1dPC_-k/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/skaner-sql-injection-na-php/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/skaner-sql-injection-na-php/</feedburner:origLink>
+      <description>Данный Injection Scanner &amp;#8211; это PHP-сценарий, который анализирует строки запроса в URL. Сравнивая строку запроса с известной инъекцией, удаляет лишний код, нейтрализуя попытку взлома, по утверждению автора достаточно эффективно справляется со своей задачей. Алгоритм работы таков &amp;#8211; когда сплоит обнаружен, сценарий останавливает все PHP процессы, обрабатывающие запросы к базе данных и информирует посетителя про обнаружение. [...]</description>
+      <category>Безопасность скриптов</category>
+      <pubDate>Tue, 29 Jun 2010 13:39:35 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1701</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-29T13:39:35Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1706 aligncenter" title="sql_injection_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/sql_injection_securos.org_.ua_.jpg" alt="sql injection securos.org .ua  Сканер SQL Injection на PHP" width="440" height="340" /></p>
+<p style="text-align: justify;">Данный Injection Scanner &#8211; это PHP-сценарий, который анализирует строки запроса в URL. Сравнивая строку запроса с известной инъекцией, удаляет лишний код, нейтрализуя попытку взлома, по утверждению автора достаточно эффективно справляется со своей задачей. Алгоритм работы таков &#8211; когда сплоит обнаружен, сценарий останавливает все PHP процессы, обрабатывающие запросы к базе данных и информирует посетителя про обнаружение. IP адреса, связанные с инъекциями, могут быть запрещены для страниц, на которых включен скрипт, но при наличии прокси и генерации псевдо-IP-адресов, по моему данная функция не оправдывает себя.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Способ подключения:</div><div class='stb-grey-body_box' ></p>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;"><span style="color: #339933;">&#60;</span>html<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;</span>head<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;</span>title<span style="color: #339933;">&#62;</span> Тест <span style="color: #339933;">&#60;/</span>title<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;/</span>head<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;</span>body<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;</span> ? php <span style="color: #b1b100;">include</span> <span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'/absolute/path/to/scan.php '</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><span style="color: #000000; font-weight: bold;">?&#62;</span>
+<span style="color: #339933;">&#60;</span> ? php 
+<span style="color: #b1b100;">echo</span> <span style="color: #0000ff;">&#34;Бла-бла-бла!&#34;</span><span style="color: #339933;">;</span> 
+<span style="color: #000000; font-weight: bold;">?&#62;</span>
+<span style="color: #339933;">&#60;/</span>body<span style="color: #339933;">&#62;</span>
+<span style="color: #339933;">&#60;/</span>html<span style="color: #339933;">&#62;</span></pre></div></div>
+
+<p></div></p>
+<p style="text-align: justify;">Там где /absolute/path/to/scan.php прописывайте свой путь к файлу scan.php. Обратите, также внимание на версию php, нужна на меньше 5, желательно 5.2.5. Методом эксперимента можно потестить и на других. В целом не плохой метод борьбы со взломами.</p>
+<p style="text-align: justify;"><div id="stb-container" class="stb-container"><div id='caption' class='stb-download-caption_box' >Скачать myPHPscripts Injection Scanner:</div><div id='body' class='stb-download-body_box' ></p>
+<p style="text-align: justify;"><a title="сканер SQL-инъекций на PHP" href="http://securos.org.ua/wp-content/uploads/2010/06/injection_scanner.zip" target="_blank"><strong>injection_scanner.zip</strong></a></div></div></p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/plMp_F9CRg3FaWkVAGly6C93sXU/0/da"><img src="http://feedads.g.doubleclick.net/~a/plMp_F9CRg3FaWkVAGly6C93sXU/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/plMp_F9CRg3FaWkVAGly6C93sXU/1/da"><img src="http://feedads.g.doubleclick.net/~a/plMp_F9CRg3FaWkVAGly6C93sXU/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=w3aH1dPC_-k:uQ1x_hyBP3Y:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/w3aH1dPC_-k" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>2</slash:comments>
+    </item>
+    <item>
+      <title>Назначение, принципы функционирования системы PAM</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/hnoyhXLlp-Y/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/naznachenie-principy-funkcionirovaniya-sistemy-pam/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/naznachenie-principy-funkcionirovaniya-sistemy-pam/</feedburner:origLink>
+      <description>Подключаемые модули аутентификации (PAM &amp;#8211; Pluggable Authentication Modules) не защищают систему от атаки, но с их помощью можно это дело предотвратить. В этом ознакомительном посте предлагаю рассмотреть общие понятия, касательно PAM и таким образом положить начало циклу нескольких постов на эту тему.
+Назначение системы PAM:
+
+обеспечить возможность свободно выбирать механизм аутентификации по замалчиванию;
+обеспечить возможность применять для разных [...]</description>
+      <category>Модули аутентификации PAM</category>
+      <pubDate>Thu, 24 Jun 2010 21:00:45 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1666</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-24T21:00:45Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1668 aligncenter" title="pam_1_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/pam_1_securos.org_.ua_.png" alt="pam 1 securos.org .ua  Назначение, принципы функционирования системы PAM" width="437" height="263" /></p>
+<p style="text-align: justify;">Подключаемые модули аутентификации (PAM &#8211; Pluggable Authentication Modules) не защищают систему от атаки, но с их помощью можно это дело предотвратить. В этом ознакомительном посте предлагаю рассмотреть общие понятия, касательно PAM и таким образом положить начало циклу нескольких постов на эту тему.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Назначение системы PAM:</div><div class='stb-grey-body_box' ></p>
+<ol style="text-align: justify;">
+<li style="text-align: justify;">обеспечить возможность свободно выбирать механизм аутентификации по замалчиванию;</li>
+<li>обеспечить возможность применять для разных прикладных служб разные механизмы аутентификации;</li>
+<li>обеспечить возможность разрабатывать прикладные службы и механизмы аутентификации независимо.</div></li>
+</ol>
+<p style="text-align: justify;">Функционирование системы PAM базируется на возможности динамично подключать к программному обеспечению прикладных служб программные модули, которые реализуют те или иные механизмы аутентификации.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Основные компоненты системы PAM:</div><div class='stb-grey-body_box' ></p>
+<ol style="text-align: justify;">
+<li style="text-align: justify;">библиотека обобщенных функций аутентификации (PAM library);</li>
+<li>набор специфических для того или иного механизма аутентификации модулей аутентификации.</div></li>
+</ol>
+<p style="text-align: justify;">Первый обеспечивает создание для прикладных служб обобщенного интерфейса доступа к модулям аутентификации, подгружая по необходимости нужные модули (в соответствии с содержанием конфигурационного файла). Вторые обеспечивают реализацию отдельных механизмов аутентификации.</p>
+<p style="text-align: justify;">Кроме модулей, которые реализуют функции только аутентификации, предполагается наличие модулей, предназначенных для выполнения других, связанных с аутентификацией, задач, таких как управление пользовательскими сеансами (session management), учетными записями (account management) и паролями (password management).</p>
+<p style="text-align: justify;">Таким образом, предусмотрено использование <strong>четырех видов аутентификационных модулей</strong>:</p>
+<ul style="text-align: justify;">
+<li style="text-align: justify;"><strong><em>модули аутентификации</em></strong> (разрешают выполнить аутентификацию субъекта доступа к ресурсам с использованием того или иного механизма аутентификации);</li>
+<li><strong><em>модули управления учетными записями</em> </strong>(разрешают проверить, возможен ли данному субъекту доступ в нужный момент согласно его учетной записи (не является ли его учетная запись заблокированной по той или иной причине, разрешается ли ему работать в данное время));</li>
+<li><strong><em>модули управления сеансами</em></strong> (разрешают выполнять разные действия в начале и в конце пользовательских сеансов, например, зарегистрировать время их начала и/или продолжительность с использованием одного из механизмов регистрации);</li>
+<li style="text-align: justify;"><strong><em>модули управления паролями</em></strong> (разрешают изменять пароли).</li>
+</ul>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/Zo14nUNF1Ez5nU91nIBRUJqIJrg/0/da"><img src="http://feedads.g.doubleclick.net/~a/Zo14nUNF1Ez5nU91nIBRUJqIJrg/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/Zo14nUNF1Ez5nU91nIBRUJqIJrg/1/da"><img src="http://feedads.g.doubleclick.net/~a/Zo14nUNF1Ez5nU91nIBRUJqIJrg/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=hnoyhXLlp-Y:xHgzgirqRqU:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/hnoyhXLlp-Y" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>0</slash:comments>
+    </item>
+    <item>
+      <title>PortSentry для обнаружения скана портов и перехвата трафика</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/qUvYHsN9MwA/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/portsentry-dlya-obnaruzheniya-skana-portov-i-perexvata-trafika/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/portsentry-dlya-obnaruzheniya-skana-portov-i-perexvata-trafika/</feedburner:origLink>
+      <description>Вступление
+Программа, предназначенная для защиты систем. С ее помо­щью выявляются попытки сканирования системы и доступа к различным портам. Можно сконфигурировать программу так, чтобы при обнаружении сканера она выполняла опре­деленные действия, например заносила адрес сканера в файл hosts.deny или блоки­ровала маршрут к нему в таблице маршрутизации. Помимо этого программа генерирует журнальные сообщения с указанием типа атаки и [...]</description>
+      <category>Детекторы атак</category>
+      <pubDate>Wed, 16 Jun 2010 20:45:08 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1650</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-16T20:45:08Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1655   aligncenter" title="portsentry_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/portsentry_securos.org_.ua_.jpg" alt="portsentry securos.org .ua  PortSentry для обнаружения скана портов и перехвата трафика" width="460" height="359" /></p>
+<h2 style="text-align: justify;"><span style="color: #888888;">Вступление</span></h2>
+<p style="text-align: justify;">Программа, предназначенная для защиты систем. С ее помо­щью выявляются попытки сканирования системы и доступа к различным портам. Можно сконфигурировать программу так, чтобы при обнаружении сканера она выполняла опре­деленные действия, например заносила адрес сканера в файл hosts.deny или блоки­ровала маршрут к нему в таблице маршрутизации. Помимо этого программа генерирует журнальные сообщения с указанием типа атаки и адреса узла-сканера.</p>
+<p style="text-align: justify;"><div class='stb-download_box' ></p>
+<h3 style="text-align: justify;">Информация о продукте:</h3>
+<p style="text-align: justify;">Программа разработана компанией Psionic Software. Она превратилась в коммер­ческий продукт (версии <em>1.х </em>и <em>2.х), </em>но версия 1.0.11 (и ряд более старых версий в форматах rpm и tar.gz) по-прежнему доступна на многих FTP-серверах, включая ftp.redhat.com.</div></p>
+<h2 style="text-align: justify;"><span style="color: #888888;">Инсталяция и конфигурирование</span></h2>
+<p style="text-align: justify;"><span style="color: #000000;">В случае RPM-дистрибутива воспользуйтесь ко­мандой rpm, а в случае tar-архива — командами make linux и make install. Рассмотрим первый вариант, так как с ним проще работать.</span></p>
+<p style="text-align: justify;">При инсталляции RPM-дистрибутива программа PortSentry регистрируется в файле /etc/services, а в каталоге /etc/rc.d/init.d создается сценарий portsen-try. Дополнительная конфигурация не требуется, но есть ряд моментов, которые следует учесть.</p>
+<p style="text-align: justify;"><div class='stb-info_box' ></p>
+<p style="text-align: justify;">Программа PortSentry способна работать в трех разных режимах по отношению как к UDP-, так и к TCP-портам. Другими словами, можно одновременно запустить 6 эк­земпляров программы, решающих разные задачи. По умолчанию используется базовый режим. В этом режиме программа подключается к заранее заданным портам, делая вид, будто является некой сетевой службой. В невидимом режиме порты выбранные прослу­шиваются на уровне сокетов, что позволяет выявлять различные варианты невидимого сканирования (TCP SYN, TCP FIN, TCP NULL, TCP Xmas Tree). В усовершенствованном невидимом режиме контролируются все порты в диапазоне 1-1023 (верхнюю границу можно расширить, хотя это не рекомендуется). Нужно заметить, что в невидимых режимах про­грамма часто объявляет &#8220;ложную тревогу&#8221;.</div></p>
+<p style="text-align: justify;">В процессе инсталляции создаются списки контролируемых TCP- и UDP-портов. По умолчанию это ТСР-порты 1, 11, 15, 143, 540, 635, 1080, 1524, 2000, 5742, 6667, 12345, 12346, 20034, 31337, 32771, 32772, 32773, 32774, 40421, 49724, 54320 и UDP-порты 1, 513, 635, 640, 641, 700, 32770, 32771, 32772, 32773, 32774, 31337, 54321. Программа конфигурируется на автоматическое блокирование последующих попыток подключиться к компьютеру с атакующего узла.</p>
+<p style="text-align: justify;">Многих администраторов не устраивают установки по умолчанию. В конфигураци­онных файлах, находящихся в каталоге /etc/portsentry, содержится ряд парамет­ров, которые можно изменить для повышения эффективности программы и адаптации ее к конкретным условиям. Таких файлов три: portsentry.conf, portsentry.modes и portsentry. ignore. В файле portsentry. conf хранятся наиболее важные уста­новки, включая списки портов, параметры игнорирования, определения удаляемых марш­рутов и внешних команд, пороговые значения и др. Файл portsentry.modes опре­деляет, в каких режимах следует запускать программу, а файл portsentry. ignore содержит IP-адреса систем, которые не нужно блокировать.</p>
+<h3 style="text-align: justify;"><span style="color: #888888;">Файл portsentry.conf</span></h3>
+<p style="text-align: justify;">Первый раздел в нем — это раздел конфигурирования портов, где определяются TCP- и UDP-порты, контролируемые в ба­зовом режиме. Установки по умолчанию выглядят так:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >TCP_PORTS=&#8221;1, 11, 15, 143, 540, 635, 1080, 1524, 2000, 5742, 6667, 12345, 12346, 20034, 31337, 32771, 32772, 32773, 32774, 40421, 49724, 54320&#8243; UDP_PORTS=&#8221;1, 513, 635, 640, 641, 700, 32770, 32771, 32772, 32773, 32774, 31337, 54321&#8243;</div></p>
+<p style="text-align: justify;">В виде комментариев в файле содержится еще несколько готовых списков. Второй раздел содержит параметры усовершенствованного невидимого режима. Сна­чала задается число контролируемых портов:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >ADVANCED_PORTS_TCP=&#8221;1023&#8243;</p>
+<p style="text-align: justify;">ADVANCED_PORTS_UDP=&#8221;1023&#8243;</div></p>
+<p style="text-align: justify;">Затем указываются порты, которые программа должна игнорировать. Обычно это пор­ты, по которым часто выдается &#8220;ложная тревога&#8221;:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' ># RPC,   TCP  ident  и~NetBIOS</p>
+<p style="text-align: justify;">ADVANCED_EXCLUDE_TCP=&#8221;111, 113, 139&#8243;</p>
+<p style="text-align: justify;"># RIP, NetBIOS и~ВООТР<br />
+ADVANCED_EXCLUDE_UDP=&#8221;520, 138, 137, 67&#8243;</div></p>
+<p style="text-align: justify;">В следующем разделе задается местонахождение трех конфигурационных файлов про­граммы. Файл portsentry. ignore содержит список IP-адресов, которые не должны блокироваться. Файл portsentry.history содержит пополняющийся список адре­сов, которые были заблокированы. Файлы portsentry.blocked. * содержат списки адресов, заблокированных в данном сеансе. Один такой файл создается для протокола UDP, другой — для протокола TCP. Установки по умолчанию таковы:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >#    Блокируемые узлы<br />
+IGNORE_FILE=&#8221;/etc/portsentry/portsentry.ignore&#8221;</p>
+<p style="text-align: justify;">#    Узлы, которым перекрывался доступ (пополняющийся список)<br />
+HISTORY_FILE=&#8221;/var/portsentry/portsentry.history&#8221;</p>
+<p style="text-align: justify;">#    Узлы, заблокированные выданном сеансе (временный список</p>
+<p style="text-align: justify;">#    до следующей перезагрузки)</p>
+<p style="text-align: justify;">BLOCKED_FILE=&#8221;/var/portsentry/portsentry.blocked&#8221;</div></p>
+<p style="text-align: justify;">Далее задаются действия, предпринимаемые в ответ на атаку UDP- и TCP-портов. Они кодируются по номерам: 0, 1 и 2. Действие 0 означает, что факт сканирования регистри­руется, но узел не блокируется. Действие 1 означает блокирование любых сканеров UDP-и TCP-портов (активизируются установки KILL_ROUTE и KILL_HOSTS_DENY). Нако­нец, действие 2 (задано по умолчанию) заставляет программу временно (до окончания сеанса) заблокировать доступ к службе, зарегистрировать факт сканирования и выполнить действия, указанные в директивах KILL_RUN_CMD. Установки по умолчанию таковы:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >BLOCK_UDP=&#8221;2&#8243;</p>
+<p style="text-align: justify;">BLOCK_TCP=&#8221;2&#8243;</div></p>
+<p style="text-align: justify;">В разделе удаляемых маршрутов содержатся директивы KILL_ROUTE. Установки по умолчанию вполне подходят для Linux:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >KILL_ROUTE=&#8221;/sbin/route add -host  $TARGET$  gw  127.0.0.1&#8243;</div></p>
+<p style="text-align: justify;">В следующем разделе определяется, какой текст добавляется в файл hosts.deny для блокирования узла, занимающегося сканированием. Установка по умолчанию такова:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >KILL_HOSTS_DENY=&#8221;ALL:   $TARGET$&#8221;</div></p>
+<p style="text-align: justify;">В последнем разделе задается порог сканирования: сколько подключений к порту должно произойти, прежде чем программа распознает сканер. Нулевое значение означает немедленное реагирование:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >SCAN_TRIGGER=&#8221;0&#8243;</div></p>
+<h3 style="text-align: justify;"><span style="color: #888888;">Файл portsentry .modes</span></h3>
+<p style="text-align: justify;">Здесь задаются режимы запуска программы PortSentry. Как уже говорилось, всего поддерживается 6 режимов: tcp (базовый режим TCP), udp (базо­вый режим UDP), step (невидимый режим TCP), sudp (невидимый режим UDP), atcp (усовершенствованный невидимый режим TCP) и audp (усовершенствованный невиди­мый режим UDP). По умолчанию используются следующие установки:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >tcp</p>
+<p style="text-align: justify;">udp</p>
+<p style="text-align: justify;">#stcp</p>
+<p style="text-align: justify;">#sudp</p>
+<p style="text-align: justify;">#atcp</p>
+<p style="text-align: justify;">#audp</div></p>
+<p style="text-align: justify;">Но эффективнее запускать программу в одном из невидимых режимов:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >#tcp</p>
+<p style="text-align: justify;">#udp</p>
+<p style="text-align: justify;">#stcp</p>
+<p style="text-align: justify;">#sudp</p>
+<p style="text-align: justify;">atcp</p>
+<p style="text-align: justify;">audp</div></p>
+<h2 style="text-align: justify;"><span style="color: #888888;">Запуск PortSentry</span></h2>
+<p style="text-align: justify;">После конфигурирования ее можно запустить с помощью команды:</p>
+<p style="text-align: justify;"><div class='stb-black_box' ># /etc/rc.d/init.d/portsentry start</div></p>
+<p style="text-align: justify;">или просто перезагрузить систему (сценарий portsentry будет вызван при переходе на уровень выполнения 3 или 5). Сообщения программы направляются в файл /var/log/ messages. Типичные сообщения показаны ниже:</p>
+<p style="text-align: justify;"><div class='stb-black_box' >Apr 13 13:43:23 maureen portsentry[25247]: adminalert: Psionic PortSentry 1.0 is starting.</p>
+<p style="text-align: justify;">Apr 13 13:43:23 maureen portsentryt25244]: adminalert: Advanced mode will monitor first 1023 ports</p>
+<p style="text-align: justify;">Apr 13 13:43:23 maureen portsentry: Starting portsentry -audp: succeeded Apr 13 13:43:23 maureen portsentry[25248]: adminalert: Advanced mode will manually exclude port: 520</p>
+<p style="text-align: justify;">Apr 13 13:43:23 maureen portsentry[25248]: adminalert: Advanced Stealth scan detection mode activated. Ignored UDP port: 111 Apr 13 13:43:23 maureen portsentry[25248]: adminalert: Advanced Stealth scan detection mode activated. Ignored UDP port: 818</p>
+<p style="text-align: justify;">Apr 13 13:43:58 maureen portsentry[25244]: attackalert: SYN/Normal scan from host: 192.168.1.15/192.168.1.15 to TCP port: 980 Apr 13 13:43:58 maureen portsentry[25244]: attackalert: Host: 192.168.1.15/192.168.1.15 is already blocked Ignoring</p>
+<p style="text-align: justify;">Apr 13 15:20:08 maureen portsentry[25248]: attackalert: UDP scan from host: drgnome/192.168.1.47 to UDP port: 525 Apr 13 15:20:08 maureen portsentry[25248]: attackalert: Host: drgnome/192.168.1.47 is already blocked Ignoring</div></p>
+<p style="text-align: justify;">При работе с программой PortSentry следует помнить о том, что можно легко забло­кировать доступ легальным пользователям из-за ложных предупреждений, посылаемых программой. Если это произошло, нужно перезапустить программу, чтобы очистить фай­лы сеансов, а также проверить файл /etc/hosts. deny. Можно также добавить прове­ренные узлы в файл /etc/portsentry/portsentry. ignore, чтобы программа их не блокировала.</p>
+<p style="text-align: justify;"><span style="color: #000000;"> </span></p>
+<p style="text-align: justify;"><span style="color: #888888;"> </span></p>
+<p style="text-align: justify;"><span style="color: #888888;"> </span></p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/NwiEi_2uQ41lw-W2aAYMA9ixchY/0/da"><img src="http://feedads.g.doubleclick.net/~a/NwiEi_2uQ41lw-W2aAYMA9ixchY/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/NwiEi_2uQ41lw-W2aAYMA9ixchY/1/da"><img src="http://feedads.g.doubleclick.net/~a/NwiEi_2uQ41lw-W2aAYMA9ixchY/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=qUvYHsN9MwA:5DwN1mfvF7U:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/qUvYHsN9MwA" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>9</slash:comments>
+    </item>
+    <item>
+      <title>Пользователи, группы и управление над ними</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/EOKMLSHqVGU/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/polzovateli-gruppy-i-upravlenie-nad-nimi/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/polzovateli-gruppy-i-upravlenie-nad-nimi/</feedburner:origLink>
+      <description>Когда было описано файл /etc/login.defs говорилось о том, что при создании новой учетной записи (с помощью команды useradd или одной из графических утилит), идентификатор группы (GID) выбирается автоматически. При этом оказывается, что он совпадает с идентификатором пользователя (UID). Такие группы называются приватными.
+Преимущество приватных групп состоит в том, что каждый пользователь является членом своей собственной группы. [...]</description>
+      <category>Учетные записи пользователей</category>
+      <pubDate>Sun, 13 Jun 2010 23:24:05 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1613</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-13T23:24:05Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1623 aligncenter" title="u_group_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/u_group_securos.org_.ua_.jpg" alt="u group securos.org .ua  Пользователи, группы и управление над ними" width="470" height="261" /></p>
+<p style="text-align: justify;">Когда было описано файл <a title="файл скрытых паролей" href="http://securos.org.ua/fajl-skrytyx-parolej/" target="_blank">/etc/login.defs</a> говорилось о том, что при создании новой учетной записи (с помощью команды <strong>useradd</strong> или одной из графических утилит), идентификатор группы (GID) выбирается автоматически. При этом оказывается, что он совпадает с идентификатором пользователя (UID). Такие группы называются <strong>приватными</strong><em>.</em></p>
+<p style="text-align: justify;">Преимущество приватных групп состоит в том, что каждый пользователь является членом своей собственной группы. В этом случае можно задать значение umask равным 007, а не 027.</p>
+<p style="text-align: justify;">Другой особенностью является то, что можно настроить пароли для групп и создать файл групповых скрытых паролей — /etc/gshadow. Это делается с помощью команды <strong>grpconv</strong>, которая аналогична команде <strong>pwconv</strong>. Групповой пароль создастся командой <strong>gpasswd</strong>. Она доступна суперпользователю, который может назначить одно­го из членов группы ее администратором. Члены группы могут пользоваться командой <strong>newgrp</strong> с идентификатором группы в качестве аргумента, не вводя пароль. Остальные пользователи смогут присвоить себе идентификатор группы, только зная ее пароль. Это менее безопасно, чем вообще отказаться от групповых паролей. В последнем случае ко­манда <strong>newgrp</strong> не позволит пользователю присвоить себе идентификатор группы, которой он не принадлежит. Впрочем, если групповые пароли зачем-то необходимы, не пережи­вайте. Суперпользователь может выполнить команду <strong>gpasswd</strong><strong> -</strong><strong>R</strong> для всех системных и других важных групп, что аналогично запрету применять к ним команду <strong>newgrp</strong> (этот запрет не касается самого суперпользователя, естественно).</p>
+<p style="text-align: justify;">Не забывайте! Что необходимо соблюдать осторожность, создавая группы пользователей. Убедитесь в том, что груп­па не относится к числу системных (идентификатор лежит в интервале от 100 до 60001) и что в нее включаются файлы и каталоги, находящиеся в несистемных разделах (т.е. не /, /usr, /var и т.д.). Если создаются групповые пароли, желательно запретить команду <strong>newgrp</strong> как минимум для всех системных групп (с помощью команды <strong>gpasswd</strong><strong> -</strong><strong>R</strong>).</p>
+<p style="text-align: justify;">PS: популярность социальных сетей не имеет границ и вот на блоге &#8220;Контекст + 2.0&#8243; я нашел статью про один из движков под это благое дело - <a href="http://www.kohtekct.com/livestreet-besplatnyj-dvizhok-socialnoj-seti/" target="_blank">LiveStreet</a>.</p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/wf2AAkD341sTnuqTzoqfsIZbCtk/0/da"><img src="http://feedads.g.doubleclick.net/~a/wf2AAkD341sTnuqTzoqfsIZbCtk/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/wf2AAkD341sTnuqTzoqfsIZbCtk/1/da"><img src="http://feedads.g.doubleclick.net/~a/wf2AAkD341sTnuqTzoqfsIZbCtk/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=EOKMLSHqVGU:ILuuZE0Zg8E:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/EOKMLSHqVGU" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>5</slash:comments>
+    </item>
+    <item>
+      <title>Суперпользователь – звучит гордо</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/MjFWTeBQkiM/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/superpolzovatel-zvuchit-gordo/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/superpolzovatel-zvuchit-gordo/</feedburner:origLink>
+      <description>Суперпользователь — сила и неограниченная власть в Linux. Учетная запись root предоставляет доступ ко всей системе. С одной стороны, это очень удобно и полез­но. С другой — постоянная головная боль администраторов, вынужденных сражаться со всякой &amp;#8220;нечистью&amp;#8221;, рвущейся к власти. Давайте вместе рассмотрим советы относительно конфигурирования и использования учетной записи root. Итак.
+Существуют четыре важных правила, касающихся [...]</description>
+      <category>Учетные записи пользователей</category>
+      <pubDate>Wed, 09 Jun 2010 22:15:31 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1602</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-09T22:15:31Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1606 aligncenter" title="ssh_root_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/06/ssh_root_securos.org_.ua_.jpg" alt="ssh root securos.org .ua  Суперпользователь   звучит гордо" width="450" height="679" /></p>
+<p style="text-align: justify;">Суперпользователь — сила и неограниченная власть в Linux. Учетная запись root предоставляет доступ ко всей системе. С одной стороны, это очень удобно и полез­но. С другой — постоянная головная боль администраторов, вынужденных сражаться со всякой &#8220;нечистью&#8221;, рвущейся к власти. Давайте вместе рассмотрим советы относительно конфигурирования и использования учетной записи root. Итак.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Существуют четыре важных правила, касающихся использования учетной записи root:</div><div class='stb-grey-body_box' ></p>
+<ul style="text-align: justify;">
+<li>Разрешайте доступ к учетной записи root только через команды su и sudo.</li>
+<li>Переходите в режим суперпользователя только тогда, когда это действительно необходимо.</li>
+<li>Тщательно контролируйте команды, выполняемые в режиме суперпользователя.</li>
+<li>Если необходимо заниматься дистанционным администрированием системы на пра­вах суперпользователя, используйте пакет SSH и утилиту sudo.</div></li>
+</ul>
+<p style="text-align: justify;">Нежелательно постоянно работать в режиме суперпользователя. Рассматривайте учет­ную запись root как специальную (административную), необходимую лишь в особых случаях. Переходить в привилегированный режим необходимо только для вы­полнения действий, доступных лишь суперпользователю.</p>
+<p style="text-align: justify;">Став суперпользователем, будьте внимательны. Например, прежде чем выполнить команду <strong>shutdown</strong>, убедитесь, что вы зарегистрированы в той системе, которую собираетесь остановить. Для этого воспользуйтесь командой <strong>uname</strong><strong> -</strong><strong>n</strong> или <strong>hostname</strong>. Прежде чем выполнять команду <strong>rm</strong><strong> </strong><strong>-</strong><strong>r</strong><strong> *</strong>, убедитесь, что вы находитесь в нужном каталоге. Команда <strong>rm</strong><strong> -</strong><strong>i</strong> будет запрашивать подтверждение на удаление каждого файла.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Советы по ограничению действий суперпользователя:</div><div class='stb-grey-body_box' ></p>
+<p style="text-align: justify;">1. Задайте переменную среды PATH так, чтобы она содержала минимум элементов.</p>
+<ul>
+<li style="text-align: justify;">Не указывайте каталоги, открытые для записи всем пользователям: можно случайно запустить &#8220;троянчика&#8221;.</li>
+</ul>
+<ul>
+<li>По той же самой причине не указывайте &#8220;.&#8221; (жесткая ссылка на текущий каталог).</li>
+</ul>
+<p>2. Указывайте полные имена вызываемых команд.</p>
+<p>3. Не указывайте &#8220;/&#8221; в качестве начального каталога суперпользователя.</div></p>
+<p style="text-align: justify;">Почему необходимо использовать SSH? Потому, что он позволяет осуществлять аутентифи­кацию, выходящую за рамки традиционных паролей Linux. Он организует защищенный туннель между двумя системами, шифруя все передаваемые данные. Всегда пользуйтесь этим пакетом, если необходимо стать суперпользователем в удаленной системе.</p>
+<h2><strong><span style="color: #888888;">Группы суперпользователей</span></strong></h2>
+<p style="text-align: justify;">В крупных системах нередко возникает ситуация, когда административными полномочиями необходимо наделить целую группу людей. Иногда для этого создается несколько root-овских учетных записей. Предположим, к примеру, что Маша и Вася отвечают за сопровождение одной и той же системы. Один из способов контроля их деятельности — создать две учетные записи, скажем, rootm для Машки и rootv для Васьки, каждую со своим уникальным паролем и идентификатором пользователя 0. Если Машуне нужен привилегированный доступ, она может зарегистрироваться в системе напрямую или с помощью команды su как пользователь rootm. To же самое может сделать и Василий, но от имени пользователя rootv.</p>
+<p style="text-align: justify;">Преимущество такого подхода состоит в том, что появляется возможность раздельного контроля (поговорим об этом в следующих статьях). Кроме того, не приходится совместно использовать один и тот же пароль. С другой стороны, каждая учетная запись с идентификатором пользователя 0 — это еще одна потенциальная брешь в защите системы. Наилучший способ контроля действий администраторов — утилита sudo.</p>
+<p style="text-align: justify;">Создание учетной записи с идентификатором пользователя 0 — одна из распространенных уловок хакеров. Поэтому необходимо регулярно просматривать файл /etc/passwd (это может ав­томатически делать программа <strong>Bastille</strong>, которая также будет рассмотрена в следующих статьях) на предмет наличия несанкционированных записей, особенно если они принадлежат суперпользователю.</p>
+<h2><span style="color: #888888;"><strong>Уменьшение последствий взлома учетной записи </strong><strong>суперпользователя</strong></span></h2>
+<p style="text-align: justify;">Получив доступ к учетной записи суперпользователя, злоумышленник захватывает контроль над всей системой.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Минимизировать разрушительные последствия такого взло­ма можно лишь двумя способами:</div><div class='stb-grey-body_box' ></p>
+<ol style="text-align: justify;">
+<li>Шифруйте все важные файлы с помощью таких средств, как <strong>CFS </strong>и <strong><a title="pgp" href="http://securos.org.ua/ctandarty-cifrovyx-sertifikatov/" target="_blank">PGP</a></strong>.</li>
+<li>Регулярно создавайте резервные копии системы в неповрежденном состоянии. Контролировать целостность системы позволяют программы <strong>Bastille</strong> и <strong>Trip</strong><strong>­</strong><strong>wire</strong>.</div></li>
+</ol>
+<p style="text-align: justify;">Применение шифрования существенно затруднит злоумышленнику доступ к конфиденциальным данным. Наличие неповрежденных резервных копий позволит восстановить систему в корректном состоянии после того, как произошел взлом.</p>
+<h2><span style="color: #888888;"><strong>Настройка файла /</strong><strong>etc</strong><strong>/</strong><strong>securetty</strong></span></h2>
+<p style="text-align: justify;">Файл /etc/securetty определяет, с каких терминалов суперпользователь может регистрироваться в системе. По умолчанию файл сконфигурирован таким образом, что суперпользователю доступны только аппаратная консоль (монитор, непосредственно подключенный к системе, — /dev/tty1) и виртуальные консоли (/dev/tty2-tty8). Попытки зарегистрироваться через другие устройства будут проигнорированы — придется регистрироваться в системе как обычный пользователь, а затем выполнять команду su. Стандартный вид файла /etc/securetty такой:</p>
+
+<div class="wp_syntax"><div class="code"><pre class="text" style="font-family:monospace;"># cat /etc/securetty
+ttyl
+tty2
+tty3
+tty4
+tty5
+tty6
+tty7
+tty8</pre></div></div>
+
+<p style="text-align: justify;"><strong> </strong></p>
+<p style="text-align: justify;">Как видите, в нем нет записей вида pts*, т.е. привилегированный доступ по сети запрещен. Можно еще больше ограничить доступ, запретив виртуальные консоли и оставив только аппаратную консоль (tty1).</p>
+<p style="text-align: justify;">Если файл /etc/securetty существует, но пуст, суперпользователь вообще не сможет напрямую зарегистрироваться в системе. Ему придется пользоваться командой su или sudo, что представляет собой гораздо более безопасный подход.</p>
+<p style="text-align: justify;"><strong><em>Если файл /etc/securetty не существует, суперпользователь сможет регистрироваться в системе откуда угодно! </em></strong>Осторожно! Таким образом, следует всегда проверять наличие этого файла.</p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/husgJP94qmHfCVwFi4chWJM3AXY/0/da"><img src="http://feedads.g.doubleclick.net/~a/husgJP94qmHfCVwFi4chWJM3AXY/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/husgJP94qmHfCVwFi4chWJM3AXY/1/da"><img src="http://feedads.g.doubleclick.net/~a/husgJP94qmHfCVwFi4chWJM3AXY/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=MjFWTeBQkiM:HPdUSOJ2kZw:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/MjFWTeBQkiM" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>16</slash:comments>
+    </item>
+    <item>
+      <title>Детектор атак Neped</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/LjOV9BanA4s/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/detektor-atak-neped/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/detektor-atak-neped/</feedburner:origLink>
+      <description>Основная функция Neped определение деятельности се­тевых анализаторов. И так, программа написана относительно давно (в 1998 году) и, по сообщениям, может быть довольно легко обманута. Тем не менее в некоторых Linux-системах (предпо­чтительно в ядрах версии не выше 2.0.36) эта программа работает довольно эффективно. Программа сканирует подсеть в поисках сетевых плат, функционирующих в беспорядоч­ном режиме. Для этого [...]</description>
+      <category>Детекторы атак</category>
+      <pubDate>Sun, 06 Jun 2010 22:19:28 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1543</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-06T22:19:28Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1548 aligncenter" title="trojan_neped_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/05/trojan_neped_securos.org_.ua_.jpg" alt="trojan neped securos.org .ua  Детектор атак Neped" width="460" height="340" /></p>
+<p style="text-align: justify;">Основная функция Neped определение деятельности се­тевых анализаторов. И так, программа написана относительно давно (в 1998 году) и, по сообщениям, может быть довольно легко обманута. Тем не менее в некоторых Linux-системах (предпо­чтительно в ядрах версии не выше 2.0.36) эта программа работает довольно эффективно. Программа сканирует подсеть в поисках сетевых плат, функционирующих в беспорядоч­ном режиме. Для этого посылаются нешироковещательные ARP-пакеты. Предполагается, что система, в которой работает сетевой анализатор, ответит на такой пакет. Недостатком программы является то, что ее нельзя применять в коммутируемой сети. Кроме того, мож­но сконфигурировать систему так, чтобы она не отвечала на ARP-запросы. Это введет в заблуждение программу Neped. К тому же новые анализаторы умеют собирать информа­цию, не переводя плату в беспорядочный режим и используя другие приемы маскировки. Но как бы там ни было, программа Neped заслуживает упоминания как один из типичных представителей класса детекторов.</p>
+<p style="text-align: justify;">Исходный код программы был по адресу http://packetstormsecurity.nl/unix-exploits/network-scanners/neped.c. и здесь тоже был http://sp.sz.ru/download/neped.c, но увы, почти все упоминания об этой замечательной утилите стерты из &#8220;аналов&#8221; интернета. Вобщем кому интересно и кто найдет или уже давно есть в архиве &#8220;ретро&#8221;, отдельный респект и уважуха. Все, что необходимо, — это скомпилировать файл с помощью утилиты gcc:</p>
+<p style="text-align: justify;"><div class='stb-black_box' >#   gcc -о  neped neped.с</div></p>
+<p style="text-align: justify;">В результате будет создан исполняемый файл neped. Чтобы запустить программу, перейдите в режим суперпользователя и введите</p>
+<p style="text-align: justify;"><div class='stb-black_box' >#   ./neped ethO</div></p>
+<p style="text-align: justify;">Вместо ethO можно указать любой другой интерфейс для прослушивания. Програм­ма отобразит текущие сетевые параметры локальной системы и выдаст список систем, сетевые платы которых работают в беспорядочном режиме. Это выглядит примерно так:</p>
+<p style="text-align: justify;"><div class='stb-black_box' >#./neped ethO</p>
+<p style="text-align: justify;">&#62;    My HW Addr: 00:69:54:B7:77:90</p>
+<p style="text-align: justify;">&#62;    My IP Addr: 192.168.1.10</p>
+<p style="text-align: justify;">&#62;    My NETMASK: 255.255.255.0</p>
+<p style="text-align: justify;">&#62;    My BROADCAST: 192.168.1.255</p>
+<p style="text-align: justify;">&#62;    Scanning &#8230;.</p>
+<p style="text-align: justify;">*&#62; Host 192.168.1.25, 00:72:10:43:12:19 **** Promiscuous mode detected !!!</p>
+<p style="text-align: justify;">&#62;   End.</div></p>
+<p style="text-align: justify;">Программа сообщает о том, что найден узел (192.168.1.25), на котором работает сете­вой анализатор. Подобную проверку можно периодически запускать с помощью демона cron, направляя результаты в файл для последующего анализа.</p>
+<p style="text-align: justify;">Вот такая примечательная софтинка&#8230;</p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/ET4vaFGUEnYcyPCEWKk53IRQQv4/0/da"><img src="http://feedads.g.doubleclick.net/~a/ET4vaFGUEnYcyPCEWKk53IRQQv4/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/ET4vaFGUEnYcyPCEWKk53IRQQv4/1/da"><img src="http://feedads.g.doubleclick.net/~a/ET4vaFGUEnYcyPCEWKk53IRQQv4/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=LjOV9BanA4s:O5KbPy70VDI:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/LjOV9BanA4s" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>9</slash:comments>
+    </item>
+    <item>
+      <title>Индексные страницы .htaccess</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/6rWXyjhF-qI/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/indeksnye-stranicy-htaccess/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/indeksnye-stranicy-htaccess/</feedburner:origLink>
+      <description>Когда пользователь заходит на хост, например http://securos.org.ua, то автоматически открывается индексный файл index.* при его отсутствии &amp;#8211; либо содержимое каталога, либо ошибку 403 (FORBIDDEN) если опция отключена &amp;#8211; запрещен просмотр директорий.
+За листинг файлов отвечает директива Indexes (показывать посетителю список файлов, если в выбранном каталоге нет файла index.html или его аналога).
+Иногда нужно сделать так, чтобы в [...]</description>
+      <category>Настройка файла .htaccess</category>
+      <pubDate>Wed, 02 Jun 2010 22:02:40 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1521</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-06-02T22:02:40Z</dc:date>
+      <content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-1523" title="index_page_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/05/index_page_securos.org_.ua_.jpg" alt="index page securos.org .ua  Индексные страницы .htaccess" width="441" height="229" /></p>
+<p style="text-align: justify;">Когда пользователь заходит на хост, например http://securos.org.ua, то автоматически открывается индексный файл index.* при его отсутствии &#8211; либо содержимое каталога, либо ошибку 403 (FORBIDDEN) если опция отключена &#8211; запрещен просмотр директорий.</p>
+<p style="text-align: justify;">За листинг файлов отвечает директива <strong>Indexes </strong>(показывать посетителю список файлов, если в выбранном каталоге нет файла index.html или его аналога).</p>
+<p style="text-align: justify;">Иногда нужно сделать так, чтобы в случае отсутствия в каталоге файла, который показывается по умолчанию, листинг, то есть список файлов в каталоге, не выдавался. В этом случае добавим в .htaccess такую строчку:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' ># Запрет выдачи листинга пустого каталога</p>
+<p style="text-align: justify;">Options -Indexes</div></p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >А чтобы выдавал листинг, нужно:</div><div class='stb-grey-body_box' ></p>
+<p style="text-align: justify;">Options Indexes</div></p>
+<p style="text-align: justify;">Если же понадобиться разрешить просматривать список файлов, но чтобы при этом чаcть файлов определенного формата не отображалась, то запишем:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >IndexIgnore *.php* *.pl</div></p>
+<p style="text-align: justify;">Выдает листинг каталога, т.е. его содержание со всем содержанием, за исключением файлов-скриптов PHP и Perl.</p>
+<p style="text-align: justify;">Если ваш веб-сайт построен на скриптах, то в качестве индексных часто могут использоваться файлы с другими расширениями &#8211; указать эти файлы можно с помощью директивы DirectoryIndex:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >DirectoryIndex index.html index.shtml index.pl index.cgi index.php</div></p>
+<p style="text-align: justify;">Если же вы хотите что бы при обращении к каталогу открывался не index.html, а например, файл htaccess.php или /cgi-bin/index.pl:</p>
+<p style="text-align: justify;"><div class='stb-grey_box' >DirectoryIndex htaccess.php /cgi-bin/index.pl</div></p>
+<p style="text-align: justify;">Вот такие возможности предоставляет файл .htaccess.</p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/8Df8nrgqppQrD0HL-n0haGWuNOo/0/da"><img src="http://feedads.g.doubleclick.net/~a/8Df8nrgqppQrD0HL-n0haGWuNOo/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/8Df8nrgqppQrD0HL-n0haGWuNOo/1/da"><img src="http://feedads.g.doubleclick.net/~a/8Df8nrgqppQrD0HL-n0haGWuNOo/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=6rWXyjhF-qI:8swU10PUkAk:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/6rWXyjhF-qI" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>10</slash:comments>
+    </item>
+    <item>
+      <title>Типовые ситуации использования  цифровых сертификатов</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/jO42cj-Y4x8/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/tipovye-situacii-ispolzovaniya-cifrovyx-sertifikatov/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/tipovye-situacii-ispolzovaniya-cifrovyx-sertifikatov/</feedburner:origLink>
+      <description>Рассмотрим сначала случай, когда сертификат является самоподписанным.
+Самоподписанный сертификат может быть свидетельством аутентичности открытого ключа, который в нем содержится, только если сам подписан с помощью непарного этому открытому ключу секретного ключа (в противном случае самоподписанный сертификат довольно легко сфабриковать). Поэтому два корреспондента могут осуществлять защищенный обмен открытыми ключами с помощью самоподписанных сертификатов только в том случае, [...]</description>
+      <category>Управление открытыми ключами</category>
+      <pubDate>Sun, 30 May 2010 22:30:27 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1443</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-05-30T22:30:27Z</dc:date>
+      <content:encoded><![CDATA[<p style="text-align: center;"><img class="size-full wp-image-1452 aligncenter" title="remoteVPN_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/05/remoteVPN_securos.org_.ua_.jpg" alt="remoteVPN securos.org .ua  Типовые ситуации использования  цифровых сертификатов" width="450" height="236" /></p>
+<h2><span style="color: #808080;">Рассмотрим сначала случай, когда сертификат является самоподписанным.</span></h2>
+<p style="text-align: justify;"><strong>Самоподписанный сертификат </strong>может быть свидетельством аутентичности открытого ключа, который в нем содержится, только если сам подписан с помощью непарного этому открытому ключу секретного ключа (в противном случае самоподписанный сертификат довольно легко сфабриковать). Поэтому два корреспондента могут осуществлять защищенный обмен открытыми ключами с помощью самоподписанных сертификатов только в том случае, если только хотят изменить открытые ключи. Проблема защищенной начальной доставки открытого ключа корреспонденту таким образом не решается. Не решается таким образом и проблема перераспределения открытых ключей в случаях, когда секретный ключ одного из корреспондентов окажется скомпрометированным (или возникнет такое подозрение).</p>
+<h2><span style="color: #808080;">Рассмотрим теперь случай, когда издатель сертификата является третьей стороной по отношению к его владельцу и получателю.</span></h2>
+<p style="text-align: justify;">Получив открытый ключ издателя (и удостоверившись в его аутентичности) пользователь может пользоваться услугами этого издателя для получения открытых ключей любых своих корреспондентов. При этом не имеет значения, первый раз пользователь получает от данного своего корреспондента открытый ключ или не первый, и, если не первый, в таком случае изменяется открытый ключ – просто из профилактических соображений или в связи с возможным раскрытием секретного ключа. Применение цифровых сертификатов, выданных третьей стороной – единый способ защищенной транспортировки открытых ключей в общем случае.</p>
+<h2><span style="color: #808080;">Издателями сертификатов могут быть специальные государственные органы.</span></h2>
+<p style="text-align: justify;">Которые могут выступать доверенной третьей стороной при обмене открытыми ключами для своих граждан, специальные (как государственные, так и негосударственные, как коммерческие, так и некоммерческие) организации (выступая доверенной третьей стороной при обмене открытыми ключами для своих клиентов), другие (т.е. неспециальные) организации (которые могут, например, выдавать сертификаты для своих членов (сотрудников), или для своих корреспондентов (клиентов)), частные лица (выступая доверенной третьей стороной при обмене открытыми ключами для других частных лиц).</p>
+<p style="text-align: justify;"><strong>Порядок применения сертификата зависит, во-первых, от того, насколько полную информацию о владельце он содержит, во-вторых, от того, какой степенью доверия он пользуется.</strong> Оба эти факторы определяются политикой издателя, т.е. принятыми им правилами издания сертификатов (последний, правда, еще и репутацией издателя).</p>
+<p style="text-align: justify;">Например, известная фирма <a href="http://www.verisign.com/" target="_blank">VeriSign</a>, которая выдает цифровые сертификаты на коммерческой основе, предлагает физическим лицам четыре класса сертификатов.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Сертификаты класса 1:</div><div class='stb-grey-body_box' > идентифицируют владельца за произвольным именем, придуманным им самим (единственное требование к имени – оно должно быть уникальным в пространстве имен VeriSign). Издание такого сертификата не предусматривает никакой проверки правдивости предоставленных заказчиком сертификата сведений. Применение таких сертификатов предусматривает предыдущее установление личного контакта между корреспондентами.</div></p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Сертификаты класса 2:</div><div class='stb-grey-body_box' > идентифицируют владельца как члена (работника) определенной организации. Такие сертификаты выдаются, только если членство заказчика в этой организации будет подтверждено ее руководителем или другим официальным представителем (т.е. процедура издания сертификата предусматривает установление официального контакта с представителем этой организации). Такими сертификатами могут свободно пользоваться члены этой организации или те, кто предоставляет какие-то льготные услуги членам этой организации.</div></p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Сертификаты класса 3:</div><div class='stb-grey-body_box' > предоставляют исчерпывающую информацию об их владельцах. Процедура издания таких сертификатов предусматривает проверку личных документов заказчика. Такие сертификаты могут свободно применяться при выполнении финансовых операций (в тех случаях, когда риск потери, вследствие подделки документов заказчиком сертификата, очень велик).</div></p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >Сертификаты класса 4:</div><div class='stb-grey-body_box' > также предоставляют исчерпывающую информацию об их владельцах, но процедура их издания более сложна: она предусматривает дополнительные проверки правдивости предоставленных заказчиком сертификата сведений о себе (не только проверку личных документов). Сферой применения таких сертификатов есть крупные финансовые операции.</div></p>
+<p style="text-align: justify;">Для того, чтобы обеспечить возможность довольно легко и безопасно осуществлять обмен открытыми ключами  (публиковать открытые ключи) определенной группе (закрытой или открытой) пользователей, нужно создать соответствующую систему средств. Такие системы по обыкновению обозначаются как “инфраструктура управления открытыми ключами” (Public Key Infrastructure, PKI (переводится также как “инфраструктура с открытыми ключами”, “инфраструктура открытых ключей” и т.п.)).</p>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/0KWLqPSytmEtjxKpKzhCkiUDXlw/0/da"><img src="http://feedads.g.doubleclick.net/~a/0KWLqPSytmEtjxKpKzhCkiUDXlw/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/0KWLqPSytmEtjxKpKzhCkiUDXlw/1/da"><img src="http://feedads.g.doubleclick.net/~a/0KWLqPSytmEtjxKpKzhCkiUDXlw/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=jO42cj-Y4x8:6rlRrN-HSs4:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/jO42cj-Y4x8" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>2</slash:comments>
+    </item>
+    <item>
+      <title>Что такое детекторы атак?</title>
+      <link>http://feedproxy.google.com/~r/securos/feed/~3/3yRcyvjB0MU/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://securos.org.ua/chto-takoe-detektory-atak/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://securos.org.ua/chto-takoe-detektory-atak/</feedburner:origLink>
+      <description>Раньше для защиты от анализаторов достаточно было использовать протоколы шиф­рования команд, например SSH, и подключить все компьютеры сети к коммутаторам. Для современных анализаторов этого уже недостаточно. Однако кое-что все же можно сделать. Прежде всего, везде, где только возможно, применяйте самые современные про­токолы шифрования. В настоящее время вполне безопасен протокол SSH2. Но помните: любые преграды лишь [...]</description>
+      <category>Детекторы атак</category>
+      <pubDate>Fri, 28 May 2010 23:39:54 GMT</pubDate>
+      <guid isPermaLink="false">http://securos.org.ua/?p=1537</guid>
+      <dc:creator>carerakjan</dc:creator>
+      <dc:date>2010-05-28T23:39:54Z</dc:date>
+      <content:encoded><![CDATA[<p><img class="alignleft size-full wp-image-1538" title="stvol_securos.org.ua" src="http://securos.org.ua/wp-content/uploads/2010/05/stvol_securos.org_.ua_.jpg" alt="stvol securos.org .ua  Что такое детекторы атак?" width="480" height="168" /></p>
+<p style="text-align: justify;">Раньше для защиты от анализаторов достаточно было использовать протоколы шиф­рования команд, например SSH, и подключить все компьютеры сети к коммутаторам. Для современных анализаторов этого уже недостаточно. Однако кое-что все же можно сделать. Прежде всего, везде, где только возможно, применяйте самые современные про­токолы шифрования. В настоящее время вполне безопасен протокол SSH2. Но помните: любые преграды лишь усложняют задачу хакерам, но не останавливают их. Хакеры тру­дятся с такой же интенсивностью, как и системные администраторы, иногда опережая их на шаг. В следующем разделе будут рассмотрены программы, позволяющие обнаружить сканирование портов и перехват трафика.</p>
+<p style="text-align: justify;">Иногда нам остается лишь надеяться, что установленных средств защиты достаточно для отражения атак большинства хакеров, а злобное меньшинство никогда не будет нас атаковать. Но правда в том, что если кто-то действительно хочет взломать систему, то, по­старавшись, он сможет это сделать. Ни одна система не является полностью безопасной, даже если она находится в закрытом помещении и выключена.</p>
+<p style="text-align: justify;">Зато есть программы, помогающие выявлять некоторые виды атак.</p>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >В дальнейшем мы погово­рим о таких из них, как:</div><div class='stb-grey-body_box' ></p>
+<ul style="text-align: justify;">
+<li style="text-align: justify;"><strong><a title="neped" href="http://securos.org.ua/detektor-atak-neped/" target="_blank">Neped</a></strong> — находит системы, в которых работают сетевые анализаторы.</li>
+<li><strong><a title="portsentry" href="http://securos.org.ua/portsentry-dlya-obnaruzheniya-skana-portov-i-perexvata-trafika/" target="_blank">PortSentry</a></strong> — контролирует деятельность сканеров портов.</div></li>
+</ul>
+<p style="text-align: justify;"><div class='stb-grey-caption_box' >На самом деле детекторов много, и ниже представлены еще одни представители этой линейки программ:</div><div class='stb-grey-body_box' ></p>
+<ul style="text-align: justify;">
+<li><strong>Courtney</strong> — это первая программа-детектор, разработанная для выявления процессов SATAN. Программа последний раз обновлялась в 1995 году, но ее все еще можно загрузить по адресу ftp://coast.cs.purdue.edu/pub/tools/unix/logutils/courtney/.</li>
+<li><strong>Klaxon</strong> — это детектор сканеров, замещающий службы в файле конфигурации демона inetd, подобно программе TCPWrappers. У программы возникают проблемы, если она применяется к большому числу протоколов, но в остальном она вполне полезна. Программа доступна по адресу ftp.eng.auburn.edu/pub/doug.</li>
+<li style="text-align: justify;"><strong>Scan-Detector</strong> — это Perl-сценарий, который можно загрузить по адресу http: //www.securityfocus.com/tools/395.</div></li>
+</ul>
+<hr/>Copyright &#169; 2010 <strong><a href="http://securos.org.ua">SecurOS :: Dofollow  блог :: безопасность, хакерство, секреты взлома</a></strong>. This Feed is for personal non-commercial use only. If you are not reading this material in your news aggregator, the site you are looking at is guilty of copyright infringement. Please contact legal@securos.org.ua so we can take legal action immediately.<br/><span style="float: right;font-size: 7pt"><a href="http://blog.taragana.com/index.php/archive/wordpress-plugins-provided-by-taraganacom/">Plugin</a> by <a href="http://www.taragana.com/">Taragana</a></span>
+<p><a href="http://feedads.g.doubleclick.net/~a/rmzde-0ZN81wpgZmWE8A1-E3l-M/0/da"><img src="http://feedads.g.doubleclick.net/~a/rmzde-0ZN81wpgZmWE8A1-E3l-M/0/di" border="0" ismap="true"></img></a><br/>
+<a href="http://feedads.g.doubleclick.net/~a/rmzde-0ZN81wpgZmWE8A1-E3l-M/1/da"><img src="http://feedads.g.doubleclick.net/~a/rmzde-0ZN81wpgZmWE8A1-E3l-M/1/di" border="0" ismap="true"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/securos/feed?a=3yRcyvjB0MU:XSmUS9kS1e8:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/securos/feed?d=yIl2AUoC8zA" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/securos/feed/~4/3yRcyvjB0MU" height="1" width="1"/>]]></content:encoded>
+      <slash:comments>9</slash:comments>
+    </item>
+  </channel>
+</rss>
+

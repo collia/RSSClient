@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Будни GNUма или Линукс по-русски</title>
+    <link>http://lug.hdd1.ru/?q=rss.xml</link>
+    <description>Будни GNUма или Линукс по-русски</description>
+    <item>
+      <title>Linuxforum переезжает на новый адрес</title>
+      <link>http://lug.hdd1.ru/?q=node/1144</link>
+      <description>&lt;p&gt;Из за разногласий Администрации форума и владельцем домена настоящий форум сейчас находится в процессе переезда на новый домен и доступен по временному адресу &lt;a href="http://linuxforum.etersoft.ru/" title="http://linuxforum.etersoft.ru/"&gt;http://linuxforum.etersoft.ru/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Официальная jabber-конференция linuxforum: &lt;a href="mailto:linuxforum@conference.jabber.ru"&gt;linuxforum@conference.jabber.ru&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Следите за апдейтами в блоге администратора linuxforum: &lt;a href="http://sash-kan.blogspot.com/2010/02/linuxforumru-linuxforummezonru.html" title="http://sash-kan.blogspot.com/2010/02/linuxforumru-linuxforummezonru.html"&gt;http://sash-kan.blogspot.com/2010/02/linuxforumru-linuxforummezonru.html&lt;/a&gt;&lt;br /&gt;
+ Подробные разъяснения также можно посмотреть здесь &lt;a href="http://alv.me/?p=1046" title="http://alv.me/?p=1046"&gt;http://alv.me/?p=1046&lt;/a&gt;&lt;br /&gt;
+Теперь уже постояныый адрес &lt;a href="http://unixforum.org" title="http://unixforum.org"&gt;http://unixforum.org&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Sun, 21 Feb 2010 19:39:42 GMT</pubDate>
+      <guid isPermaLink="false">1144 at http://lug.hdd1.ru</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-02-21T19:39:42Z</dc:date>
+    </item>
+    <item>
+      <title>Гуртовщики Мыши, я пац сталом...</title>
+      <link>http://lug.hdd1.ru/?q=node/1141</link>
+      <description>&lt;p&gt;(c) Microsoft &amp;amp; ХимФак МГУ '98&lt;br /&gt;
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&lt;br /&gt;
+Перевод куска текстовика к хелпу Win95 без основного словаря&lt;br /&gt;
+переводчиком Poliglossum с медицинским, коммерческим и юридическим&lt;br /&gt;
+словарем.&lt;/p&gt;
+&lt;p&gt;Microsoft компания получает много откликов после появления Окон 95. Мы&lt;br /&gt;
+выявили, что много пользователей встретили проблему мыши. В этом&lt;br /&gt;
+документе Служба Техничного Упора Microsoft компании сводит вместе всю&lt;br /&gt;
+полезную информацию о возможных проблемах с мышами и гуртовщиками мыши и&lt;br /&gt;
+забота-стреляние.&lt;/p&gt;
+&lt;p&gt;Если вы только что закрепили себе Окна 95, вы можете увидеть, что ваша&lt;/p&gt;
+ &lt;p&gt;&lt;a href="http://lug.hdd1.ru/?q=node/1141" target="_blank"&gt;читать далее&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Tue, 02 Feb 2010 15:25:59 GMT</pubDate>
+      <guid isPermaLink="false">1141 at http://lug.hdd1.ru</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-02-02T15:25:59Z</dc:date>
+    </item>
+    <item>
+      <title>А надо ли?</title>
+      <link>http://lug.hdd1.ru/?q=node/1140</link>
+      <description>&lt;p&gt;Компания Canonical, которая является известной своим популярным дистрибутивом Ubuntu Linux, подписала соглашение с Yahoo!, согласно которому, все новые выпуски Ubuntu будут включать Yahoo! как поисковый движок по-умолчанию. В частности, все версии Firefox, которые будут входить в состав дистрибутивов, начиная с Lucid Lynx 10.04 LTS, будут использовать Yahoo! вместо Google по-умолчанию. Впрочем, пользователь сможет беспрепятственно установить любой поисковый движок, который ему нравится.&lt;/p&gt;
+ &lt;p&gt;&lt;a href="http://lug.hdd1.ru/?q=node/1140" target="_blank"&gt;читать далее&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Sat, 30 Jan 2010 16:47:11 GMT</pubDate>
+      <guid isPermaLink="false">1140 at http://lug.hdd1.ru</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-01-30T16:47:11Z</dc:date>
+    </item>
+    <item>
+      <title>Google Chrome для Linux быстрее Firefox</title>
+      <link>http://lug.hdd1.ru/?q=node/105</link>
+      <description>&lt;div style="width: 100px" class="image-attach-teaser"&gt;&lt;a href="/?q=node/105"&gt;&lt;img src="http://lug.hdd1.ru/sites/default/files/images/google chrome.thumbnail.jpeg" alt="google chrome.jpeg" title="google chrome.jpeg"  class="image image-thumbnail " width="100" height="100" /&gt;&lt;/a&gt;&lt;/div&gt;
+ &lt;p&gt;Довольно известным сайтом computerworld.com протестирована бета-версия браузера Google Chrome.&lt;br /&gt;
+Тест SunSpider JavaScript Benchmark браузер Chrome выполнил за 786.2 миллисекунды, в то время, как Firefox 3.5.6  показал не столь хороший результат - всего лишь 2969.4 миллисекунды. В тесте Acid3 браузер Google Chrome показал довольно неплохой результат - 99 баллов.&lt;/p&gt;
+ &lt;p&gt;&lt;a href="http://lug.hdd1.ru/?q=node/105" target="_blank"&gt;читать далее&lt;/a&gt;&lt;/p&gt;</description>
+      <enclosure url="http://lug.hdd1.ru/?q=image/view/106/preview" length="3450" type="image/jpeg" />
+      <pubDate>Sat, 09 Jan 2010 22:12:24 GMT</pubDate>
+      <guid isPermaLink="false">105 at http://lug.hdd1.ru</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-01-09T22:12:24Z</dc:date>
+    </item>
+    <item>
+      <title>Новая версия  Firefox 3.5.7</title>
+      <link>http://lug.hdd1.ru/?q=node/92</link>
+      <description>&lt;div style="width: 100px" class="image-attach-teaser"&gt;&lt;a href="/?q=node/92"&gt;&lt;img src="http://lug.hdd1.ru/sites/default/files/images/firefox_0.thumbnail.png" alt="firefox.png" title="firefox.png"  class="image image-thumbnail " width="100" height="99" /&gt;&lt;/a&gt;&lt;/div&gt;
+ &lt;p&gt;Выпущена новая версия браузера Firefox 3.5.7. В ней устранена распространённая проблема со стабильностью работы, а также исправлена ошибка, которая касалась предоставления пользователям обновлений.&lt;/p&gt;
+ &lt;p&gt;&lt;a href="http://lug.hdd1.ru/?q=node/92" target="_blank"&gt;читать далее&lt;/a&gt;&lt;/p&gt;</description>
+      <enclosure url="http://lug.hdd1.ru/?q=image/view/91/preview" length="5928" type="image/png" />
+      <pubDate>Thu, 07 Jan 2010 21:04:31 GMT</pubDate>
+      <guid isPermaLink="false">92 at http://lug.hdd1.ru</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-01-07T21:04:31Z</dc:date>
+    </item>
+    <item>
+      <title>Настоящие приверженцы "бомжеведения"</title>
+      <link>http://lug.hdd1.ru/?q=node/89</link>
+      <description>&lt;div style="width: 100px" class="image-attach-teaser"&gt;&lt;a href="/?q=node/89"&gt;&lt;img src="http://lug.hdd1.ru/sites/default/files/images/9426.thumbnail.jpeg" alt="9426.jpeg" title="9426.jpeg"  class="image image-thumbnail " width="100" height="66" /&gt;&lt;/a&gt;&lt;/div&gt;
+ &lt;p&gt;Различных блогов "бомжей" в инете огромное количество, может быть авторы некоторых на снимках? &lt;img src="http://lug.hdd1.ru/sites/all/modules/smileys/packs/Roving/bigsmile.png" title="Big smile" alt="Big smile" class="smiley-content"/&gt;&lt;/p&gt;</description>
+      <enclosure url="http://lug.hdd1.ru/?q=image/view/86/preview" length="30876" type="image/jpeg" />
+      <pubDate>Tue, 05 Jan 2010 15:35:19 GMT</pubDate>
+      <guid isPermaLink="false">89 at http://lug.hdd1.ru</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-01-05T15:35:19Z</dc:date>
+    </item>
+    <item>
+      <title>Очередной миф из мира мелкософта</title>
+      <link>http://lug.hdd1.ru/?q=node/85</link>
+      <description>&lt;p&gt;Авторами очередного "разгромного" исследования стали специалисты исследовательской компании Qualys, проведя свой анализ уязвимостей различных популярных программных продуктов, в число которых попали и браузеры.В отчете компании наиболее опасным, в плане защиты от внешних угроз, браузером был назван Firefox - в 2009 году специалисты насчитали в нем более сотни дыр, влияющих на безопасность пользователя, сообщает tochka.net&lt;/p&gt;
+ &lt;p&gt;&lt;a href="http://lug.hdd1.ru/?q=node/85" target="_blank"&gt;читать далее&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Tue, 05 Jan 2010 15:13:31 GMT</pubDate>
+      <guid isPermaLink="false">85 at http://lug.hdd1.ru</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-01-05T15:13:31Z</dc:date>
+    </item>
+    <item>
+      <title>Кое-что о Google Chrome OS</title>
+      <link>http://lug.hdd1.ru/?q=node/83</link>
+      <description>&lt;p&gt;Не так давно Google впервые продемонстрировала свою инновационную операционную систему Google Chrome OS. Ее девиз – «Скорость, простота и безопасность».&lt;br /&gt;
+ Новинка интересна тем, что может работать как на нетбуках, так и на настольных ПК. Был большой обзор от самой компании об этой ОС, поэтому остановлюсь только на ключевых моментах...&lt;/p&gt;
+ &lt;p&gt;&lt;a href="http://lug.hdd1.ru/?q=node/83" target="_blank"&gt;читать далее&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Sun, 03 Jan 2010 21:01:07 GMT</pubDate>
+      <guid isPermaLink="false">83 at http://lug.hdd1.ru</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2010-01-03T21:01:07Z</dc:date>
+    </item>
+    <item>
+      <title>С Новым Годом!</title>
+      <link>http://lug.hdd1.ru/?q=node/82</link>
+      <description>&lt;div style="width: 84px" class="image-attach-teaser"&gt;&lt;a href="/?q=node/82"&gt;&lt;img src="http://lug.hdd1.ru/sites/default/files/images/dedmoroz.thumbnail.jpeg" alt="Новый Год" title="Новый Год"  class="image image-thumbnail " width="84" height="100" /&gt;&lt;/a&gt;&lt;/div&gt;
+ &lt;p&gt;Поздравляю всех любителей линукса, сеошников, вебмастеров, читателей, короче всех хороших людей с наступившим Новым 2010 Годом! Пускай сбудуться мечты и планы, и будет этот год более удачным чем прошлый 2009. Счастья всем, удачи и, конечно, любви...Разнообразной... &lt;img src="http://lug.hdd1.ru/sites/all/modules/smileys/packs/Roving/bigsmile.png" title="Big smile" alt="Big smile" class="smiley-content"/&gt;&lt;/p&gt;</description>
+      <enclosure url="http://lug.hdd1.ru/?q=image/view/81/preview" length="5186" type="image/jpeg" />
+      <pubDate>Thu, 31 Dec 2009 19:43:50 GMT</pubDate>
+      <guid isPermaLink="false">82 at http://lug.hdd1.ru</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2009-12-31T19:43:50Z</dc:date>
+    </item>
+    <item>
+      <title>Мигрируем на ext4 без потерь данных</title>
+      <link>http://lug.hdd1.ru/?q=node/80</link>
+      <description>&lt;p&gt;Итак, в новогодние праздники появится некоторе свободное время, ну а так как отдыхать мы будем аж 11 дней, то можно и поизгаляться над своими системами. Например установить себе файловую систему ext4. Тем более если данные есть, а попробовать очень хочется, то надеюсь данное руководство будет полезным.&lt;br /&gt;
+ Итак в терминале вводим (естественно от рута)&lt;/p&gt;
+&lt;p&gt;# tune2fs -O extents,uninit_bg,dir_index /dev/имя_устройства&lt;/p&gt;
+&lt;p&gt;Естественно устройство должно быть отмонтировано, ну а если кто-то рискнул преобразовать корневую файловую систему, то перед этим надо бы загрузиться с liveCD.&lt;br /&gt;
+Затем проверяем&lt;/p&gt;
+ &lt;p&gt;&lt;a href="http://lug.hdd1.ru/?q=node/80" target="_blank"&gt;читать далее&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Wed, 30 Dec 2009 17:39:19 GMT</pubDate>
+      <guid isPermaLink="false">80 at http://lug.hdd1.ru</guid>
+      <dc:creator>admin</dc:creator>
+      <dc:date>2009-12-30T17:39:19Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

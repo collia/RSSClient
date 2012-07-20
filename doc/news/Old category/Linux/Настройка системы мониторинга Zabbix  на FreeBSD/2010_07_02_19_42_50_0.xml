@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Zabbix</title>
+    <link>http://bsdadmin.ru/index.php/2010-01-07-11-46-32.feed?type=rss</link>
+    <description>Настройка системы мониторинга Zabbix  на FreeBSD.</description>
+    <item>
+      <title>Иконки в zabbix.</title>
+      <link>http://bsdadmin.ru/index.php/2010-01-07-11-46-32/122--zabbix.html</link>
+      <description>&lt;p&gt;Раз уж мне пришлось переинсталировать Zabbix на другую машину решил для памяти записать &lt;br /&gt;изменения в картах Zabbix. &lt;br /&gt;&lt;strong&gt;&lt;em&gt;Во-первых:&lt;/em&gt;&lt;/strong&gt; теперь при новой инсталяции не инсталлируются иконки для создания карт Zabbix.&lt;br /&gt;&lt;strong&gt;&lt;em&gt;Во-вторых:&lt;/em&gt;&lt;/strong&gt; разработчики поменяли формат иконок с png на jpg.&lt;br /&gt;&lt;br /&gt;&lt;em&gt;&lt;strong&gt;Следовательно, перед тем, как начать работать с картами, сначала необходимо загрузить иконки, причем, как я говорил, в новом формате Jpg. Иконки формата png не поддерживаются.&lt;br /&gt;&lt;/strong&gt;&lt;/em&gt;&lt;br /&gt;Делается это следующим образом:&lt;br /&gt;&lt;em&gt;Configuration- General&lt;/em&gt;&lt;br /&gt;&lt;em&gt;Configuration of Zabbix - Выбрать Images&lt;br /&gt;В Images выбрать Type – Icon&lt;br /&gt;&lt;/em&gt;Должно получиться так :&lt;/p&gt;</description>
+      <category>Zabbix</category>
+      <pubDate>Mon, 12 Apr 2010 09:11:46 GMT</pubDate>
+      <guid isPermaLink="false">http://bsdadmin.ru/index.php/2010-01-07-11-46-32/122--zabbix.html</guid>
+      <dc:creator>pvic74@mail.ru (Administrator)</dc:creator>
+      <dc:date>2010-04-12T09:11:46Z</dc:date>
+    </item>
+    <item>
+      <title>Обновление триггера при проверке доступности канала и сетевых устройств.</title>
+      <link>http://bsdadmin.ru/index.php/2010-01-07-11-46-32/72-2010-02-08-13-51-29.html</link>
+      <description>&lt;p&gt;&lt;span lang="RU"&gt;
+&lt;p&gt;Причина обновления триггера состоит в том, что иногда может быть маленькая задержка в сети, в результате которой частично теряется ответ пингуемого сервера. Так на серию в 3 пинга (опция -с3) может прийти только два ответа echo-replay. В принципе получается,что канал доступен,конечно с некоторым ухудшением качества,а Zabbix воспринимает это как отсутствие канала и посылает уведомление.&lt;/p&gt;
+&lt;p&gt;В связи с этим необходимо привести триггер к виду:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;{Router:icmpping.max(120)}&amp;#60;1&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Это означает, что Zabbix пошлет уведомление о недоступности, если в течении 2 минут не придет ни одного echo-replay (цифра 120).&lt;/p&gt;
+&lt;p&gt;Опытным путем я также определил различные периоды времени для каждого типа сетевых устройств. Например, &lt;strong&gt;&lt;em&gt;маршрутизаторы должны проверяться в течении 2 минут, а для рабочих станций это время может быть увеличено до 5 минут. В этом случае простая перезагрузка рабочей станции, не зарегистрируется в системе мониторинга как проблема.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;А проверку доступности свичей можно увеличить до 10 минут.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</description>
+      <category>Zabbix</category>
+      <pubDate>Mon, 08 Feb 2010 13:48:12 GMT</pubDate>
+      <guid isPermaLink="false">http://bsdadmin.ru/index.php/2010-01-07-11-46-32/72-2010-02-08-13-51-29.html</guid>
+      <dc:creator>pvic74@mail.ru (Administrator)</dc:creator>
+      <dc:date>2010-02-08T13:48:12Z</dc:date>
+    </item>
+    <item>
+      <title>Инсталляция агента Zabbix для Windows.</title>
+      <link>http://bsdadmin.ru/index.php/2010-01-07-11-46-32/67--zabbix-windows.html</link>
+      <description>&lt;p&gt;Из-за того, что в нашем удаленном офисе нет системного администратора, а ехать на&lt;br /&gt;другой конец страны я не имею ни малейшего желания,пришлось написать статью с картинками по инсталляции агента zabbix для Windows  для  опытного пользователя. &lt;br /&gt;Сервер с Zabbix уехал  к ним 2 месяца назад.&lt;br /&gt;Заодно, решил опубликовать  на сайте, раз уж сделал. &lt;br /&gt;Объяснений я думаю не требуется.&lt;br /&gt;&lt;br /&gt;&lt;img src="http://bsdadmin.ru/images/stories/my_statia/zabbix_win/zab_win1n.jpg" border="0" alt="Начало инсталяции агента Zabbix" title="Начало инсталяции агента Zabbix" /&gt;&lt;/p&gt;</description>
+      <category>Zabbix</category>
+      <pubDate>Fri, 29 Jan 2010 15:44:47 GMT</pubDate>
+      <guid isPermaLink="false">http://bsdadmin.ru/index.php/2010-01-07-11-46-32/67--zabbix-windows.html</guid>
+      <dc:creator>pvic74@mail.ru (Administrator)</dc:creator>
+      <dc:date>2010-01-29T15:44:47Z</dc:date>
+    </item>
+    <item>
+      <title>Настройка Zabbix  для проверки доступности  канала.</title>
+      <link>http://bsdadmin.ru/index.php/2010-01-07-11-46-32/61--zabbix-.html</link>
+      <description>&lt;p&gt;Смысл данной проверки простой — выбираем машину Windows в удаленной сети и пингуем. Если ответы на пинги не приходят,  то удаленная сеть недоступна. И, соответственно, об этом администратору Zabbix посылается сообщение по почте.&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;em&gt;Настройка заключается в следующем:&lt;br /&gt;&lt;/em&gt;&lt;/strong&gt;--Создаем новый Шаблон (Template). Он нужен для того, чтобы привязать к нему событие (Item).&lt;br /&gt;Событие привязывается к шаблону хоста, а не к самому хосту. Ибо это событие мы потом увидим в шаблоне этого хоста. &lt;br /&gt;Если мы привяжем событие к общему шаблону, так называемому Template_windows , то событие будет привязано ко всем рабочим станциям, которым назначен данный шаблон. А нам этого не надо. Поэтому-то мы и создаем новый шаблон только для этой рабочей станции. &lt;br /&gt;Надеюсь, я Вас не запутал.&lt;br /&gt;--Создаем Хост, который мы будем мониторить и привязываем к нему вновь созданный шаблон.&lt;br /&gt;--Создаем Item (Событие), которое будем мониторить. (В нашем случае прохождение ping.)&lt;br /&gt;--Создаем триггер ( Trigger). Он предназначен для того, чтобы, вроде семафора, сработать, если сценарий выполнился с ошибкой. &lt;br /&gt;--Создаем Action – это то, что необходимо сделать, когда сработал триггер. Например послать сообщение по почте администратору.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</description>
+      <category>Zabbix</category>
+      <pubDate>Tue, 19 Jan 2010 17:32:13 GMT</pubDate>
+      <guid isPermaLink="false">http://bsdadmin.ru/index.php/2010-01-07-11-46-32/61--zabbix-.html</guid>
+      <dc:creator>pvic74@mail.ru (Administrator)</dc:creator>
+      <dc:date>2010-01-19T17:32:13Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

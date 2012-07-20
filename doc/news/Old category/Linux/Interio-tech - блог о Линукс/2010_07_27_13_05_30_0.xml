@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Interio-tech</title>
+    <link>http://feeds.feedburner.com/Interio-tech</link>
+    <description>Инновационный блог о Линукс, веб-дизайну, веб-разработке, заработке в интернет.</description>
+    <item>
+      <title>ID3 теги в Banshee или Rhythmbox под Linux (кодировки в плеерах).</title>
+      <link>http://feedproxy.google.com/~r/Interio-tech/~3/9Wne3nzDDNs/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://interio-tech.com/2010/07/id3-tegi-v-banshee-ili-rhythmbox-pod-linux/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://interio-tech.com/2010/07/id3-tegi-v-banshee-ili-rhythmbox-pod-linux/</feedburner:origLink>
+      <description>Есть такая проблема в линукс плеерах как неправильное отображение ID3 тегов, проблема заключается в том что эти теги записаны в кодировке Windows CP1251 поэтому при добавлении файлов в списки воспроизведения плееров у нас отображаются не имена файлов а кракозябры, как же это исправить, есть несколько способов, я опишу все известные мне и более менее эффективные.
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/456Sin5CIaMeVA9uN3vGFf4H2L8/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/456Sin5CIaMeVA9uN3vGFf4H2L8/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/456Sin5CIaMeVA9uN3vGFf4H2L8/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/456Sin5CIaMeVA9uN3vGFf4H2L8/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Interio-tech/~4/9Wne3nzDDNs" height="1" width="1"/&gt;</description>
+      <category>Linux</category>
+      <category>Персонализация</category>
+      <category>amarok id3</category>
+      <category>audacious</category>
+      <category>banshee</category>
+      <category>cp-1251</category>
+      <category>fonts</category>
+      <category>id3</category>
+      <category>id3 tag</category>
+      <category>id3 tag editor</category>
+      <category>id3 tags</category>
+      <category>id3 теги</category>
+      <category>id3v2</category>
+      <category>kubuntu</category>
+      <category>linux</category>
+      <category>linux mint</category>
+      <category>rhythmbox id3</category>
+      <category>rhythmbox id3 tag</category>
+      <category>squid</category>
+      <category>tags</category>
+      <category>ubuntu</category>
+      <category>utf-8</category>
+      <category>utf8</category>
+      <category>кодировка banshee</category>
+      <category>кодировка в плеерах</category>
+      <category>кодировка линукс</category>
+      <category>кракозябры</category>
+      <category>отображение banshee</category>
+      <pubDate>Sun, 25 Jul 2010 22:03:45 GMT</pubDate>
+      <guid isPermaLink="false">http://interio-tech.com/?p=425</guid>
+      <dc:creator>millerd</dc:creator>
+      <dc:date>2010-07-25T22:03:45Z</dc:date>
+      <slash:comments>0</slash:comments>
+    </item>
+    <item>
+      <title>PingWi Typography — свободные шрифты для Linux.</title>
+      <link>http://feedproxy.google.com/~r/Interio-tech/~3/Mse04C6qeUo/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://interio-tech.com/2010/07/pingwi-typography-svobodnye-shrifty-dlya-linux/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://interio-tech.com/2010/07/pingwi-typography-svobodnye-shrifty-dlya-linux/</feedburner:origLink>
+      <description>Компания PingWin Software (входит в ГК АйТи) сообщает о начале открытого бета-тестирования пакета шрифтов PingWi Typography (PWT). Гарнитуры, входящие в пакет, разрабатываются «с нуля», как метрические аналоги широко распространенных шрифтов: Tahoma, Arial, Courier, Verdana, Times New Roman.
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/Ea40S32AFqY1v1UgLSPceDmiXcI/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/Ea40S32AFqY1v1UgLSPceDmiXcI/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/Ea40S32AFqY1v1UgLSPceDmiXcI/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/Ea40S32AFqY1v1UgLSPceDmiXcI/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Interio-tech/~4/Mse04C6qeUo" height="1" width="1"/&gt;</description>
+      <category>Linux</category>
+      <category>Графика</category>
+      <category>Новости</category>
+      <category>Персонализация</category>
+      <category>fonts</category>
+      <category>kubuntu</category>
+      <category>linux</category>
+      <category>linux fonts</category>
+      <category>mint</category>
+      <category>ttf linux fonts</category>
+      <category>ttf-fonts</category>
+      <category>ubuntu</category>
+      <category>настройка шрифтов</category>
+      <category>шрифты в линуксе</category>
+      <pubDate>Sat, 24 Jul 2010 09:35:56 GMT</pubDate>
+      <guid isPermaLink="false">http://interio-tech.com/?p=420</guid>
+      <dc:creator>millerd</dc:creator>
+      <dc:date>2010-07-24T09:35:56Z</dc:date>
+      <slash:comments>0</slash:comments>
+    </item>
+    <item>
+      <title>[Анонс] Установлен Dofollow плагин.</title>
+      <link>http://feedproxy.google.com/~r/Interio-tech/~3/CpJEmic7c7w/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://interio-tech.com/2010/07/anons-ustanovlen-dofollow-plagin/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://interio-tech.com/2010/07/anons-ustanovlen-dofollow-plagin/</feedburner:origLink>
+      <description>Спешу  Вам сообщить, о том что на нашем блоге установлен dofollow плагин, а это значит что все комментарии в которых вы указали свой сайт или сайт разрабатываемый вами будет индексироваться поисковыми машинами.
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/gwDdfKsZg37_8pn6ueZAKqW31bQ/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/gwDdfKsZg37_8pn6ueZAKqW31bQ/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/gwDdfKsZg37_8pn6ueZAKqW31bQ/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/gwDdfKsZg37_8pn6ueZAKqW31bQ/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Interio-tech/~4/CpJEmic7c7w" height="1" width="1"/&gt;</description>
+      <category>Новости</category>
+      <category>do-follow</category>
+      <category>dofollow</category>
+      <category>dofollow blog</category>
+      <category>plugin dofollow</category>
+      <category>u comment i follow</category>
+      <pubDate>Fri, 23 Jul 2010 10:34:42 GMT</pubDate>
+      <guid isPermaLink="false">http://interio-tech.com/?p=412</guid>
+      <dc:creator>millerd</dc:creator>
+      <dc:date>2010-07-23T10:34:42Z</dc:date>
+      <slash:comments>2</slash:comments>
+    </item>
+    <item>
+      <title>Photoshop CS4 в линукс.</title>
+      <link>http://feedproxy.google.com/~r/Interio-tech/~3/-KmLK0YiN_E/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://interio-tech.com/2010/07/photoshop-v-linuks/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://interio-tech.com/2010/07/photoshop-v-linuks/</feedburner:origLink>
+      <description>В многочисленных спорах между пользователями linux и windows довольно часто всплывает аргумент о том что мол в линуксе нет достойной замены программы photoshop, что мол все графические редакторы под линукс слабые и трудны в освоении, а кто сказал что нельзя запустить фотошоп под линукс? Никто не говорил, но все спорят, а мы попробуем.
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/qC5OwYVBJ9-GIhwfJJaHEGeb8L0/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/qC5OwYVBJ9-GIhwfJJaHEGeb8L0/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/qC5OwYVBJ9-GIhwfJJaHEGeb8L0/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/qC5OwYVBJ9-GIhwfJJaHEGeb8L0/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Interio-tech/~4/-KmLK0YiN_E" height="1" width="1"/&gt;</description>
+      <category>Linux</category>
+      <category>Графика</category>
+      <category>kubuntu</category>
+      <category>linux</category>
+      <category>photoshop</category>
+      <category>photoshop cs4</category>
+      <category>photoshop cs4 portable</category>
+      <category>photoshop cs4 скачать бесплатно</category>
+      <category>photoshop linux</category>
+      <category>photoshop linux 2010</category>
+      <category>photoshop linux ubuntu</category>
+      <category>photoshop linux wine</category>
+      <category>photoshop в linux</category>
+      <category>playonlinux</category>
+      <category>ubuntu</category>
+      <category>wine</category>
+      <category>wine 1.2</category>
+      <category>настройка photoshop</category>
+      <category>настройка photoshop под linux</category>
+      <category>скачать бесплатно</category>
+      <category>установить photoshop cs4</category>
+      <pubDate>Fri, 23 Jul 2010 06:38:19 GMT</pubDate>
+      <guid isPermaLink="false">http://interio-tech.com/?p=400</guid>
+      <dc:creator>millerd</dc:creator>
+      <dc:date>2010-07-23T06:38:19Z</dc:date>
+      <slash:comments>6</slash:comments>
+    </item>
+    <item>
+      <title>Conky, настройка системного монитора.</title>
+      <link>http://feedproxy.google.com/~r/Interio-tech/~3/Ee-m1zrdEW4/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://interio-tech.com/2010/07/conky-nastrojka-sistemnogo-monitora/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://interio-tech.com/2010/07/conky-nastrojka-sistemnogo-monitora/</feedburner:origLink>
+      <description>Каким системным монитором вы пользуетесь, виджетами плазмы или возможно superkaramba? Сегодня хочу поделиться с вами своим личным конфигом для программы conky. Что собственно такое Conky?
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/uf_NughzcmkrlTBcJdyjBZQ9cZw/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/uf_NughzcmkrlTBcJdyjBZQ9cZw/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/uf_NughzcmkrlTBcJdyjBZQ9cZw/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/uf_NughzcmkrlTBcJdyjBZQ9cZw/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Interio-tech/~4/Ee-m1zrdEW4" height="1" width="1"/&gt;</description>
+      <category>Linux</category>
+      <category>Персонализация</category>
+      <category>.conkyrc</category>
+      <category>/etc/conky/</category>
+      <category>conky</category>
+      <category>conky config</category>
+      <category>conky gismeteo</category>
+      <category>conky ubuntu</category>
+      <category>conky настройка</category>
+      <category>kubuntu</category>
+      <category>linux</category>
+      <category>linux mint</category>
+      <category>system monitor</category>
+      <category>ubuntu</category>
+      <category>настройка conky</category>
+      <pubDate>Fri, 23 Jul 2010 05:00:25 GMT</pubDate>
+      <guid isPermaLink="false">http://interio-tech.com/?p=384</guid>
+      <dc:creator>millerd</dc:creator>
+      <dc:date>2010-07-23T05:00:25Z</dc:date>
+      <slash:comments>6</slash:comments>
+    </item>
+    <item>
+      <title>Быстрая регистрация на любом сайте.</title>
+      <link>http://feedproxy.google.com/~r/Interio-tech/~3/2KPC7ystJm8/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://interio-tech.com/2010/07/bystraya-registraciya-na-lyubom-sajte/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://interio-tech.com/2010/07/bystraya-registraciya-na-lyubom-sajte/</feedburner:origLink>
+      <description>"Быстрая регистрация на любом сайте" - такой заголовок у сайта antireg.ru, и действительно если вам не хочется нигде светить ваш почтовый адрес или нужно зарегистрировать множество аккаунтов на каком-то сервисе или ресурсе то вы можете...
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/oF3fVrpF_LnpoOZhwSViDdDMjYo/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/oF3fVrpF_LnpoOZhwSViDdDMjYo/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/oF3fVrpF_LnpoOZhwSViDdDMjYo/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/oF3fVrpF_LnpoOZhwSViDdDMjYo/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Interio-tech/~4/2KPC7ystJm8" height="1" width="1"/&gt;</description>
+      <category>Общая информация</category>
+      <category>antireg</category>
+      <category>antireg.ru</category>
+      <category>quick registration anywhere</category>
+      <category>vkontakte</category>
+      <category>Быстрая регистрация на любом сайте</category>
+      <pubDate>Tue, 20 Jul 2010 15:49:33 GMT</pubDate>
+      <guid isPermaLink="false">http://interio-tech.com/?p=376</guid>
+      <dc:creator>millerd</dc:creator>
+      <dc:date>2010-07-20T15:49:33Z</dc:date>
+      <slash:comments>2</slash:comments>
+    </item>
+    <item>
+      <title>Btrfs в новой Ubuntu 10.10.</title>
+      <link>http://feedproxy.google.com/~r/Interio-tech/~3/aoVMoTnIFU4/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://interio-tech.com/2010/07/btrfs-v-novoj-ubuntu-10-10/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://interio-tech.com/2010/07/btrfs-v-novoj-ubuntu-10-10/</feedburner:origLink>
+      <description>Прошёл слух что в новом релизе Ubuntu 10.10 файловой системой по умолчанию будет Btrfs.
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/sMB3jFJJp44mDZd6bKbhB-3_RrM/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/sMB3jFJJp44mDZd6bKbhB-3_RrM/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/sMB3jFJJp44mDZd6bKbhB-3_RrM/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/sMB3jFJJp44mDZd6bKbhB-3_RrM/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Interio-tech/~4/aoVMoTnIFU4" height="1" width="1"/&gt;</description>
+      <category>Linux</category>
+      <pubDate>Mon, 19 Jul 2010 18:41:46 GMT</pubDate>
+      <guid isPermaLink="false">http://interio-tech.com/?p=372</guid>
+      <dc:creator>millerd</dc:creator>
+      <dc:date>2010-07-19T18:41:46Z</dc:date>
+      <slash:comments>0</slash:comments>
+    </item>
+    <item>
+      <title>Teamviewer под Linux, удаленный рабочий стол.</title>
+      <link>http://feedproxy.google.com/~r/Interio-tech/~3/WqcnhzswwRE/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://interio-tech.com/2010/07/teamviewer-pod-linux-udalennyj-rabochij-stol/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://interio-tech.com/2010/07/teamviewer-pod-linux-udalennyj-rabochij-stol/</feedburner:origLink>
+      <description>Как зайти на удаленный рабочий стол на машину на которой стоит Linux? С недавнего времени такая программа как TeamViewer доступна и под линукс, она доступна как под отдельные дистрибутивы так и в виде исходных кодов, а точнее...
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/_HuZ0FPsLuICGsWEGasgH-qgdEU/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/_HuZ0FPsLuICGsWEGasgH-qgdEU/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/_HuZ0FPsLuICGsWEGasgH-qgdEU/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/_HuZ0FPsLuICGsWEGasgH-qgdEU/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Interio-tech/~4/WqcnhzswwRE" height="1" width="1"/&gt;</description>
+      <category>Linux</category>
+      <category>Общая информация</category>
+      <category>kubuntu</category>
+      <category>linux</category>
+      <category>remote desktop</category>
+      <category>teamviewer</category>
+      <category>ubuntu</category>
+      <pubDate>Tue, 13 Jul 2010 10:53:41 GMT</pubDate>
+      <guid isPermaLink="false">http://interio-tech.com/?p=350</guid>
+      <dc:creator>millerd</dc:creator>
+      <dc:date>2010-07-13T10:53:41Z</dc:date>
+      <slash:comments>0</slash:comments>
+    </item>
+    <item>
+      <title>Космические рейнджеры 2 на дистрибутиве Linux Mint 9.0</title>
+      <link>http://feedproxy.google.com/~r/Interio-tech/~3/cIYBh0Ww2Ak/</link>
+      <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://interio-tech.com/2010/07/kosmicheskie-rejndzhery-2-v-distributive-linux-mint-9-0/feed/</wfw:commentRss>
+      <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://interio-tech.com/2010/07/kosmicheskie-rejndzhery-2-v-distributive-linux-mint-9-0/</feedburner:origLink>
+      <description>Всё оказалось проще чем можно было предположить, установил wine 1.2 и PlayOnLinux к нему, самое смешное что на Windows 7 эта игра отказалась корректно работать напрочь, что я только не делал и режимы совместимости включал и с разными правами запускал вобщем винда не приняла её. Вобщем после установки программ я вставил образ диска игры с помощью программы...
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/pyE-ZYpOFsiMVSPrcbWY_4LUWwA/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/pyE-ZYpOFsiMVSPrcbWY_4LUWwA/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/pyE-ZYpOFsiMVSPrcbWY_4LUWwA/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/pyE-ZYpOFsiMVSPrcbWY_4LUWwA/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/Interio-tech/~4/cIYBh0Ww2Ak" height="1" width="1"/&gt;</description>
+      <category>Игры</category>
+      <category>linux</category>
+      <category>linux mint</category>
+      <category>playonlinux</category>
+      <category>space rangers 2</category>
+      <category>wine</category>
+      <category>космические рейнджеры 2</category>
+      <pubDate>Mon, 12 Jul 2010 11:07:58 GMT</pubDate>
+      <guid isPermaLink="false">http://interio-tech.com/?p=339</guid>
+      <dc:creator>millerd</dc:creator>
+      <dc:date>2010-07-12T11:07:58Z</dc:date>
+      <slash:comments>0</slash:comments>
+    </item>
+  </channel>
+</rss>
+

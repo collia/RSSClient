@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Welcome to the Frontpage</title>
+    <link>http://unixland.freehostia.com/index.php?format=feed&amp;type=rss</link>
+    <description>Бесплатная литература по Unix и Linux</description>
+    <item>
+      <title>Что такое UNIX?</title>
+      <link>http://unixland.freehostia.com/index.php?option=com_content&amp;view=article&amp;id=44:-unix</link>
+      <description>&lt;p&gt;По большей части это группа переносимых, многопользовательских и многозадачных операционных систем. Впервые подобная "система" появилась в 1969г., создателем которой было подразделение Bell Labs компании AT&amp;amp;B. В наше время существует множество подобных unix систем, хоть и некоторые не имеют "официального" права называться таковыми, однако являются Unix-подобными системами.&lt;/p&gt; &lt;ul&gt;По большей части признаками UNIX-систем являются: &lt;li&gt;использование простых текстовых файлов для настройки и управления системой; &lt;/li&gt;&lt;li&gt;широкое применение утилит, запускаемых в командной строке; &lt;/li&gt;&lt;li&gt;взаимодействие с пользователем посредством виртуального устройства — терминала; &lt;/li&gt;&lt;li&gt;представление физических и виртуальных устройств и некоторых средств межпроцессового взаимодействия как файлов; &lt;/li&gt;&lt;li&gt;использование конвейеров из нескольких программ, каждая из которых выполняет одну задачу. &lt;/li&gt;&lt;/ul&gt; &lt;p&gt;Данный сайт предназначен для ознакомления и снабжения пользователей информацией/книгами по UNIX-подобным системам.&lt;/p&gt; &lt;p&gt;&lt;a href="http://unixland.freehostia.com/images/main/unix_history-simple.jpg" target="_blank"&gt;Схема развития UNIX систем&lt;/a&gt;&lt;/p&gt;</description>
+      <category>frontpage</category>
+      <pubDate>Fri, 13 Nov 2009 03:18:06 GMT</pubDate>
+      <guid isPermaLink="false">http://unixland.freehostia.com/index.php?option=com_content&amp;view=article&amp;id=44:-unix</guid>
+      <dc:date>2009-11-13T03:18:06Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

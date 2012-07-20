@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Настройка хостинг-сервера</title>
+    <link>http://server-tuning.info/rss.xml</link>
+    <description>Настройка хостинг-сервера</description>
+    <item>
+      <title>MRTG: Графики производительности системы</title>
+      <link>http://server-tuning.info/linux/mrtg-scripts.html</link>
+      <description>MRTG — это пакет утилит для построения графиков на основе данных о состоянии системы. Функциональность легко расширяется с помощью простых скриптов, которые могут предоставлять данные, например, о нагрузке на сетевые интерфейсы, количество запросов к SQL и веб-серверу, и о многом другом.</description>
+      <pubDate>Sat, 05 Sep 2009 21:21:00 GMT</pubDate>
+      <guid isPermaLink="false">http://server-tuning.info/linux/mrtg-scripts.html</guid>
+      <dc:date>2009-09-05T21:21:00Z</dc:date>
+    </item>
+    <item>
+      <title>MySQL: Перекодировка из latin1 в utf8</title>
+      <link>http://server-tuning.info/mysql/latin1-utf8.html</link>
+      <description>Если вы храните в БД данные в кодировке UTF-8, то наверняка сталкивались с ситуацией, когда по ошибке эти данные записывались в таблицу с кодировкой latin1 по умолчанию. Не смотря на то, что данные выглядят совершенно нечитабельно, это можно легко исправить.</description>
+      <pubDate>Wed, 26 Mar 2008 10:16:00 GMT</pubDate>
+      <guid isPermaLink="false">http://server-tuning.info/mysql/latin1-utf8.html</guid>
+      <dc:date>2008-03-26T10:16:00Z</dc:date>
+    </item>
+    <item>
+      <title>BIND: Secondary NS для домена</title>
+      <link>http://server-tuning.info/bind/secondary-ns.html</link>
+      <description>В системе DNS ваш домен всегда обслуживают, как минимум, 2 ns-сервера. Когда первый сервер оказывается недоступен, запрос направляется ко второму. Если у вас есть еще один сервер или VPS, можно назначить ему роль Secondary NS.</description>
+      <pubDate>Fri, 01 Feb 2008 00:22:00 GMT</pubDate>
+      <guid isPermaLink="false">http://server-tuning.info/bind/secondary-ns.html</guid>
+      <dc:date>2008-02-01T00:22:00Z</dc:date>
+    </item>
+    <item>
+      <title>nginx: Конфигурация frontend к Apache</title>
+      <link>http://server-tuning.info/nginx/apache-frontend.html</link>
+      <description>Снизим нагрузку на сервер и уменьшим время отклика, поставив между посетителем и Apache легкий nginx. Он будет часть запросов перенаправлять к Apache, а часть &amp;mdash; обслуживать сам.</description>
+      <pubDate>Fri, 18 Jan 2008 00:04:00 GMT</pubDate>
+      <guid isPermaLink="false">http://server-tuning.info/nginx/apache-frontend.html</guid>
+      <dc:date>2008-01-18T00:04:00Z</dc:date>
+    </item>
+    <item>
+      <title>nginx: Защита файлов от прямых ссылок</title>
+      <link>http://server-tuning.info/nginx/direct-linking-protection.html</link>
+      <description>Часто, при цитировании материала с вашего сайта, адреса изображений или загружаемых файлов не изменяют. Возникает нагрузка на ваш сервер, но при этом посетитель даже не знает, откуда загружается рисунок и не видит вашего сайта.</description>
+      <pubDate>Thu, 17 Jan 2008 16:06:00 GMT</pubDate>
+      <guid isPermaLink="false">http://server-tuning.info/nginx/direct-linking-protection.html</guid>
+      <dc:date>2008-01-17T16:06:00Z</dc:date>
+    </item>
+    <item>
+      <title>nginx: Автоматические субдомены</title>
+      <link>http://server-tuning.info/nginx/auto-subdomains.html</link>
+      <description>Если у вас много субдоменов или вы хотите создавать их автоматически, тогда имеет смысл создать одну универсальную конфигурацию, которая будет обслуживать все субдомены, направляя запросы посетителей в соответствующие каталоги.</description>
+      <pubDate>Thu, 17 Jan 2008 12:58:00 GMT</pubDate>
+      <guid isPermaLink="false">http://server-tuning.info/nginx/auto-subdomains.html</guid>
+      <dc:date>2008-01-17T12:58:00Z</dc:date>
+    </item>
+    <item>
+      <title>nginx: Простое ограничение доступа по паролю</title>
+      <link>http://server-tuning.info/nginx/basic-auth.html</link>
+      <description>Используя директивы &lt;i&gt;auth_basic&lt;/i&gt; и &lt;i&gt;auth_basic_user_file&lt;/i&gt;, можно ограничить доступ ко всему серверу, сайту, каталогу или любому URL по маске, с авторизацией по протоколу "HTTP Basic Authentication".</description>
+      <pubDate>Wed, 16 Jan 2008 23:22:00 GMT</pubDate>
+      <guid isPermaLink="false">http://server-tuning.info/nginx/basic-auth.html</guid>
+      <dc:date>2008-01-16T23:22:00Z</dc:date>
+    </item>
+    <item>
+      <title>nginx: Конфигурация на отдельном порту/IP</title>
+      <link>http://server-tuning.info/ru/nginx/standalone.html</link>
+      <description>Это самая легкая в настройке конфигурация совместного использования nginx и Apache. Они работают на разных портах/IP и никак не связаны между собой. Адрес веб-сервера, который будет обслуживать запрос, содержится в URL запроса.</description>
+      <pubDate>Fri, 07 Dec 2007 17:38:00 GMT</pubDate>
+      <guid isPermaLink="false">http://server-tuning.info/ru/nginx/standalone.html</guid>
+      <dc:date>2007-12-07T17:38:00Z</dc:date>
+    </item>
+    <item>
+      <title>Apache: mod_status</title>
+      <link>http://server-tuning.info/ru/apache/mod_status.html</link>
+      <description>mod_status - это модуль, который генерирует специальную страницу с подробной информацией про веб-сервер, системные ресурсы, текущие запросы и скорость их обработки.</description>
+      <pubDate>Fri, 16 Nov 2007 23:59:00 GMT</pubDate>
+      <guid isPermaLink="false">http://server-tuning.info/ru/apache/mod_status.html</guid>
+      <dc:date>2007-11-16T23:59:00Z</dc:date>
+    </item>
+    <item>
+      <title>Форум: Настройка хостинг-сервера</title>
+      <link>http://forum.server-tuning.info/</link>
+      <description>Открылся форум, где вы можете задать любые вопросы по настройке сервера.</description>
+      <pubDate>Sat, 10 Nov 2007 20:03:00 GMT</pubDate>
+      <guid isPermaLink="false">http://forum.server-tuning.info/</guid>
+      <dc:date>2007-11-10T20:03:00Z</dc:date>
+    </item>
+    <item>
+      <title>Nginx: Знакомство, варианты использования</title>
+      <link>http://server-tuning.info/ru/nginx/about-nginx.html</link>
+      <description>Nginx - это очень быстрый HTTP сервер, который часто используют вместо или совместно с Apache, чтобы снизить нагрузку на сервер и увеличить скорость обработки запросов посетителей.</description>
+      <pubDate>Sat, 03 Mar 2007 01:49:00 GMT</pubDate>
+      <guid isPermaLink="false">http://server-tuning.info/ru/nginx/about-nginx.html</guid>
+      <dc:date>2007-03-03T01:49:00Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

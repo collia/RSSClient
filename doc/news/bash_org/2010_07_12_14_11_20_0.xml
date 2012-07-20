@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>IT happens</title>
+    <link>http://localhost:8080/rss/testRSS2.xml</link>
+    <description>IT истории из жизни</description>
+    <item>
+      <title>#3051: Горелое не ем</title>
+      <link>http://ithappens.ru/story/3051</link>
+      <description>Сижу дома, нарезаю болванки. На второй подряд болванке не сходится контрольная сумма. Настроение падает окончательно, и я выхожу на балкон покурить. В этот момент Total Commander своим коронным «бздынь» извещает о том, что ещё одну болванку постигла смерть храбрых. Хватаю первую попавшуюся и выбрасываю что есть силы из окна.&lt;br&gt;&lt;br&gt;Болванка падает в чужой двор. Подходит к ней кавказец, долго и тщательно вынюхивает, что же ему тут прилетело. Спустя секунд десять пёс начинает с огромным усердием гавкать на злосчастную болванку. Вот так: даже животное может отличить плохое от хорошего.</description>
+      <pubDate>Fri, 07 May 2010 05:00:02 GMT</pubDate>
+      <guid isPermaLink="false">http://ithappens.ru/story/3051</guid>
+      <dc:date>2010-05-07T05:00:02Z</dc:date>
+    </item>
+  </channel>
+</rss>
+
